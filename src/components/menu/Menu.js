@@ -1,7 +1,6 @@
 import React from "react";
 import hukuk from "./logo.jpg";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
 import "./Menu.css";
@@ -22,7 +21,7 @@ function Menu() {
             ></img>
         </Link>
       </div>
-
+      
       <div
         className="col-sm-6  container"
         onClick={(x) => {
@@ -38,7 +37,8 @@ function Menu() {
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-
+      <br/>
+      <br/>
       <div
         className="col-lg-12 col-md-12 col-sm-12 p-0 menu-item"
         id="menu-item"
@@ -58,7 +58,7 @@ function Menu() {
           <hr className="line" />
           <li>
             <Link className="menu-item-link" to="/hizmetlerimiz">
-              HIZMETLERIMIZ
+              HİZMETLERİMİZ
             </Link>
           </li>
           <hr className="line" />
@@ -76,10 +76,15 @@ function Menu() {
           <hr className="line" />
           <li>
             <Link className="menu-item-link" to="/iletisim">
-              ILETISIM
+              İLETİŞİM
             </Link>
           </li>
         </ul>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div className="col-lg-12 icon_parent">
                 <a className="icon"
                   href="https://www.facebook.com/adli.sicil.1"

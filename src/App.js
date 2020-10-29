@@ -23,9 +23,10 @@ function App() {
         </div>
 
         <div
-          className="col-lg-9 col-md-9 col-sm-12"
+          className="col-lg-9 col-md-9 col-sm-12" 
          
         >
+          
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/hakkimizda" component={About}/>
@@ -34,7 +35,7 @@ function App() {
             <Route exact path="/blog" component={Blog}/>
             <Route exact path="/iletisim" component={Contact}/>
           </Switch>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </Router>
