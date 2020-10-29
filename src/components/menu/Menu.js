@@ -1,4 +1,9 @@
 import React from "react";
+import hukuk from "./logo.jpg";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
 import "./Menu.css";
 import { Link } from "react-router-dom";
 
@@ -7,7 +12,14 @@ function Menu() {
     <div className="menu col-12">
       <div className="col-lg-12 col-md-12 col-sm-6  company-logo">
         <Link className="menu-item-link logo" to="/">
-          LOGO
+        <img
+              
+              style={{ height: "auto", width: "90%" }}
+              src={hukuk}
+              alt="hukuk"
+              title="avukat"
+              
+            ></img>
         </Link>
       </div>
 
@@ -68,30 +80,36 @@ function Menu() {
             </Link>
           </li>
         </ul>
+        <div className="col-lg-12 icon_parent">
+                <a className="icon"
+                  href="https://www.facebook.com/adli.sicil.1"
+                  style={{ float: "left" }}
+                >
+                  <FacebookIcon style={{fontSize:"28px"}}/>
+                </a>
+                
+                <a className="icon"
+                  href="https://wa.me/+905427724718"
+                  style={{ float: "left", textIndent: "10px" }}
+                >
+                  <WhatsAppIcon style={{fontSize:"28px"}}/>
+                </a>
+                <a className="icon"
+                  href="tel: +905427724718"
+                  style={{ float: "left", textIndent: "10px" }}
+                >
+                  <SettingsPhoneIcon style={{fontSize:"28px"}}/>
+                </a>
+
+
+            </div>
+
       </div>
 
-      <div className="col-lg-12 social-icon" style={{ marginTop: "10%" }}>
-        <ul>
-          <li>
-            <a class="active menu-item-link" href="#home">
-              Instagram
-            </a>
-          </li>
-
-          <li>
-            <a class="active menu-item-link" href="#home">
-              Facebook
-            </a>
-          </li>
-
-          <li>
-            <a class="active menu-item-link" href="#home">
-              Twitter
-            </a>
-          </li>
-        </ul>
+      
+      
       </div>
-    </div>
+    
   );
 }
 
