@@ -3,7 +3,7 @@ import "./Contact.css"
 function Contact() {
     return (
         <div>
-            <h4>CONTACT PAGE forked by berati</h4>
+            <h4>CONTACT PAGE</h4>
         </div>
     )
 } 

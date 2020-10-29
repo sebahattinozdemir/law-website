@@ -2,9 +2,83 @@ import React from 'react'
 import "./Footer.css"
 function Footer() {
     return (
-        <div> 
-            <h1>BEN FOOTERIM brt brt</h1>
+        
+        <div class="row p-4" style={{ backgroundColor: "#f8f9fa",paddingTop:"20px"}}>
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+            
+            <b style={{ color: "black", fontSize: "20px" }}>Neden Biz</b>
+            <hr/>
+            <p>
+            Ata Kurumsal, İkamet izni, (oturma izni) Yabancı sermayeli şirket kuruluşu, Çalışma izni,  Türk iş hukuku, Turkuaz kart ve Türk vatandaşlığı gibi başlıca konularda tam profesyonel yetkinlik ile hizmet verebilen, TSE (Hizmet Yeterlilik) belgeli, DUNS ve NSPA gibi uluslararası saygınlığı olan kuruluşlara üye bir Türk danışmanlık firmasıdır.
+            </p>
+           
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+            <b style={{ color: "black", fontSize: "20px" }}>Yasal Uyarı</b>
+            <hr/>
+            <p>
+            Tüm hakları saklıdır. Bu sitede yer alan yazı, haber, fotoğraf, video ve sair dokümanların, bireysel kullanım dışında izin alınmadan kısmen ya da tamamen kopyalanması, çoğaltılması, kullanılması, yayınlanması ve dağıtılması kesinlikle yasaktır. Bu yasağa uymayanlar hakkında 5846 sayılı Fikir ve Sanat Eserleri Kanunu uyarınca yasal işlem yapılacaktır.
+            </p>
+            
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+            <b style={{ color: "black", fontSize: "20px" }}>İstanbul Ofis</b>
+            <hr/>
+            <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
+            <p><b>Randevusuz Görüşme: </b> HAYIR</p>
+            <p><b>Görüşme Ücreti: </b>400 ₺/45 Dakika</p>
+            <p><b>Adres: </b>Atatürk İş Merkezi
+                <br/>
+                    Nato Caddesi No:155 Kat:3
+                <br/>
+                    Yeşilköy / Bakırköy / İstanbul
+
+            </p>
+           
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+            <b style={{ color: "black", fontSize: "20px" }}>Ankara Ofis</b>
+            <hr/>
+            <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
+            <p><b>Randevusuz Görüşme: </b> HAYIR</p>
+            <p><b>Görüşme Ücreti: </b>400 ₺/45 Dakika</p>
+            <p><b>Adres: </b>Atatürk İş Merkezi
+                <br/>
+                    Karanfil Caddesi No:199 Kat:2
+                <br/>
+                    Kızılay / Çankaya / Ankara
+
+            </p>
+            
+          </div>
+
+          
+
+          <div className="col-12">
+            <p style={{color:"#f8f9fa"}}>This line was inserted in order to give a unique hr tag below the four colums</p>
+            <hr/> 
+                    <div className="patent">
+                        
+                            <p style={{fontSize:"12px",color:"black",paddingLeft:"15px",float:"left"}}> ©2020 All Rights Reserved</p> 
+                            &nbsp; &nbsp;
+                            <p style={{fontSize:"12px",color:"black",paddingRight:"15px",float:"right",textAlign:"right"}}> ®Se<b>B</b>er Tech</p>
+                    </div>
+          </div>
+
+          
+         
+          
+          
+
         </div>
+
+       
+
+        
+     
     )
 }
 
