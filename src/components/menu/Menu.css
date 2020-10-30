@@ -5,6 +5,7 @@
     left: 0;
     width: 16.66%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-left: 10px;
 }
 
 .company-logo{
@@ -20,6 +21,8 @@
     padding-top: 5%;
 }
 
+
+
 .menu-item ul{
     
     padding: 0%;
@@ -29,12 +32,14 @@
 
 ul li {
     list-style: none;
+    
 }
 
 .menu-item-link{
     text-decoration: none !important;
     color: #333;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .menu-item-link:hover{
@@ -44,19 +49,19 @@ ul li {
     color: orange;
 }
 
-.social-icon{
-   
-}
 
 .social-icon ul li{
     display: inline;
     padding-left: 10%;
 }
 .icon_parent{
-    position: fixed;
-    top:200px;
-    
+    justify-content:center;
+
 }
+.icon{
+    color:black;
+}
+
 .icon:hover{
     color:orange;
 }

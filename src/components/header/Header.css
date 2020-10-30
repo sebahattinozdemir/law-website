@@ -1,0 +1,43 @@
+.body{
+    
+    width:100%;
+    
+    
+    
+    
+}
+.ana{
+    color:black;
+    font-size: 18px;
+    float: left;
+}
+
+.ana:hover{
+    color:white;
+    text-decoration:none
+}
+.genel{
+    display: inline;
+    
+}
+.subtitle{
+    
+    font-size: 18px;
+    color:black;
+    float:left;
+}
+.icon{
+ 
+    float: left;
+    
+}
+.icon:hover{
+    color:white;
+}
+
+.title{
+    float:left;
+    font-size: 45px;
+    
+}
+
