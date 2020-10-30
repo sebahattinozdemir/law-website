@@ -54,6 +54,13 @@ ul li {
     display: inline;
     padding-left: 10%;
 }
+.icon_parent{
+    justify-content:center;
+
+}
+.icon{
+    color:black;
+}
 
 .icon:hover{
     color:orange;
