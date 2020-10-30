@@ -109,20 +109,20 @@ function Menu() {
         <br/>
         
         <div className="icon_parent">
-                <a className="icon"
+                <a className="menu-item-link"
                   href="https://www.facebook.com/adli.sicil.1"
                   style={{ float: "left" }}
                 >
                   <FacebookIcon style={{fontSize:"28px"}}/>
                 </a>
                 
-                <a className="icon"
+                <a className="menu-item-link"
                   href="https://wa.me/+905427724718"
                   style={{ float: "left", textIndent: "10px" }}
                 >
                   <WhatsAppIcon style={{fontSize:"28px"}}/>
                 </a>
-                <a className="icon"
+                <a className="menu-item-link"
                   href="tel: +905427724718"
                   style={{ float: "left", textIndent: "10px" }}
                 >

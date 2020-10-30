@@ -58,6 +58,7 @@ ul li {
     justify-content:center;
 
 }
+
 .icon{
     color:black;
 }
@@ -125,5 +126,8 @@ ul li {
         transition: 0.4s;
       }
       
+      .icon_parent{
+          display: none;
+      }
    
   }
