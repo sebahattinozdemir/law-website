@@ -7,7 +7,7 @@ export default class Header extends Component {
     render(){
         const {subtitle,title,icon}=this.props;
     return (
-        <div class="row p-4" style={{ backgroundColor: "orange",paddingTop:"50px",paddingLeft:"25px",height:"200px"}}>
+        <div class="row p-4" style={{ backgroundColor: "orange",paddingTop:"50px",paddingLeft:"25px",height:"200px", }}>
           <div className="col-12">
           
                 <div className="genel">
