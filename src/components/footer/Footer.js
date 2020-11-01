@@ -3,7 +3,7 @@ import "./Footer.css"
 function Footer() {
     return (
         
-        <div class="col-12 py-4 px-0" style={{ paddingTop:"20px",width:"100%"}}>
+        <div class="col-12 py-4 px-0" style={{ width:"100%"}}>
           
           <div className="col-lg-3 col-md-6 col-sm-6 col-12">
             
