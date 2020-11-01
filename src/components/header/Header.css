@@ -8,7 +8,7 @@
 }
 .ana{
     color:black;
-    font-size: 18px;
+    font-size: large;
     float: left;
 }
 
@@ -22,7 +22,7 @@
 }
 .subtitle{
     
-    font-size: 18px;
+    font-size: large;
     color:black;
     float:left;
 }
@@ -37,7 +37,7 @@
 
 .title{
     float:left;
-    font-size: 45px;
+    font-size:xx-large;
     
 }
 
