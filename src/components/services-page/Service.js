@@ -13,7 +13,7 @@ function Service() {
                 icon={<GavelIcon style={{fontSize:"35px"}}/>}
             />
             
-            <div className="inter" style={{backgroundColor:"#F7ECEC",witdth:"100%",overflow:"auto",paddingTop:"5px"}}>
+            <div className="row" style={{margin:"0%",padding:"0%"}}>
                    
                     
           
@@ -69,6 +69,7 @@ function Service() {
                   
  
             </div>
+
         </div>
     )
 }
