@@ -6,17 +6,20 @@ import "./Service.css"
 
 function Service() {
     return (
-        <div>
+        <div >
             <Header
                 subtitle="Hizmetlerimiz"
                 title="Hizmetlerimiz"
                 icon={<GavelIcon style={{fontSize:"35px"}}/>}
             />
             
-            <div className="inter col-12" style={{backgroundColor:"#F7ECEC",display:'block',paddingTop:"5px"}}>
+            <div className="row" style={{margin:"0%",padding:"0%"}}>
                    
+                    
+          
                         <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-                                 
+                            
+                            
                                 <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -63,7 +66,10 @@ function Service() {
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         
+                  
+ 
             </div>
+
         </div>
     )
 }

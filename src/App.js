@@ -33,6 +33,7 @@ function App() {
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
           </Switch>
+          
 
           <div className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
             <Footer />
