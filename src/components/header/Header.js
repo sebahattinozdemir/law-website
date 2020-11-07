@@ -28,7 +28,7 @@ export default class Header extends Component {
                     <br/>
                     <br/>
 
-                <p className="icon">{icon}</p> 
+                <p className="icon" >{icon}</p> 
                 <p className="title"><b>
                     &nbsp;
                     

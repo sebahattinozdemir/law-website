@@ -13,59 +13,55 @@ function Service() {
                 icon={<GavelIcon style={{fontSize:"35px"}}/>}
             />
             
-            <div className="row" style={{margin:"0%",padding:"0%"}}>
+            <div className="row" style={{margin:"0%",padding:"1%"}}>
                    
                     
           
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             
                             
                                 <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                
+                                <a className="h_title" href="#">Türk Vatandaşlığı</a>
+                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             
                             
                                 <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a className="h_title" href="#">Oturma İzni</a>
+                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             
                             
                                 <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a className="h_title" href="#">Çalışma İzni</a>
+                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             
                             
                                 <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a className="h_title" href="#">Turkuaz Kart</a>
+                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             
                             
                                 <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a className="h_title" href="#">Sağlık Sigorta Poliçesi</a>
+                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             
                             
                                 <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a className="h_title"  href="#">Türk Vatandaşlığı</a>
+                
+                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        
+                      
                   
  
             </div>

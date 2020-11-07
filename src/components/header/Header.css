@@ -26,8 +26,10 @@
     color:black;
     float:left;
 }
+
+
 .icon{
- 
+    
     float: left;
     
 }
@@ -38,6 +40,10 @@
 .title{
     float:left;
     font-size: 45px;
+   
     
+}
+.title:hover{
+    color:white;
 }
 

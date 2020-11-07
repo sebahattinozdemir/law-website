@@ -11,7 +11,7 @@ function Blog() {
                 title="Blog"
                 icon={<AssignmentIcon style={{fontSize:"35px"}} />}
             />
-                   <div className="row" style={{margin:"0%",padding:"0%"}}>
+                   <div className="row" style={{margin:"0%",padding:"1%"}}>
                    
                     
           
