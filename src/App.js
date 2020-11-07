@@ -35,6 +35,7 @@ function App() {
           </Switch>
           
 
+          
           <div className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
             <Footer />
           </div>
