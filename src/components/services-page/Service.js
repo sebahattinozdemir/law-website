@@ -1,4 +1,5 @@
 import Header from "../header/Header"; 
+import Interior from "../services-interior/Interior";
 import h1 from "./h1.jpg";
 import GavelIcon from '@material-ui/icons/Gavel';
 import React from 'react'
@@ -12,60 +13,51 @@ function Service() {
                 title="Hizmetlerimiz"
                 icon={<GavelIcon style={{fontSize:"35px"}}/>}
             />
-            
-            <div className="row" style={{margin:"0%",padding:"1%"}}>
-                   
-                    
-          
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                
-                                <a className="h_title" href="#">Türk Vatandaşlığı</a>
-                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <a className="h_title" href="#">Oturma İzni</a>
-                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <a className="h_title" href="#">Çalışma İzni</a>
-                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <a className="h_title" href="#">Turkuaz Kart</a>
-                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <a className="h_title" href="#">Sağlık Sigorta Poliçesi</a>
-                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            
-                            
-                                <img src={h1} class="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                                <a className="h_title"  href="#">Türk Vatandaşlığı</a>
-                
-                                <p class="card-text">Daha Fazla Bilgi  &gt;</p> 
-                        </div>
-                      
+          <div className="row" style={{margin:"0%",padding:"1%"}}>
+          <Interior
+                photo={h1}
+                title="Türk Vatandaşlığı"
+                uzanti="#turk-vatandasligi"
+                divert="#turk-vatandasligi"
+            />
+            <Interior
+                photo={h1}
+                title="Çalışma İzni"
+                uzanti="#calisma-izni"
+                divert="#calisma-izni"
+            />
+            <Interior
+                photo={h1}
+                title="Oturma İzni"
+                uzanti="#oturma-izni"
+                divert="#oturma-izni"
+            />
+            <Interior
+                photo={h1}
+                title="Türkiye'de Şirket Kuruluşu"
+                uzanti="#turkiyede-sirket-kurulusu"
+                divert="#turkiyede-sirket-kurulusu"
+            />
+            <Interior
+                photo={h1}
+                title="Turkuaz Kart"
+                uzanti="#turkuaz-kart"
+                divert="#turkuaz-kart"
+            />
+            <Interior
+                photo={h1}
+                title="Sağlık Sigorta Poliçesi"
+                uzanti="#saglik-sigorta-policesi"
+                divert="#saglik-sigorta-policesi"
+            />
                   
- 
-            </div>
+        </div>   
+          
 
+       
+
+
+            
         </div>
     )
 }

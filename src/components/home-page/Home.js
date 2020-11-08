@@ -10,6 +10,6 @@ function Home() {
             <Mail/>
         </div>
     )
-}
+} 
 
 export default Home

@@ -8,12 +8,15 @@ import Services from "./components/services-page/Service";
 import Reference from "./components/references-page/Reference";
 import Blog from "./components/blog/Blog";
 import Contact from "./components/contact-page/Contact";
+import Notfound from "./components/notfound/Notfound";
 
 
 
 function App() {
   return (
+    
     <Router>
+      
       <div className="col-12">
         <div
           className="col-lg-2 col-md-2 col-sm-12" style={{margin:'0px',padding:'0px'}}>
@@ -24,7 +27,6 @@ function App() {
           className="col-lg-10 col-md-10 col-sm-12"
           style={{margin:'0px',padding:'0px'}}
         >
-          
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/hakkimizda" component={About} />
@@ -32,17 +34,19 @@ function App() {
             <Route exact path="/referanslarimiz" component={Reference} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
+            <Route component={Notfound} />
+            
+            
           </Switch>
-          
-
-          
           <div className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
             <Footer />
           </div>
+          
 
         </div>
       </div>
     </Router>
+    
   );
 }
 

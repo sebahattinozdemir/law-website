@@ -1,5 +1,5 @@
 import "./Header.css";
-
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Link } from "react-router-dom";
 import React, { Component } from 'react'
 
@@ -20,7 +20,7 @@ export default class Header extends Component {
                         
                     <p className="subtitle">
                             &nbsp;
-                            &gt;
+                            <ArrowForwardIcon/>
                             &nbsp; 
                         {subtitle}</p>
                 </div>
