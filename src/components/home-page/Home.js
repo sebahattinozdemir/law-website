@@ -10,6 +10,7 @@ function Home() {
         className="col-12"
         style={{ position: "relative", marginLeft:'1%',marginRight:'1%', border: "2px solid red" }}
       >
+
         <img
           src={video}
           class="card-img-top"
