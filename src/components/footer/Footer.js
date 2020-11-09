@@ -5,9 +5,9 @@ function Footer() {
         
         <div class="col-12 py-4 px-0" style={{ width:"100%"}}>
           
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             
-            <b style={{ color: "black", fontSize: "20px" }}>Neden Biz</b>
+            <b style={{ color: "black", fontSize: "20px"}}>Neden Biz</b>
             <hr/>
             <p>
             Ata Kurumsal, İkamet izni, (oturma izni) Yabancı sermayeli şirket kuruluşu, Çalışma izni,  Türk iş hukuku, Turkuaz kart ve Türk vatandaşlığı gibi başlıca konularda tam profesyonel yetkinlik ile hizmet verebilen, TSE (Hizmet Yeterlilik) belgeli, DUNS ve NSPA gibi uluslararası saygınlığı olan kuruluşlara üye bir Türk danışmanlık firmasıdır.
@@ -15,7 +15,7 @@ function Footer() {
            
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             <b style={{ color: "black", fontSize: "20px" }}>Yasal Uyarı</b>
             <hr/>
             <p>
@@ -24,7 +24,7 @@ function Footer() {
             
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             <b style={{ color: "black", fontSize: "20px" }}>İstanbul Ofis</b>
             <hr/>
             <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
@@ -40,7 +40,7 @@ function Footer() {
            
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             <b style={{ color: "black", fontSize: "20px" }}>Ankara Ofis</b>
             <hr/>
             <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>

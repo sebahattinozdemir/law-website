@@ -11,6 +11,7 @@ export default class Interior extends Component {
                         <a className="h_title" href={uzanti}>{title}</a>
                         <br/>
                         <a className="add" href={divert}>Daha Fazla Bilgi </a><ArrowForwardIcon style={{color:"orange"}}/>
+                       
                   
           </div>
         
