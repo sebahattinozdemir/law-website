@@ -9,7 +9,12 @@ import Reference from "./components/references-page/Reference";
 import Blog from "./components/blog/Blog";
 import Contact from "./components/contact-page/Contact";
 import Notfound from "./components/notfound/Notfound";
+import Calisma from "./components/services-page/calisma-izni/Calisma";
+import Oturma from "./components/services-page/oturma-izni/Oturma";
+import Saglik from "./components/services-page/saglik-sigorta-policesi/Saglik";
 import Turk from "./components/services-page/turk-vatandasligi/Turk";
+import Turkiye from "./components/services-page/turkiyede-sirket-kurulusu/Turkiye";
+import Turkuaz from "./components/services-page/turkuaz-kart/Turkuaz";
 
 
 function App() {
@@ -34,7 +39,13 @@ function App() {
             <Route exact path="/referanslarimiz" component={Reference} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
-            <Route exact path="/turk-vatandasligi" component={Turk} />
+            <Route exact path="/hizmetlerimiz/calisma-izni" component={Calisma} />
+            <Route exact path="/hizmetlerimiz/oturma-izni" component={Oturma} />
+            <Route exact path="/hizmetlerimiz/saglik-sigorta-policesi" component={Saglik} />
+            <Route exact path="/hizmetlerimiz/turk-vatandasligi" component={Turk} />
+            <Route exact path="/hizmetlerimiz/turkiyede-sirket-kurulusu" component={Turkiye} />
+            <Route exact path="/hizmetlerimiz/turkuaz-kart" component={Turkuaz} />
+
             <Route component={Notfound} />
             
             

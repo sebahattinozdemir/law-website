@@ -10,10 +10,14 @@ export default class Interior extends Component {
        
           <div className="col-lg-4 col-md-6 col-sm-6 col-12" style={{float:"left",paddingBottom:"1%"}}>
                         <img src={photo} className="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
-                        <a className="h_title" href={uzanti}>{title}</a>
+                        
+                        <Link className="h_title" to={uzanti} >
+                       
+                            {title}
+                        </Link>
                         <br/>
 
-                        <Link className="ana" to={divert} >
+                        <Link className="an" to={divert} >
                         <ArrowForwardIcon style={{color:"orange"}}/>
                             Daha Fazla Bilgi
                         </Link>

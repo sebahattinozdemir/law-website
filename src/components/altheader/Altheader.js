@@ -1,11 +1,11 @@
-import "./Header.css";
+import "./Altheader.css";
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Link } from "react-router-dom";
 import React, { Component } from 'react'
 
-export default class Header extends Component {
+export default class Altheader extends Component {
     render(){
-        const {subtitle,title,icon}=this.props;
+        const {alttitle,title,icon}=this.props;
     return (
         <div class="row p-4" style={{ backgroundColor: "orange",paddingTop:"50px",width:"100%",paddingLeft:"25px",height:"200px",marginLeft:"0px"}}>
           <div className="col-12">
@@ -17,12 +17,18 @@ export default class Header extends Component {
                             
                     </Link>
                     
-                        
-                    <p className="subtitle">
+                    <Link className="subtitle1" to="/hizmetlerimiz">
                             &nbsp;
                             <ArrowForwardIcon/>
                             &nbsp; 
-                        {subtitle}</p>
+                            Hizmetlerimiz
+                    </Link>   
+                    <p className="alttitle">
+                            &nbsp;
+                            <ArrowForwardIcon/>
+                            &nbsp; 
+                            {alttitle}
+                    </p>
                 </div>
                     <br/>
                     <br/>
@@ -33,8 +39,17 @@ export default class Header extends Component {
                     &nbsp;
                     
 
-                    {title}</b></p>      
-          </div> 
+                    {title}</b></p>
+                
+                    
+                
+                
+               
+                
+          </div>
+              
+          
+        
         </div>
     
 
