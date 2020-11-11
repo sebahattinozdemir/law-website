@@ -18,19 +18,19 @@ function Service() {
                 photo={h1}
                 title="Türk Vatandaşlığı"
                 uzanti="#turk-vatandasligi"
-                divert="#turk-vatandasligi"
+                divert="/turk-vatandasligi"
             />
             <Interior
                 photo={h1}
                 title="Çalışma İzni"
                 uzanti="#calisma-izni"
-                divert="#calisma-izni"
+                divert="/calisma-izni"
             />
             <Interior
                 photo={h1}
                 title="Oturma İzni"
                 uzanti="#oturma-izni"
-                divert="#oturma-izni"
+                divert="oturma-izni"
             />
             <Interior
                 photo={h1}

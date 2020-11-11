@@ -1,6 +1,8 @@
 import "./Interior.css";
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
+
 export default class Interior extends Component {
     render(){
         const {photo,title,uzanti,divert}=this.props;
@@ -10,9 +12,12 @@ export default class Interior extends Component {
                         <img src={photo} className="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
                         <a className="h_title" href={uzanti}>{title}</a>
                         <br/>
-                        <a className="add" href={divert}>Daha Fazla Bilgi </a><ArrowForwardIcon style={{color:"orange"}}/>
-                       
-                  
+
+                        <Link className="ana" to={divert} >
+                        <ArrowForwardIcon style={{color:"orange"}}/>
+                            Daha Fazla Bilgi
+                        </Link>
+                    
           </div>
         
     )

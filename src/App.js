@@ -9,7 +9,7 @@ import Reference from "./components/references-page/Reference";
 import Blog from "./components/blog/Blog";
 import Contact from "./components/contact-page/Contact";
 import Notfound from "./components/notfound/Notfound";
-
+import Turk from "./components/services-page/turk-vatandasligi/Turk";
 
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
             <Route exact path="/referanslarimiz" component={Reference} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
+            <Route exact path="/turk-vatandasligi" component={Turk} />
             <Route component={Notfound} />
             
             

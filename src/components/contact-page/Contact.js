@@ -9,9 +9,7 @@ function Contact() {
                 subtitle="İletişim"
                 title="İletişim"
                 icon={<ContactPhoneIcon style={{fontSize:"35px"}}/>}
-                
             />
-            
             <h4>CONTACT PAGE</h4>
         </div>
     )
