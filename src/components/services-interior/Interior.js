@@ -9,7 +9,7 @@ export default class Interior extends Component {
     return (
        
           <div className="col-lg-4 col-md-6 col-sm-6 col-12" style={{float:"left",paddingBottom:"1%"}}>
-                        <img src={photo} className="card-img-top" alt="..." style={{width:"100%", height:"auto"}}></img>
+                        <img src={photo} className="card_int" alt="..." style={{width:"100%", height:"auto"}}></img>
                         
                         <Link className="h_title" to={uzanti} >
                        
