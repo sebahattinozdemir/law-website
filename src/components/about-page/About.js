@@ -7,16 +7,19 @@ import React from 'react'
 import "./About.css";
 function About() {
     return (
-        <div>
+        <div >
             <Header
                 subtitle="Hakkımızda"
                 title="Hakkımızda"
                 icon={<BusinessIcon style={{fontSize:"35px"}}/>}
                 
             />
-            <Basic/>
-            <Neden/>
-            <Misyon/>
+            <div className="row" style={{margin:"0%"}}>
+                <Basic/>
+                <Neden/>
+                <Misyon/>
+            </div>
+            
            
             
             
