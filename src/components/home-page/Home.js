@@ -1,6 +1,8 @@
 import "./Home.css";
 import video from "./1.gif";
+import h2 from "./h2.jpg";
 import Mail from "../mail/Mail";
+import Interior from "../services-interior/Interior";
 import React from 'react';
 import "./Home.css"
 function Home() {
@@ -8,479 +10,49 @@ function Home() {
     <div className="row">
       <div
         className="col-12"
-        style={{ position: "relative", marginLeft:'1%',marginRight:'1%', border: "2px solid red" }}
+        style={{ position: "relative", marginLeft:'1%',marginRight:'1%' }}
       >
 
         <img
           src={video}
           class="card-img-top"
           alt="..."
-          style={{ width: "100%", height: "25vw" }}
+          style={{ width: "100%", height: "25vw"}}
         ></img>
 
-        <h2
+        <p
           style={{
             position: "absolute",
             top: "35%",
             left: "30%",
             color: "white",
+            fontSize:"xx-large"
+            
           }}
         >
-          BIZI TERCIH ETMELISINIZ CUNKU ...
-        </h2>
+          BİZİ TERCİH ETMELİSİNİZ ÇÜNKÜ ...
+        </p>
       </div>
-      <div className="container">
-        <div
-          className="row"
-          style={{
-            marginTop: "5%",
-            border: "2px solid red",
-            backgroundColor: "#f2f2f2",
-          }}
-        >
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "fit-content" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="row"
-          style={{ marginTop: "5%", border: "2px solid red" }}
-        >
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "fit-content" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="row"
-          style={{ marginTop: "5%", border: "2px solid red" }}
-        >
-          <div
-            className="row"
-            style={{ marginTop: "5%", border: "2px solid red" }}
-          >
-            <ul style={{ display: "flex", justifyContent: "flex-start" }}>
-              <li style={{ marginLeft: "30px", fontSize: "22px" }}>
-                <b>HEPSI</b>
-              </li>
-              <li style={{ marginLeft: "30px", fontSize: "22px" }}>
-                <b>OTURUM IZNI DANISMANLIK</b>
-              </li>
-              <li style={{ marginLeft: "30px", fontSize: "22px" }}>
-                <b>TURK VATANDASLIGI</b>
-              </li>
-              <li style={{ marginLeft: "30px", fontSize: "22px" }}>
-                <b>TURKUAZ KART</b>
-              </li>
-            </ul>
-          </div>
-
-          <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card" style={{ width: "400px" }}>
-              <img
-                class="card-img-top"
-                src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                alt="Card image"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">
-                  Some example text some example text. John Doe is an architect
-                  and engineer
-                </p>
-                <a href="#" class="btn btn-primary">
-                  See Profile
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="col-12"
-          style={{ marginTop: "5%", border: "2px solid red" }}
-        >
-          <img
-            src="https://www.atakurumsal.com/wp-content/uploads/2017/12/features.jpg?id=1766"
-            class="card-img-top"
-            alt="..."
-            style={{ width: "100%", height: "15vw" }}
-          ></img>
-        </div>
-
-        <div
-          className="col-12"
-          style={{ marginTop: "5%", border: "2px solid red" }}
-        >
-          <h1>BILGI BANKASI</h1>
-
-          <div className="row" style={{ backgroundColor: "#ffffff" }}>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "400px" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "400px" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "400px" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "fit-content" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row" style={{ backgroundColor: "#ffffff" }}>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "400px" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "400px" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "400px" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card" style={{ width: "fit-content" }}>
-                <img
-                  class="card-img-top"
-                  src="https://www.atakurumsal.com/wp-content/uploads/2017/12/turkuaz-kart-350x204.jpg"
-                  alt="Card image"
-                  style={{ width: "100%" }}
-                />
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">
-                    Some example text some example text. John Doe is an
-                    architect and engineer
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    See Profile
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3>
-          YABANCILAR ICIN DANISMANLIK FIRMASI SECERKEN DIKKAT ETMESI GEREKEN
-          HUSUSLAR
-        </h3>
+      <div className="row" style={{margin:"0%",padding:"1%"}}>
+          <Interior
+                photo={h2}
+                title="Türk Vatandaşlığı"
+                uzanti="/hizmetlerimiz/turk-vatandasligi"
+                divert="/hizmetlerimiz/turk-vatandasligi"
+            />
+            <Interior
+                photo={h2}
+                title="Çalışma İzni"
+                uzanti="/hizmetlerimiz/calisma-izni"
+                divert="/hizmetlerimiz/calisma-izni"
+            />
+            <Interior
+                photo={h2}
+                title="Oturma İzni"
+                uzanti="/hizmetlerimiz/oturma-izni"
+                divert="/hizmetlerimiz/oturma-izni"
+            />
+          
       </div>
       <Mail/>
     </div>

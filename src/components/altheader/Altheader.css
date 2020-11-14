@@ -32,23 +32,12 @@
 }
 
 
-.icon{
-    
-    float: left;
-    
-}
-.icon:hover{
-    color:white;
-}
-
 .title{
     float:left;
     font-size:xx-large;
     
 }
-.title:hover{
-    color:white;
-}
+
 
 .alttitle{
     color:black;

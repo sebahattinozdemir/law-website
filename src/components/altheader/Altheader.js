@@ -7,9 +7,9 @@ export default class Altheader extends Component {
     render(){
         const {alttitle,title,icon}=this.props;
     return (
-        <div class="row p-4" style={{ backgroundColor: "orange",paddingTop:"50px",width:"100%",paddingLeft:"25px",height:"200px",marginLeft:"0px"}}>
+        <div class="row p-4" style={{ backgroundColor: "orange",paddingTop:"5rem",width:"100%",paddingLeft:"5rem",height:"20rem",marginLeft:"0px"}}>
           <div className="col-12">
-          
+         
                 <div className="genel">
 
                     <Link className="ana" to="/" >
@@ -34,17 +34,12 @@ export default class Altheader extends Component {
                     <br/>
                     <br/>
 
-                <p className="icon" >{icon}</p> 
+                
                 <p className="title"><b>
+                    {icon} 
                     &nbsp;
-                    
-
                     {title}</b></p>
                 
-                    
-                
-                
-               
                 
           </div>
               

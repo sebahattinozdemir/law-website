@@ -167,20 +167,20 @@ class Mail extends Component {
                 color: "orange",
               }}
             >
-              <MailIcon style={{ fontSize: 30, color: "orange" }} /> &nbsp; BİZİMLE
+              <MailIcon style={{ fontSize: "x-large", color: "orange" }} /> &nbsp; BİZİMLE
               İLETİŞİME GEÇEBİLİRSİNİZ 
             </h2>
             <p
               style={{
                 display: "flex",
                 justifyContent: "center",
-                fontSize: "18px",
+                fontSize: "larger",
                 color: "white",
               }}
             >
               Size yardımcı olabilmek için buradayız.
             </p>
-            <form id="contact-form" style={{marginLeft:"1%",marginRight:"1%"}} onSubmit={this.handleSubmit} noValidate>
+            <form id="contact-form" style={{marginLeft:"10%",marginRight:"10%"}} onSubmit={this.handleSubmit} noValidate>
               <div className="row m-5" >
                 <div className="col-12">
                   <input

@@ -9,7 +9,7 @@ function Footer() {
             
             <b style={{ color: "black", fontSize: "20px"}}>Neden Biz</b>
             <hr/>
-            <p>
+            <p style={{textAlign:"justify"}}>
             Ata Kurumsal, İkamet izni, (oturma izni) Yabancı sermayeli şirket kuruluşu, Çalışma izni,  Türk iş hukuku, Turkuaz kart ve Türk vatandaşlığı gibi başlıca konularda tam profesyonel yetkinlik ile hizmet verebilen, TSE (Hizmet Yeterlilik) belgeli, DUNS ve NSPA gibi uluslararası saygınlığı olan kuruluşlara üye bir Türk danışmanlık firmasıdır.
             </p>
            
@@ -18,7 +18,7 @@ function Footer() {
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             <b style={{ color: "black", fontSize: "20px" }}>Yasal Uyarı</b>
             <hr/>
-            <p>
+            <p style={{textAlign:"justify"}}>
             Tüm hakları saklıdır. Bu sitede yer alan yazı, haber, fotoğraf, video ve sair dokümanların, bireysel kullanım dışında izin alınmadan kısmen ya da tamamen kopyalanması, çoğaltılması, kullanılması, yayınlanması ve dağıtılması kesinlikle yasaktır. Bu yasağa uymayanlar hakkında 5846 sayılı Fikir ve Sanat Eserleri Kanunu uyarınca yasal işlem yapılacaktır.
             </p>
             
