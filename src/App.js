@@ -22,7 +22,7 @@ function App() {
     
     <Router>
       
-      <div className="col-12">
+      <div className="app">
         <div
           className="col-lg-2 col-md-2 col-sm-12" style={{margin:'0px',padding:'0px'}}>
           <Menu />
