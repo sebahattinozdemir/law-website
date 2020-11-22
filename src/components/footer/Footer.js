@@ -10,7 +10,7 @@ function Footer() {
             <b style={{ color: "black", fontSize: "20px"}}>Neden Biz</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            Ata Kurumsal, İkamet izni, (oturma izni) Yabancı sermayeli şirket kuruluşu, Çalışma izni,  Türk iş hukuku, Turkuaz kart ve Türk vatandaşlığı gibi başlıca konularda tam profesyonel yetkinlik ile hizmet verebilen, TSE (Hizmet Yeterlilik) belgeli, DUNS ve NSPA gibi uluslararası saygınlığı olan kuruluşlara üye bir Türk danışmanlık firmasıdır.
+            NAR Danışmanlık hizmetleri, İkamet izni (oturma izni), Yabancı sermayeli şirket kuruluşu, Çalışma izni, Türk  hukuku, Türk vatandaşlığı gibi başlıca konularda  profesyonel avukat ve uzman kadrosuyla   hizmet veren Türk danışmanlık firmasıdır.
             </p>
            
           </div>

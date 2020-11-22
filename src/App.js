@@ -15,6 +15,10 @@ import Saglik from "./components/services-page/saglik-sigorta-policesi/Saglik";
 import Turk from "./components/services-page/turk-vatandasligi/Turk";
 import Turkiye from "./components/services-page/turkiyede-sirket-kurulusu/Turkiye";
 import Turkuaz from "./components/services-page/turkuaz-kart/Turkuaz";
+import Egitim from "./components/investment/turkiyede-egitim/Egitim";
+import TurkSaglik from "./components/investment/turkiyede-saglik/TurkSaglik";
+import Yasam from "./components/investment/turkiyede-yasam/Yasam";
+import Yatirim from "./components/investment/turkiyede-yatirim/Yatirim";
 
 
 function App() {
@@ -45,6 +49,10 @@ function App() {
             <Route exact path="/hizmetlerimiz/turk-vatandasligi" component={Turk} />
             <Route exact path="/hizmetlerimiz/turkiyede-sirket-kurulusu" component={Turkiye} />
             <Route exact path="/hizmetlerimiz/turkuaz-kart" component={Turkuaz} />
+            <Route exact path="/turkiyede-egitim" component={Egitim} />
+            <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
+            <Route exact path="/turkiyede-yasam" component={Yasam} />
+            <Route exact path="/turkiyede-yatirim" component={Yatirim} />
 
             <Route component={Notfound} />
             

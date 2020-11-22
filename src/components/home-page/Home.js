@@ -1,8 +1,13 @@
 import "./Home.css";
 import video from "./1.gif";
 import h2 from "./h2.jpg";
+import investment from "./investment.jpg";
+import education from "./education.jpg";
+import life from "./life.jpg";
+import health from "./health.jpg";
 import Mail from "../mail/Mail";
 import Interior from "../services-interior/Interior";
+import Investment from "../investment/Investment";
 import React from 'react';
 import "./Home.css"
 function Home() {
@@ -23,14 +28,14 @@ function Home() {
         <p
           style={{
             position: "absolute",
-            top: "35%",
-            left: "30%",
+            top: "65%",
+            left: "15%",
             color: "white",
             fontSize:"xx-large"
             
           }}
         >
-          BİZİ TERCİH ETMELİSİNİZ ÇÜNKÜ ...
+          DAHA HIZLI VE DAHA GÜVENLİ ADIMLAR İÇİN BİZİ TERCİH ETMELİSİNİZ...
         </p>
       </div>
       <div className="row" style={{margin:"0%",padding:"1%"}}>
@@ -38,21 +43,50 @@ function Home() {
                 photo={h2}
                 title="Türk Vatandaşlığı"
                 uzanti="/hizmetlerimiz/turk-vatandasligi"
-                divert="/hizmetlerimiz/turk-vatandasligi"
+                explain="Yatırım yoluyla Türk vatandaşlığı (Türkiye’den ev alan yabancılara vatandaşlık) 2018 yeni programının tüm detaylarını ve danışmanlık hizmetlerimizin kapsamını burada bulabilirsiniz."
+                
             />
             <Interior
                 photo={h2}
                 title="Çalışma İzni"
                 uzanti="/hizmetlerimiz/calisma-izni"
-                divert="/hizmetlerimiz/calisma-izni"
+                explain="Yabancıların Türkiye’de çalışma esaslarını düzenleyen 6735 Sayılı Uluslarası işgücü kanunu ve yönetmeliğine göre Çalışma izni hakkında tüm sorularınıza bu sayfamızda cevap bulabilirsiniz."
             />
             <Interior
                 photo={h2}
                 title="Oturma İzni"
                 uzanti="/hizmetlerimiz/oturma-izni"
-                divert="/hizmetlerimiz/oturma-izni"
+                explain="Türkiye’de yabancılar için ikamet izni çeşitleri, başvuru yöntemleri ve başvuruların nasıl yapılacağına dair videolu anlatımlarla Oturma izni ile ilgili herşeyi detaylı anlatıyoruz."
             />
           
+      </div>
+
+      <div className="row" style={{margin:"0%",padding:"1%"}}>
+            <Investment
+                Iphoto={investment}
+                Ititle="Türkiye'de Yatırım"
+                Iuzanti="/turkiyede-yatirim"
+                Iexplain="Türkiye 2017 yılı itibari ile dünya üzerinde en hızlı büyüyen ikinci ülke konumundadır ve Türkiye’de her şey bir yatırım aracıdır, nereye ve nasıl yatırım yapacağınızı bu sayfamızda öğretiyoruz."
+            />
+            <Investment
+                Iphoto={life}
+                Ititle="Türkiye'de Yaşam"
+                Iuzanti="/turkiyede-yasam"
+                Iexplain="Türkiye’de huzurlu bir yaşam için nasıl davranmalısınız, misafiri olduğunuz ülkenin örf ve adetleri nelerdir, Türkler neleri sever neleri sevmez, başucunuzdan ayırmayacağınız bir rehber hazırladık."
+            />
+            <Investment
+                Iphoto={health}
+                Ititle="Türkiye'de Sağlık"
+                Iuzanti="/turkiyede-saglik"
+                Iexplain="Coğrafyanın en büyük şehir hastaneleri, dünya üzerinde ün yapmış özel hastaneleri ve kalifiye doktorları ile Türkiye’de sağlık ve tedavi hakkında bilmeniz gereken her şeyi burada yazdık."
+            />
+            <Investment
+                Iphoto={education}
+                Ititle="Türkiye'de Eğitim"
+                Iuzanti="/turkiyede-egitim"
+                Iexplain="Yabancı öğrenciler için bir cennet olan Türkiye’de hangi okullarda nasıl eğitimler veriliyor, okul kayıt aşamaları, öğrenci ikamet izinleri, mezuniyet sonrası iş bulma süreçlerini detaylı bir şekilde öğretiyoruz."
+            />
+
       </div>
       <Mail/>
     </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default class Interior extends Component {
     render(){
-        const {photo,title,uzanti,divert}=this.props;
+        const {photo,title,uzanti,divert,more,explain}=this.props;
     return (
        
           <div className="col-lg-4 col-md-6 col-sm-6 col-12" style={{float:"left",paddingBottom:"1%"}}>
@@ -19,8 +19,9 @@ export default class Interior extends Component {
 
                         <Link className="an" to={divert} >
                         <ArrowForwardIcon style={{color:"orange"}}/>
-                            Daha Fazla Bilgi
+                            {more}
                         </Link>
+                        <p>{explain}</p>
                     
           </div>
         

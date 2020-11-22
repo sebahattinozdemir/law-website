@@ -1,0 +1,26 @@
+.card{
+    padding-bottom: 1%;
+  }
+  .card:hover{
+     
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(100%);
+  
+          opacity: 1;
+          transition: .5s ease;
+          backface-visibility: hidden;
+         
+        
+  }
+  
+  .Ih_title{
+    
+    color:black;
+    font-size: x-large;
+  }
+  .Ih_title:hover{
+    text-decoration: none;
+    color:orange;
+  }
+  
+ 
