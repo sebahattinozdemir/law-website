@@ -59,7 +59,7 @@ function Home() {
             />
           
       </div>
-
+     
       <div className="row" style={{margin:"0%",padding:"1%"}}>
             <Investment
                 Iphoto={investment}
@@ -85,9 +85,10 @@ function Home() {
                 Iuzanti="/turkiyede-egitim"
                 Iexplain="Yabancı öğrenciler için bir cennet olan Türkiye’de hangi okullarda nasıl eğitimler veriliyor, okul kayıt aşamaları, öğrenci ikamet izinleri, mezuniyet sonrası iş bulma süreçlerini detaylı bir şekilde öğretiyoruz."
             />
-
       </div>
-      <Mail/>
+            
+            <Mail />
+            
     </div>
   );
 }
