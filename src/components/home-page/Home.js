@@ -9,12 +9,11 @@ import Mail from "../mail/Mail";
 import Interior from "../services-interior/Interior";
 import Investment from "../investment/Investment";
 import React from 'react';
-import "./Home.css"
 function Home() {
   return (
     <div className="row">
       <div
-        className="col-12"
+        className="col-12 slide"
         style={{ position: "relative", marginLeft:'1%',marginRight:'1%' }}
       >
 
