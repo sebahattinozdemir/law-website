@@ -10,6 +10,7 @@ import Blog from "./components/blog/Blog";
 import Contact from "./components/contact-page/Contact";
 import Notfound from "./components/notfound/Notfound";
 import Turk from "./components/services-page/turk-vatandasligi/Turk";
+import Admin from "./components/admin/Admin";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <Router>
       
       <div className="col-12">
-        <div
+        <div id="menu"
           className="col-lg-2 col-md-2 col-sm-12" style={{margin:'0px',padding:'0px'}}>
           <Menu />
         </div>
@@ -35,11 +36,12 @@ function App() {
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
             <Route exact path="/turk-vatandasligi" component={Turk} />
+            <Route exact path="/admin" component={Admin} />
             <Route component={Notfound} />
             
             
           </Switch>
-          <div className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
+          <div id="footer" className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
             <Footer />
           </div>
           
