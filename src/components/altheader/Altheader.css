@@ -1,0 +1,47 @@
+.body{
+    
+    width:100%;
+    
+    
+    
+    
+}
+.ana{
+    color:black;
+    font-size: large;
+    float: left;
+}
+
+.ana:hover{
+    color:white;
+    text-decoration:none
+}
+.genel{
+    display: inline;
+    
+}
+.subtitle1{
+    
+    color:black;
+    font-size: large;
+    float: left;
+}
+.subtitle1:hover{
+    color:white;
+    text-decoration:none
+}
+
+
+.title{
+    float:left;
+    font-size:xx-large;
+    
+}
+
+
+.alttitle{
+    color:black;
+    font-size: large;
+    float: left;
+
+}

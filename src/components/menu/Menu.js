@@ -1,5 +1,5 @@
 import React from "react";
-import hukuk from "./logo.jpg";
+import Logo from "./logo.jpg";
 import BusinessIcon from '@material-ui/icons/Business';
 import GroupIcon from '@material-ui/icons/Group';
 import GavelIcon from '@material-ui/icons/Gavel';
@@ -19,17 +19,17 @@ function Menu() {
         <Link className="menu-item-link logo" to="/">
         <img
               
-              style={{ height: "auto", width: "90%" }}
-              src={hukuk}
+              style={{ height: "auto", width: "90%"}}
+              src={Logo}
               alt="hukuk"
-              title="avukat"
+              title="Cebeci Göç ve Danışmanlık"
               
             ></img>
         </Link>
       </div>
       
       <div
-        className="col-sm-6  container"
+        className="col-sm-6  container " style={{minWidth:"100rem"}}
         onClick={(x) => {
           var visible = document.getElementById("menu-item").style.display;
           if (visible === "block") {
@@ -48,6 +48,7 @@ function Menu() {
       <div
         className="col-lg-12 col-md-12 col-sm-12 p-0 menu-item"
         id="menu-item"
+        
       >
         <ul style={{ width: "100%", marginLeft: "0%" }}>
           <li className="pl-0">

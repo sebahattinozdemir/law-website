@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./Mail.css";
-import MailIcon from "@material-ui/icons/Mail";
+
 
 // Email validation
 const emailRegex = RegExp(
@@ -165,22 +165,22 @@ class Mail extends Component {
                 display: "flex",
                 justifyContent: "center",
                 color: "orange",
+                padding:"2%",
               }}
             >
-              <MailIcon style={{ fontSize: 30, color: "orange" }} /> &nbsp; BİZİMLE
-              İLETİŞİME GEÇEBİLİRSİNİZ 
+               BİZİMLE İLETİŞİME GEÇEBİLİRSİNİZ 
             </h2>
             <p
               style={{
                 display: "flex",
                 justifyContent: "center",
-                fontSize: "18px",
+                fontSize: "larger",
                 color: "white",
               }}
             >
               Size yardımcı olabilmek için buradayız.
             </p>
-            <form id="contact-form" style={{marginLeft:"1%",marginRight:"1%"}} onSubmit={this.handleSubmit} noValidate>
+            <form id="contact-form" style={{marginLeft:"10%",marginRight:"10%"}} onSubmit={this.handleSubmit} noValidate>
               <div className="row m-5" >
                 <div className="col-12">
                   <input
