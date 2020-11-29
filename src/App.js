@@ -28,13 +28,13 @@ function App() {
     <Router>
       
       <div className="app">
-        <div
+        <div id="menu"
           className="col-lg-2 col-md-2 col-sm-12" style={{margin:'0px',padding:'0px'}}>
           <Menu />
         </div>
-
+        
         <div
-          className="col-lg-10 col-md-10 col-sm-12"
+          className="col-lg-10 col-md-10 col-sm-12" id="menu"
           style={{margin:'0px',padding:'0px'}}
         >
           <Switch>
@@ -56,7 +56,6 @@ function App() {
             <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
             <Route exact path="/turkiyede-yasam" component={Yasam} />
             <Route exact path="/turkiyede-yatirim" component={Yatirim} />
-
             <Route component={Notfound} />
             
             
