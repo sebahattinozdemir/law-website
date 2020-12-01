@@ -118,13 +118,13 @@ function Menu() {
                 </a>
                 
                 <a className="menu-item-link"
-                  href="https://wa.me/+905427724718"
+                  href="https://wa.me/+905376971155"
                   style={{ float: "left", textIndent: "10px" }}
                 >
                   <WhatsAppIcon style={{fontSize:"28px"}}/>
                 </a>
                 <a className="menu-item-link"
-                  href="tel: +905427724718"
+                  href="tel: +905376971155"
                   style={{ float: "left", textIndent: "10px" }}
                 >
                   <SettingsPhoneIcon style={{fontSize:"28px"}}/>

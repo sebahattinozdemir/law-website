@@ -11,24 +11,25 @@ export default class Misyon extends Component {
                    <br/>
                    <div className="col-md-6 col-sm-6 col-12">
                         <h3 style={{marginLeft:"1%"}}><img src={mission}></img> Misyonumuz</h3>
-                        <p class="card-vizyon"> Sunduğumuz tüm sağlık hizmetlerinde hasta ve çalışan güvenliğini ön planda tutan, hasta haklarına daima saygılı, yetkin ve kalifiye sağlık personeli yetiştiren ve sürekli kendini geliştiren/yenileyen, hasta odaklı ve performans bazlı dinamikleri ile hizmet veren öncü bir kuruluş olmak.
-Koruyucu ve iyileştirici sağlık hizmetlerini, tıbbın ulaştığı en üst düzeyde, yaygın ve bütünleşik bir yapı içinde, uygun ekonomik koşullarda  din, dil, ırk ve cinsiyet ayrımı gözetmeksizin nitelikli ve uzman kadrolar ile topluma sunmak.
-Sağlık bilimleri alanındaki akademik çalışmalara ve bilimsel araştırmalara olanak sağlayarak, sağlıkla ilgili her konuda yeni bilgi ve uygulamaların geliştirilmesini desteklemek.
-Uzmanlık eğitiminde çağdaş teknoloji ve yöntemleri kullanarak ülkemizin lider uzmanlarını yetiştirmek. Sağlık alanındaki araştırmalar ile evrensel bilime katkıda bulunmaktır.</p>
+                        <p class="card-vizyon">Sunduğumuz tüm  hizmetlerde danışan ve müvekkil  güvenliğini ön planda tutan, saygılı, yetkin, kalifiye hizmet üreten ve sürekli kendini yenileyen, danışan-müvekkil odaklı ve güven bazlı dinamikleri ile hizmet veren danışmanlık ofisi olmak. Vizyonumuz ilkeler çerçevesinde müvekkillerimize, danışanlarımıza karşılaştığı problemlere, sahip olduğumuz tecrübe ve birikimlerle profesyonelce çözüm aramak ve uyuşmazlıkların en iyi, en hızlı ve en etkin şekilde kısa sürede bitirilmesini sağlamak ofisimizin yegâne amacıdır.</p>
+                        <ol className="ilkeler">
+                            <li>Hizmet sunduğumuz bireylerin yaşam kalitesini artırmak,</li>
+                            <li>Faaliyet gösterdiğimiz şehir, bölge ve ülkenin ekonomik, sosyal ve çevresel gelişimine katkıda bulunmaktır.</li>
+                        </ol>
                         <br/>
                    </div>
                 
                    <div className="col-md-6 col-sm-6 col-12">
                         <h3 style={{marginLeft:"1%"}}><img src={vision}></img> Vizyonumuz</h3>
-                        <p class="card-vizyon"> Aşağıdaki değerlere bağlı kalan anlayışımızı değiştirmeden Şirketimizin yetenek ve kapasitesi doğrultusunda, müşterilerimizin istek ve beklentilerini dünya standartlarında karşılayan, Müşterilerimizin ve çalışanlarımızın memnuniyetlerini sağlayan firma anlayışımızı devam ettirebilmek.</p>
+                        <p class="card-vizyon"> Vizyonumuz aşağıda belirtilen ilkeler çerçevesinde müvekkillerimize, danışanlarımıza karşılaştığı problemlere, sahip olduğumuz tecrübe ve birikimlerle profesyonelce çözüm aramak ve uyuşmazlıkların en iyi, en hızlı ve en etkin şekilde kısa sürede bitirilmesini sağlamak ofisimizin yegâne amacıdır.</p>
                         <ol className="ilkeler">
                             <li>Kaliteli hizmet üretimi,</li>
-                            <li>Günceli yakalayan teknoloji yatırımı,</li>
                             <li>Mesleki uzmanlık,</li>
+                            <li>Günceli yakalayan teknoloji yatırımı,</li>
                             <li>Kişisel verilerde gizlilik,</li>
-                            <li>Kreatif düşünebilen eğitimli insan kaynağı,</li>
-                            <li>İnsana Saygı duyan,</li>
-                            <li>Sosyal sorumluluk bilincine sahip</li>
+                            <li>İnsana saygı gösterme,</li>
+                            <li>Etkili ve hızlı adımları atabilme,</li>
+                            <li>Sosyal sorumluluk bilincine sahip olmaktır.</li>
                         </ol>
 
                         <br/>
