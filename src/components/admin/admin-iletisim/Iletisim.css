@@ -1,5 +1,9 @@
-.admin-ana{
+.iletisim{
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
     background: linear-gradient(to right, #25c481, #25b7c4);
     height: 100vh;
 }
+
+.iletisim input[type=text] {
+    font-size: medium;
+  }
