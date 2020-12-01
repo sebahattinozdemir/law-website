@@ -23,6 +23,7 @@ function Admin() {
   return (
     <div className="row admin-ana">
     
+  
       <div className="login" id='login'>
             <Login/>
       </div>
