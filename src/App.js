@@ -13,6 +13,7 @@ import Calisma from "./components/services-page/calisma-izni/Calisma";
 import Oturma from "./components/services-page/oturma-izni/Oturma";
 import Saglik from "./components/services-page/saglik-sigorta-policesi/Saglik";
 import Turk from "./components/services-page/turk-vatandasligi/Turk";
+import Admin from "./components/admin/Admin";
 import Turkiye from "./components/services-page/turkiyede-sirket-kurulusu/Turkiye";
 import Turkuaz from "./components/services-page/turkuaz-kart/Turkuaz";
 import Egitim from "./components/investment/turkiyede-egitim/Egitim";
@@ -27,13 +28,13 @@ function App() {
     <Router>
       
       <div className="app">
-        <div
+        <div id="menu"
           className="col-lg-2 col-md-2 col-sm-12" style={{margin:'0px',padding:'0px'}}>
           <Menu />
         </div>
-
+        
         <div
-          className="col-lg-10 col-md-10 col-sm-12"
+          className="col-lg-10 col-md-10 col-sm-12" id= 'app-container'
           style={{margin:'0px',padding:'0px'}}
         >
           <Switch>
@@ -43,6 +44,8 @@ function App() {
             <Route exact path="/referanslarimiz" component={Reference} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
+            <Route exact path="/turk-vatandasligi" component={Turk} />
+            <Route exact path="/admin" component={Admin} />
             <Route exact path="/hizmetlerimiz/calisma-izni" component={Calisma} />
             <Route exact path="/hizmetlerimiz/oturma-izni" component={Oturma} />
             <Route exact path="/hizmetlerimiz/saglik-sigorta-policesi" component={Saglik} />
@@ -53,12 +56,11 @@ function App() {
             <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
             <Route exact path="/turkiyede-yasam" component={Yasam} />
             <Route exact path="/turkiyede-yatirim" component={Yatirim} />
-
             <Route component={Notfound} />
             
             
           </Switch>
-          <div className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
+          <div id="footer" className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
             <Footer />
           </div>
           

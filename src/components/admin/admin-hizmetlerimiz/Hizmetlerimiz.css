@@ -1,0 +1,44 @@
+.hizmetlerimiz{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  height: 100vh;
+}
+.hizmetlerimiz textarea{
+  background-color: #333;
+  color: white;
+}
+
+.hizmetlerimiz-pop{
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  height: 100vh;
+  overflow-y: scroll;
+  color: white;
+}
+.dropdown {
+    position: relative;
+    display: block;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    min-width: 90%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown-content p{
+      cursor: pointer;
+  }
+  .dropdown-content p:hover{
+      background-color: gray;
+      color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
