@@ -23,7 +23,7 @@ export default function Turkuaz() {
                     </div>
  
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <h3 style={{color:"orange"}}><AssignmentIndIcon style={{fontSize:"x-large",color:"black"}}/> Öğrenci İkamet İzni Gerekli Belgeler</h3>
+                            <h3 style={{color:"#A4203A"}}><AssignmentIndIcon style={{fontSize:"x-large",color:"black"}}/> Öğrenci İkamet İzni Gerekli Belgeler</h3>
                             <p class="card-text1">Öğrenci ikamet izni adından da anlaşılacağı üzere Türkiye’ye okumak için geleceklere verilen ikamet iznidir. Gerekli evraklar ise;</p>
                             <ol className="sermaye">
                                 <li>Pasaport fotokopisi,</li>
@@ -36,12 +36,12 @@ export default function Turkuaz() {
                     </div>
  
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <h3 style={{color:"orange"}}><AssignmentIndIcon style={{fontSize:"x-large",color:"black"}}/>  Yabancı İkamet İzni Nasıl Alınır?</h3>
+                            <h3 style={{color:"#A4203A"}}><AssignmentIndIcon style={{fontSize:"x-large",color:"black"}}/>  Yabancı İkamet İzni Nasıl Alınır?</h3>
                             <p class="card-text1">Yabancılar için ikamet izni almak oldukça basittir. Öncelikle kişiler hangi amaçla oturma izni alacağını bilmeli ve ona göre evrak hazırlayıp ikamet izni başvuru formu doldurmalıdır. Bu kapsamda profesyonel destek alıp başvurusunun olumlu sonuç getirmesini isteyenler işinde uzman kişilerle çalışmalıdır. Başvuru formu ve gerekli evraklar hazırlandığı zaman başvuru yapacak yabancı uyruklu kişi ülkesinde bulunan Türk Başkonsolosluğuna başvurmalıdır. Türkiye sınırları içerisinde olup başvuru yapmak isteyenler ise valilik, il ve ilçe göç müdürlüklerine formlarını teslim edebilirler.</p>
                     </div>
  
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12" >
-                            <h3 style={{color:"orange"}}><AssignmentIndIcon style={{fontSize:"x-large",color:"black"}}/>  İnsani İkamet İzni Hakkında</h3>
+                            <h3 style={{color:"#A4203A"}}><AssignmentIndIcon style={{fontSize:"x-large",color:"black"}}/>  İnsani İkamet İzni Hakkında</h3>
                             <p class="card-text1" >İnsani ikamet izni sadece hak edenlere verilen bir uygulamadır. Bu durumdan birçok kişi farklı yöntemler eşliğine yararlanabilmektedir. Örnek verecek olursak, Türkiye’miz için yararlı olabilecek, faydası dokunabilecek çocuklar insani ikamet izni kapsamında Türkiye’de kalabilirler. İnsani ikamet izni genel olarak valilikler tarafından 1 yıl süre şartıyla verilir. Fakat uygun görüldüğü takdirde 1 yıl süre istenildiği kadar uzatılabilir.</p>
                     </div>
                   

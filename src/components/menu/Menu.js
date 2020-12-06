@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "./logo.jpg";
+import NarV5 from "./narV5.jpg";
+import Nar01 from "./nar01.jpg";
 import BusinessIcon from '@material-ui/icons/Business';
 import GroupIcon from '@material-ui/icons/Group';
 import GavelIcon from '@material-ui/icons/Gavel';
@@ -19,10 +20,10 @@ function Menu() {
         <Link className="menu-item-link logo" to="/">
         <img
               
-              style={{ height: "auto", width: "90%"}}
-              src={Logo}
+              style={{ height: "15rem", width: "80%",align:"center",marginLeft:"1rem"}}
+              src={NarV5}
               alt="hukuk"
-              title="Cebeci Göç ve Danışmanlık"
+              title="Nar Göç ve Danışmanlık"
               
             ></img>
         </Link>
@@ -52,7 +53,7 @@ function Menu() {
       >
         <ul style={{ width: "100%", marginLeft: "0%" }}>
           <li className="pl-0">
-            <HomeIcon style={{fontSize:"28px",color:"orange"}}/>
+            <HomeIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
             <Link className="menu-item-link" to="/">
@@ -61,7 +62,7 @@ function Menu() {
           </li>
           <hr className="line" />
           <li>
-            <BusinessIcon style={{fontSize:"28px",color:"orange"}}/>
+            <BusinessIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
             <Link className="menu-item-link" to="/hakkimizda">
@@ -70,7 +71,7 @@ function Menu() {
           </li>
           <hr className="line" />
           <li>
-            <GavelIcon style={{fontSize:"28px",color:"orange"}}/>
+            <GavelIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
             <Link className="menu-item-link" to="/hizmetlerimiz">
@@ -79,7 +80,7 @@ function Menu() {
           </li>
           <hr className="line" />
           <li>
-            <GroupIcon style={{fontSize:"28px",color:"orange"}}/>
+            <GroupIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
             <Link className="menu-item-link" to="/referanslarimiz">
@@ -88,7 +89,7 @@ function Menu() {
           </li>
           <hr className="line" />
           <li>
-            <AssignmentIcon style={{fontSize:"28px",color:"orange"}}/>
+            <AssignmentIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
             <Link className="menu-item-link" to="/blog">
@@ -97,7 +98,7 @@ function Menu() {
           </li>
           <hr className="line" />
           <li>
-            <ContactPhoneIcon style={{fontSize:"28px",color:"orange"}}/>
+            <ContactPhoneIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
             <Link className="menu-item-link" to="/iletisim">

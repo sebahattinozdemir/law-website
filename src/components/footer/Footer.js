@@ -24,22 +24,7 @@ function Footer() {
             
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "black", fontSize: "20px" }}>İstanbul Ofis</b>
-            <hr/>
-            <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
-            <p><b>Randevusuz Görüşme: </b> HAYIR</p>
-            <p><b>Görüşme Ücreti: </b>400 ₺/45 Dakika</p>
-            <p><b>Adres: </b>Atatürk İş Merkezi
-                <br/>
-                    Nato Caddesi No:155 Kat:3
-                <br/>
-                    Yeşilköy / Bakırköy / İstanbul
-
-            </p>
-           
-          </div>
-
+        
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             <b style={{ color: "black", fontSize: "20px" }}>Ankara Ofis</b>
             <hr/>
@@ -54,6 +39,22 @@ function Footer() {
 
             </p>
             
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
+            <b style={{ color: "black", fontSize: "20px" }}>Samsun Ofis</b>
+            <hr/>
+            <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
+            <p><b>Randevusuz Görüşme: </b> HAYIR</p>
+            <p><b>Görüşme Ücreti: </b>300 ₺/45 Dakika</p>
+            <p><b>Adres: </b>Atatürk İş Merkezi
+                <br/>
+                    Nato Caddesi No:155 Kat:3
+                <br/>
+                    Atakent / Atakum / Samsun
+
+            </p>
+           
           </div>
 
           

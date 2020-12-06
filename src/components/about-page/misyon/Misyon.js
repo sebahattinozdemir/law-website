@@ -11,7 +11,8 @@ export default class Misyon extends Component {
                    <br/>
                    <div className="col-md-6 col-sm-6 col-12">
                         <h3 style={{marginLeft:"1%"}}><img src={mission}></img> Misyonumuz</h3>
-                        <p class="card-vizyon">Sunduğumuz tüm  hizmetlerde danışan ve müvekkil  güvenliğini ön planda tutan, saygılı, yetkin, kalifiye hizmet üreten ve sürekli kendini yenileyen, danışan-müvekkil odaklı ve güven bazlı dinamikleri ile hizmet veren danışmanlık ofisi olmak. Vizyonumuz ilkeler çerçevesinde müvekkillerimize, danışanlarımıza karşılaştığı problemlere, sahip olduğumuz tecrübe ve birikimlerle profesyonelce çözüm aramak ve uyuşmazlıkların en iyi, en hızlı ve en etkin şekilde kısa sürede bitirilmesini sağlamak ofisimizin yegâne amacıdır.</p>
+                        <p class="card-vizyon">Sunduğumuz tüm  hizmetlerde danışan ve müvekkil  güvenliğini ön planda tutan, saygılı, yetkin, kalifiye hizmet üreten ve sürekli kendini yenileyen, danışan-müvekkil odaklı ve güven bazlı dinamikleri ile hizmet veren danışmanlık ofisi olmak. 
+                        </p>
                         <ol className="ilkeler">
                             <li>Hizmet sunduğumuz bireylerin yaşam kalitesini artırmak,</li>
                             <li>Faaliyet gösterdiğimiz şehir, bölge ve ülkenin ekonomik, sosyal ve çevresel gelişimine katkıda bulunmaktır.</li>
@@ -21,7 +22,7 @@ export default class Misyon extends Component {
                 
                    <div className="col-md-6 col-sm-6 col-12">
                         <h3 style={{marginLeft:"1%"}}><img src={vision}></img> Vizyonumuz</h3>
-                        <p class="card-vizyon"> Vizyonumuz aşağıda belirtilen ilkeler çerçevesinde müvekkillerimize, danışanlarımıza karşılaştığı problemlere, sahip olduğumuz tecrübe ve birikimlerle profesyonelce çözüm aramak ve uyuşmazlıkların en iyi, en hızlı ve en etkin şekilde kısa sürede bitirilmesini sağlamak ofisimizin yegâne amacıdır.</p>
+                        <p class="card-vizyon"> Aşağıda belirtilen ilkeler çerçevesinde müvekkillerimize, danışanlarımıza karşılaştığı problemlere, sahip olduğumuz tecrübe ve birikimlerle profesyonelce çözüm aramak ve uyuşmazlıkların en hızlı ve en kısa sürede bitirilmesini sağlamak ofisimizin yegâne amacıdır.</p>
                         <ol className="ilkeler">
                             <li>Kaliteli hizmet üretimi,</li>
                             <li>Mesleki uzmanlık,</li>

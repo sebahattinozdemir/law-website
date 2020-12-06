@@ -42,10 +42,10 @@ ul li {
 }
 
 .menu-item-link:hover{
-    color: orange;
+    color: #A4203A;
 }
 .menu-item-link:focus{
-    color: orange;
+    color: #A4203A;
 }
 
 
@@ -95,14 +95,14 @@ ul li {
     }
 
     .menu-item-link:hover{
-        color: orange;
+        color: #A4203A;
         text-decoration: underline !important;
     }
     .menu-item-link:active{
-        color: orange;
+        color: #A4203A;
     }
     .menu-item-link:focus{
-        color: orange !important;
+        color: #A4203A !important;
     }
     .line{
         display: none;

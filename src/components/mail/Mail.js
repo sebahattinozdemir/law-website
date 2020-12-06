@@ -84,10 +84,10 @@ class Mail extends Component {
       };
 
       emailjs.send(
-        "service_vx1kefm",
-        "template_2rsbnbr",
+        "nargocvedanismanlik",
+        "template_ihofdy9",
         templateParams,
-        "user_bTFsTGKw8lxQ3pgyrwFWI"
+        "user_LxzxRblngf5ApgrzPTMCl"
         
       );
 
@@ -164,7 +164,7 @@ class Mail extends Component {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                color: "orange",
+                color: "#A4203A",
                 padding:"2%",
               }}
             >
@@ -263,7 +263,7 @@ class Mail extends Component {
                   <button
                     className="btn btn-primary"
                     type="submit"
-                    style={{ width: "100%",backgroundColor:"orange" }}
+                    style={{ width: "100%",backgroundColor:"#A4203A" }}
                   >
                     <b>Gönder</b>
                   </button>

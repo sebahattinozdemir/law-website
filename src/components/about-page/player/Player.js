@@ -12,7 +12,7 @@ export default function Player() {
                
             
               
-                <ReactPlayer className="col-lg-4 col-md-6 col-sm-6 col-12" style={{margin:"auto",overFlow:"hidden",overFlow:"hidden"}}
+                <ReactPlayer className="col-lg-4 col-md-6 col-sm-6 col-12" style={{margin:"auto",overFlow:"hidden"}}
                     url={Manastır}
                     className='react-player fixed-bottom'
                     controls = {true}

@@ -1,6 +1,9 @@
 import "./Home.css";
 import video from "./1.gif";
 import h2 from "./h2.jpg";
+import Calisma from "./calisma.jpg";
+import Oturma from "./oturma.jpg";
+import nar14 from "./nar14.jpg";
 import investment from "./investment.jpg";
 import education from "./education.jpg";
 import life from "./life.jpg";
@@ -39,20 +42,20 @@ function Home() {
       </div>
       <div className="row" style={{margin:"0%",padding:"1%"}}>
           <Interior
-                photo={h2}
+                photo={nar14}
                 title="Türk Vatandaşlığı"
                 uzanti="/hizmetlerimiz/turk-vatandasligi"
                 explain="Yatırım yoluyla Türk vatandaşlığı (Türkiye’den ev alan yabancılara vatandaşlık) 2018 yeni programının tüm detaylarını ve danışmanlık hizmetlerimizin kapsamını burada bulabilirsiniz."
                 
             />
             <Interior
-                photo={h2}
+                photo={Calisma}
                 title="Çalışma İzni"
                 uzanti="/hizmetlerimiz/calisma-izni"
                 explain="Yabancıların Türkiye’de çalışma esaslarını düzenleyen 6735 Sayılı Uluslarası işgücü kanunu ve yönetmeliğine göre Çalışma izni hakkında tüm sorularınıza bu sayfamızda cevap bulabilirsiniz."
             />
             <Interior
-                photo={h2}
+                photo={Oturma}
                 title="Oturma İzni"
                 uzanti="/hizmetlerimiz/oturma-izni"
                 explain="Türkiye’de yabancılar için ikamet izni çeşitleri, başvuru yöntemleri ve başvuruların nasıl yapılacağına dair videolu anlatımlarla Oturma izni ile ilgili herşeyi detaylı anlatıyoruz."

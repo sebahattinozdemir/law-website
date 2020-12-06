@@ -6,14 +6,14 @@
     
     
 }
-.ana{
-    color:black;
+.ana2{
+    color:white;
     font-size: large;
     float: left;
 }
 
-.ana:hover{
-    color:white;
+.ana2:hover{
+    color:black;
     text-decoration:none
 }
 .genel{
@@ -22,13 +22,13 @@
 }
 .subtitle1{
     
-    color:black;
+    color:white;
     font-size: large;
     float: left;
 }
 .subtitle1:hover{
-    color:white;
-    text-decoration:none
+    color:black;
+    text-decoration:none;
 }
 
 
@@ -40,7 +40,7 @@
 
 
 .alttitle{
-    color:black;
+    color:white;
     font-size: large;
     float: left;
 

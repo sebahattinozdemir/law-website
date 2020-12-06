@@ -3,6 +3,8 @@ import berati from "./berati.jpg";
 import sami from "./sami.jpg";
 import mehmet from "./mehmet.jpg";
 import hasan from "./hasan.jpg";
+import eda from "./eda.jpg";
+import tugba from "./tugba.jpg";
 import GroupIcon from '@material-ui/icons/Group';
 import RefComponent from "../Reference-compo/RefComponent";
 import React from 'react'
@@ -22,6 +24,17 @@ function Reference() {
                 <br/>
                 <div className="row" style={{padding:"1%",width:"90%",backgroundColor:"#EFEFEF",borderRadius:"1rem",margin:"auto"}}>
                    
+
+                  <RefComponent
+                        refphoto={eda}
+                        refname="Eda Merdamert"
+                        refjob="Mechanical Engineer"
+                  />
+                  <RefComponent
+                        refphoto={tugba}
+                        refname="Tuğba Dikmen"
+                        refjob="Electrical and Electronics Engineer"
+                  />
                   <RefComponent
                         refphoto={berati}
                         refname="Berati Şahin"
