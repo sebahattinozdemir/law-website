@@ -1,30 +1,43 @@
 import "./Interior.css";
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import React, { Component } from 'react'
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import ServicePage from "../services-page/ServicePage";
 
-export default class Interior extends Component {
-    render(){
-        const {photo,title,uzanti,divert,more,explain}=this.props;
-    return (
-       
-          <div className="col-lg-4 col-md-6 col-sm-6 col-12" style={{float:"left",paddingBottom:"1%"}}>
-                        <img src={photo} className="card_int" alt="..." style={{width:"100%", height:"auto",padding:"1%"}}></img>
-                        
-                        <Link className="h_title" to={uzanti} style={{padding:"1%"}}>
-                       
-                            {title}
-                        </Link>
-                        <br/>
+function Interior(props) {
 
-                        <Link className="an" to={divert} style={{padding:"1%"}}>
-                        <ArrowForwardIcon style={{color:"orange"}}/>
-                            {more}
-                        </Link>
-                        <p style={{padding:"1%",textAlign:"justify"}}>{explain}</p>
-                    
-          </div>
-        
-    )
-    } 
+ 
+  return (
+    <div
+      className="col-lg-4 col-md-6 col-sm-6 col-12"
+      style={{ float: "left", paddingBottom: "1%" }}
+    >
+      <img
+        src={props.photo}
+        className="card_int"
+        alt="..."
+        style={{ width: "100%", height: "auto", padding: "1%" }}
+      ></img>
+
+      <Link
+        className="h_title"
+        to={{ 
+            pathname: props.uzanti, 
+            state: props.content 
+           }}
+        style={{ padding: "1%" }}
+      >
+        {props.title}
+      </Link>
+      <br />
+
+      <Link className="an" to={props.divert} style={{ padding: "1%" }}>
+        <ArrowForwardIcon style={{ color: "orange" }} />
+        {props.more}
+      </Link>
+      <p style={{ padding: "1%", textAlign: "justify" }}>{props.explain}</p>
+    </div>
+  );
 }
+
+export default Interior;

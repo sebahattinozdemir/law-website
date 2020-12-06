@@ -1,7 +1,7 @@
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./components/home-page/Home";
 import About from "./components/about-page/About";
 import Services from "./components/services-page/Service";
@@ -21,8 +21,47 @@ import TurkSaglik from "./components/investment/turkiyede-saglik/TurkSaglik";
 import Yasam from "./components/investment/turkiyede-yasam/Yasam";
 import Yatirim from "./components/investment/turkiyede-yatirim/Yatirim";
 
+import React, { useState, useEffect } from "react";
+import db from "./firebase";
+import ServicePage from "./components/services-page/ServicePage";
+
+
 
 function App() {
+  const [services, setServices] = useState([]);
+
+  const [heading, setHeading] = useState("");
+  const [serviceContent, setServiceContent] = useState("");
+  const [underServiceText1, setUnderServiceText1] = useState("");
+  const [underServiceText2, setUnderServiceText2] = useState("");
+  const [underServiceText3, setUnderServiceText3] = useState("");
+  const [underServiceHead1, setUnderServiceHead1] = useState("");
+  const [underServiceHead2, setUnderServiceHead2] = useState("");
+  const [underServiceHead3, setUnderServiceHead3] = useState("");
+  useEffect(() => {
+    // fires once when the app loads
+    db.collection("services")
+      .orderBy("timeStamp", "desc")
+      .onSnapshot((snapshot) => {
+        setServices(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            heading: doc.data().heading,
+            serviceContent: doc.data().service_content,
+            underServiceHead1: doc.data().under_service_head1,
+            underServiceHead2: doc.data().under_service_head2,
+            underServiceHead3: doc.data().under_service_head3,
+            underServiceText1: doc.data().under_service_text1,
+            underServiceText2: doc.data().under_service_text2,
+            underServiceText3: doc.data().under_service_text3,
+          }))
+        );
+      });
+    console.log(services);
+  }, []);
+
+
+ 
   return (
     
     <Router>
@@ -45,13 +84,10 @@ function App() {
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
             <Route exact path="/turk-vatandasligi" component={Turk} />
+            {services.map((service,index) => (
+            <Route exact path={"/hizmetlerimiz/"+service.heading} component={ServicePage} />
+          ))}
             <Route exact path="/admin" component={Admin} />
-            <Route exact path="/hizmetlerimiz/calisma-izni" component={Calisma} />
-            <Route exact path="/hizmetlerimiz/oturma-izni" component={Oturma} />
-            <Route exact path="/hizmetlerimiz/saglik-sigorta-policesi" component={Saglik} />
-            <Route exact path="/hizmetlerimiz/turk-vatandasligi" component={Turk} />
-            <Route exact path="/hizmetlerimiz/turkiyede-sirket-kurulusu" component={Turkiye} />
-            <Route exact path="/hizmetlerimiz/turkuaz-kart" component={Turkuaz} />
             <Route exact path="/turkiyede-egitim" component={Egitim} />
             <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
             <Route exact path="/turkiyede-yasam" component={Yasam} />
