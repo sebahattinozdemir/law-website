@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Admin.css";
 import Login from "./login/Login";
-import Hakkimizda from "./admin-hakkimizda/hakkimizda";
+import Hakkimizda from "./admin-hakkimizda/Hakkimizda";
 import Hizmetlerimiz from "./admin-hizmetlerimiz/Hizmetlerimiz";
 import Referanslarimiz from "./admin-referanslar/Referanslar.js";
 import Blog from "./admin-blog/Blog";

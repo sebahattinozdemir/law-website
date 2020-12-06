@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import "./Blog.css";
+import React, { useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Dialog from "@material-ui/core/Dialog";
 import AppBar from "@material-ui/core/AppBar";
@@ -7,12 +6,14 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
-import Table from "./table/Table";
-import db from "./../../../firebase";
+import db from "./../../../../firebase";
 import firebase from "firebase";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
@@ -23,57 +24,34 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
-
-function Blog() {
-  const classes = useStyles();
-
+function Table(props) {
   const [open, setOpen] = React.useState(false);
-
-  const [blogs, setBlogs] = useState([]);
-  const [heading, setHeading] = useState("");
-  const [blogContent, setBlogContent] = useState("");
-
-  useEffect(() => {
-    // fires once when the app loads
-    db.collection("blogs")
-      .orderBy("timeStamp", "desc")
-      .onSnapshot((snapshot) => {
-        setBlogs(
-          snapshot.docs.map((doc) => ({
-            id: doc.id,
-            heading: doc.data().heading,
-            blogContent: doc.data().blog_content,
-          }))
-        );
-      });
-  }, []);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+  const [heading, setHeading] = useState(props.blog.heading);
+  const [blogContent, setBlogContent] = useState(props.blog.blogContent);
+  const classes = useStyles();
 
   const handleClose = () => {
     setOpen(false);
   };
 
-  const kaydet = (e) => {
-    e.preventDefault();
-    db.collection("blogs").add({
-      heading: heading,
-      blog_content: blogContent,
-      timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
-    });
-
-    setHeading("");
-    setBlogContent("");
-    setOpen(false);
+  const handleClickOpen = () => {
+    setOpen(true);
   };
 
+  const guncelle = (e) => {
+    e.preventDefault();
+    db.collection("blogs").doc(props.blog.id).set(
+      {
+        heading: heading,
+        blog_content: blogContent,
+        timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
+      },
+      { merge: true }
+    );
+    setOpen(false);
+  };
   return (
-    <div className="blog" style={{ border: "2px solid transparent" }}>
+    <tbody>
       <Dialog
         fullScreen
         open={open}
@@ -90,10 +68,9 @@ function Blog() {
             >
               <CloseIcon />
             </IconButton>
-            <h3 style={{ marginLeft: "5%" }}>Blog Sayfasi Ekle</h3>
+            <h3 style={{ marginLeft: "5%" }}>Blog Sayfasini Guncelle</h3>
           </Toolbar>
         </AppBar>
-
         <div className="col-12 blog-pop">
           <div className="container" style={{ marginTop: "10%" }}>
             <form>
@@ -142,49 +119,35 @@ function Blog() {
               <button
                 className="btn btn-primary"
                 type="submit"
-                onClick={kaydet}
+                onClick={guncelle}
               >
-                Kaydet
+                Guncelle
               </button>
             </form>
           </div>
         </div>
       </Dialog>
-
-      <h1 style={{ textAlign: "center", color: "white" }}>
-        {" "}
-        Blog Sayfasi Guncelleme
-      </h1>
-      <div
-        class="dropdown btn btn-outline"
-        style={{
-          fontSize: "16px",
-          display: "block",
-          width: "20%",
-        }}
-      ></div>
-
-      <div className="container">
-        <h2 style={{ color: "white" }}>Bloglar</h2>
-        <button className="btn btn-primary" onClick={handleClickOpen}>
-          Blog Sayfasi Ekle
-        </button>
-        <table class="table" style={{ color: "white" }}>
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Blog Sayfa Adi</th>
-              <th scope="col">Sil</th>
-              <th scope="col">Guncelle</th>
-            </tr>
-          </thead>
-          {blogs.map((blog) => (
-            <Table key={blog.id} blog={blog} />
-          ))}
-        </table>
-      </div>
-    </div>
+      <tr>
+        <th scope="row">1</th>
+        <td>{props.blog.heading}</td>
+        <td>
+          <button
+            className="btn btn-danger"
+            onClick={(event) =>
+              db.collection("blogs").doc(props.blog.id).delete()
+            }
+          >
+            X
+          </button>
+        </td>
+        <td>
+          <button className="btn btn-primary" onClick={handleClickOpen}>
+            Guncelle
+          </button>
+        </td>
+      </tr>
+    </tbody>
   );
 }
 
-export default Blog;
+export default Table;

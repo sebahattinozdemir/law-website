@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import "./Hizmetlerimiz.css";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Dialog from "@material-ui/core/Dialog";
 import AppBar from "@material-ui/core/AppBar";
@@ -7,12 +6,14 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
-import db from "./../../../firebase";
-import Table from "./table/Table";
+import db from "./../../../../firebase";
 import firebase from "firebase";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
@@ -23,94 +24,62 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
-
-function Hizmetlerimiz() {
-  const [open, setOpen] = React.useState(false);
-
-  const [services, setServices] = useState([]);
-
-  const [heading, setHeading] = useState("");
-  const [serviceContent, setServiceContent] = useState("");
-  const [underServiceText1, setUnderServiceText1] = useState("");
-  const [underServiceText2, setUnderServiceText2] = useState("");
-  const [underServiceText3, setUnderServiceText3] = useState("");
-  const [underServiceHead1, setUnderServiceHead1] = useState("");
-  const [underServiceHead2, setUnderServiceHead2] = useState("");
-  const [underServiceHead3, setUnderServiceHead3] = useState("");
-
-  useEffect(() => {
-    // fires once when the app loads
-    let i = 0;
-    db.collection("services")
-      .orderBy("timeStamp", "desc")
-      .onSnapshot((snapshot) => {
-        setServices(
-          snapshot.docs.map((doc) => ({
-            id: doc.id,
-            index: ++i,
-            heading: doc.data().heading,
-            serviceContent: doc.data().service_content,
-            underServiceHead1: doc.data().under_service_head1,
-            underServiceHead2: doc.data().under_service_head2,
-            underServiceHead3: doc.data().under_service_head3,
-            underServiceText1: doc.data().under_service_text1,
-            underServiceText2: doc.data().under_service_text2,
-            underServiceText3: doc.data().under_service_text3,
-          }))
-        );
-      });
-
-    console.log(services);
-  }, []);
-
+function Table(props) {
+  const [openUpdate, setOpenUpdate] = React.useState(false);
+  const handleClickOpenUpdate = () => {
+    setOpenUpdate(true);
+  };
+  const handleCloseUpdate = () => {
+    setOpenUpdate(false);
+  };
   const classes = useStyles();
+  const sil = () => {};
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+  const [heading, setHeading] = useState(props.service.heading);
+  const [serviceContent, setServiceContent] = useState(props.service.heading);
+  const [underServiceText1, setUnderServiceText1] = useState(
+    props.service.underServiceText1
+  );
+  const [underServiceText2, setUnderServiceText2] = useState(
+    props.service.underServiceText2
+  );
+  const [underServiceText3, setUnderServiceText3] = useState(
+    props.service.underServiceText3
+  );
+  const [underServiceHead1, setUnderServiceHead1] = useState(
+    props.service.underServiceHead1
+  );
+  const [underServiceHead2, setUnderServiceHead2] = useState(
+    props.service.underServiceHead2
+  );
+  const [underServiceHead3, setUnderServiceHead3] = useState(
+    props.service.underServiceHead3
+  );
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const kaydet = (e) => {
+  const guncelle = (e) => {
     e.preventDefault();
-    db.collection("services").add({
-      heading: heading,
-      service_content: serviceContent,
-      under_service_head1: underServiceHead1,
-      under_service_head2: underServiceHead2,
-      under_service_head3: underServiceHead3,
-      under_service_text1: underServiceText1,
-      under_service_text2: underServiceText2,
-      under_service_text3: underServiceText3,
-      timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
-    });
-
-    setHeading("");
-    setServiceContent("");
-    setUnderServiceHead1("");
-    setUnderServiceHead2("");
-    setUnderServiceHead3("");
-    setUnderServiceText1("");
-    setUnderServiceText2("");
-    setUnderServiceText3("");
-
-    setOpen(false);
+    db.collection("services").doc(props.service.id).set(
+      {
+        heading: heading,
+        service_content: serviceContent,
+        under_service_head1: underServiceHead1,
+        under_service_head2: underServiceHead2,
+        under_service_head3: underServiceHead3,
+        under_service_text1: underServiceText1,
+        under_service_text2: underServiceText2,
+        under_service_text3: underServiceText3,
+        timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
+      },
+      { merge: true }
+    );
+    setOpenUpdate(false);
   };
-
   return (
-    <div
-      style={{ height: "100vh", border: "2px solid transparent" }}
-      className="hizmetlerimiz"
-    >
+    <tbody>
       <Dialog
         fullScreen
-        open={open}
-        onClose={handleClose}
+        open={openUpdate}
+        onClose={handleCloseUpdate}
         TransitionComponent={Transition}
       >
         <AppBar className={classes.appBar}>
@@ -118,15 +87,14 @@ function Hizmetlerimiz() {
             <IconButton
               edge="start"
               color="inherit"
-              onClick={handleClose}
+              onClick={handleCloseUpdate}
               aria-label="close"
             >
               <CloseIcon />
             </IconButton>
-            <h3 style={{ marginLeft: "5%" }}>Hizmet Sayfasi Ekle</h3>
+            <h3 style={{ marginLeft: "5%" }}>Hizmet Sayfasini Guncelle</h3>
           </Toolbar>
         </AppBar>
-
         <div className="col-12 hizmetlerimiz-pop">
           <div
             className="container"
@@ -193,6 +161,7 @@ function Hizmetlerimiz() {
                 <label for="exampleFormControlTextarea1">
                   Hizmet Alt Yazisi 1
                 </label>
+            
                 <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText1}
@@ -229,8 +198,7 @@ function Hizmetlerimiz() {
                 <label for="exampleFormControlTextarea1">
                   Hizmet Alt Yazisi 2
                 </label>
-
-                <CKEditor
+                  <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText2}
                   onReady={(editor) => {
@@ -266,8 +234,7 @@ function Hizmetlerimiz() {
                 <label for="exampleFormControlTextarea1">
                   Hizmet Alt Yazisi 3
                 </label>
-
-                <CKEditor
+                  <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText3}
                   onReady={(editor) => {
@@ -289,56 +256,36 @@ function Hizmetlerimiz() {
               <button
                 className="btn btn-primary"
                 type="submit"
-                onClick={kaydet}
+                onClick={guncelle}
               >
-                Kaydet
+                Guncelle
               </button>
             </form>
           </div>
         </div>
       </Dialog>
 
-      <h1 style={{ textAlign: "center", color: "white" }}>
-        {" "}
-        Hizmetler Sayfasi Guncelleme
-      </h1>
-
-      <div
-        class="dropdown btn btn-outline"
-        style={{
-          fontSize: "16px",
-          display: "block",
-          width: "20%",
-        }}
-      ></div>
-
-      <div className="container">
-        <h2 style={{ color: "white" }}>Hizmetlerimiz</h2>
-        <button
-          style={{ color: "white" }}
-          className="btn btn-primary"
-          onClick={handleClickOpen}
-        >
-          Hizmet Sayfasi Ekle
-        </button>
-
-        <table style={{ color: "white" }} class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Hizmet Sayfa Adi</th>
-              <th scope="col">Sil</th>
-              <th scope="col">Guncelle</th>
-            </tr>
-          </thead>
-
-          {services.map((service) => (
-            <Table key={service.id} service={service} />
-          ))}
-        </table>
-      </div>
-    </div>
+      <tr>
+        <th scope="row">{props.service.index}</th>
+        <td>{props.service.heading}</td>
+        <td>
+          <button
+            className="btn btn-danger"
+            onClick={(event) =>
+              db.collection("services").doc(props.service.id).delete()
+            }
+          >
+            X
+          </button>
+        </td>
+        <td>
+          <button className="btn btn-primary" onClick={handleClickOpenUpdate}>
+            Guncelle
+          </button>
+        </td>
+      </tr>
+    </tbody>
   );
 }
 
-export default Hizmetlerimiz;
+export default Table;
