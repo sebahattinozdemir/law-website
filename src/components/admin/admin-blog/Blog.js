@@ -178,8 +178,8 @@ function Blog() {
               <th scope="col">Guncelle</th>
             </tr>
           </thead>
-          {blogs.map((blog) => (
-            <Table key={blog.id} blog={blog} />
+          {blogs.map((blog,index) => (
+            <Table key={blog.id} blog={blog} index = {index}/>
           ))}
         </table>
       </div>

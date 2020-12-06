@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Admin.css";
 import Login from "./login/Login";
-import Hakkimizda from "./admin-hakkimizda/Hakkimizda";
 import Hizmetlerimiz from "./admin-hizmetlerimiz/Hizmetlerimiz";
 import Referanslarimiz from "./admin-referanslar/Referanslar.js";
 import Blog from "./admin-blog/Blog";
@@ -36,10 +35,6 @@ function Admin() {
        
         <div  className="admin-content" style={{ width: "85%", height: "100vh" }}>
           
-          <div id="hakkimizda" style={{ width: "100%",height:'100%', display: "none" }}>
-                <Hakkimizda/>
-          </div>
-
           <div id="hizmetlerimiz" style={{ width: "100%", display: "none" }}>
                 <Hizmetlerimiz/>
           </div>

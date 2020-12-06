@@ -43,14 +43,12 @@ function Hizmetlerimiz() {
 
   useEffect(() => {
     // fires once when the app loads
-    let i = 0;
     db.collection("services")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setServices(
           snapshot.docs.map((doc) => ({
             id: doc.id,
-            index: ++i,
             heading: doc.data().heading,
             serviceContent: doc.data().service_content,
             underServiceHead1: doc.data().under_service_head1,
@@ -332,8 +330,8 @@ function Hizmetlerimiz() {
             </tr>
           </thead>
 
-          {services.map((service) => (
-            <Table key={service.id} service={service} />
+          {services.map((service,index) => (
+            <Table key={service.id} service={service} index = {index} />
           ))}
         </table>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Dialog from "@material-ui/core/Dialog";
 import AppBar from "@material-ui/core/AppBar";
@@ -24,8 +24,12 @@ const useStyles = makeStyles((theme) => ({
 
 function Table(props) {
   const [open, setOpen] = React.useState(false);
-  const [referenceName, setReferenceName] = useState(props.reference.referenceName);
-  const [referencePosition, setReferencePosition] = useState(props.reference.referencePosition);
+  const [referenceName, setReferenceName] = useState(
+    props.reference.referenceName
+  );
+  const [referencePosition, setReferencePosition] = useState(
+    props.reference.referencePosition
+  );
   const classes = useStyles();
 
   const handleClose = () => {
@@ -40,8 +44,8 @@ function Table(props) {
     e.preventDefault();
     db.collection("references").doc(props.reference.id).set(
       {
-        reference_name:referenceName,
-        reference_position:referencePosition,
+        reference_name: referenceName,
+        reference_position: referencePosition,
         timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
       },
       { merge: true }
@@ -88,19 +92,19 @@ function Table(props) {
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Sayfa Adi"
-                  value = {referenceName}
-                  onChange={(event)=>setReferenceName(event.target.value)}
+                  value={referenceName}
+                  onChange={(event) => setReferenceName(event.target.value)}
                 />
               </div>
               <div class="form-group">
-              <label for="exampleFormControlInput1">Referans Pozisyonu</label>
+                <label for="exampleFormControlInput1">Referans Pozisyonu</label>
                 <input
                   type="text"
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Sayfa Adi"
-                  value = {referencePosition}
-                  onChange={(event)=>setReferencePosition(event.target.value)}
+                  value={referencePosition}
+                  onChange={(event) => setReferencePosition(event.target.value)}
                 />
               </div>
               <button
@@ -116,7 +120,7 @@ function Table(props) {
       </Dialog>
 
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">{props.index + 1}</th>
         <td>{props.reference.referenceName}</td>
         <td>
           <button

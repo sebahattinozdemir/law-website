@@ -10,7 +10,7 @@ import db from "./../../../../firebase";
 import firebase from "firebase";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-
+import "./Table.css"
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -128,7 +128,7 @@ function Table(props) {
         </div>
       </Dialog>
       <tr>
-        <th scope="row">1</th>
+                <th scope="row">{props.index+1}</th>
         <td>{props.blog.heading}</td>
         <td>
           <button

@@ -94,7 +94,7 @@ function Referanslar() {
             </tr>
           </thead>
 
-          {references.map((reference) => ( <Table key={reference.id} reference = {reference}/>))}
+          {references.map((reference,index) => ( <Table key={reference.id} reference = {reference} index={index} />))}
           
         </table>
       </div>

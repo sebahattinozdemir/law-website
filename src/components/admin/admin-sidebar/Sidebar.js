@@ -2,30 +2,20 @@ import React from "react";
 import './Sidebar.css'
 
 function Sidebar() {
-  const hakkimizda = () => {
-    document.getElementById("hakkimizda").style.display = "block";
-    document.getElementById("hizmetlerimiz").style.display = "none";
-    document.getElementById("referanslar").style.display = "none";
-    document.getElementById("blog").style.display = "none";
-    document.getElementById("iletisim").style.display = "none";
-  };
-
+ 
   const hizmetlerimiz = () => {
-    document.getElementById("hakkimizda").style.display = "none";
     document.getElementById("hizmetlerimiz").style.display = "block";
     document.getElementById("referanslar").style.display = "none";
     document.getElementById("blog").style.display = "none";
     document.getElementById("iletisim").style.display = "none";
   };
   const referanslar = () => {
-    document.getElementById("hakkimizda").style.display = "none";
     document.getElementById("hizmetlerimiz").style.display = "none";
     document.getElementById("referanslar").style.display = "block";
     document.getElementById("blog").style.display = "none";
     document.getElementById("iletisim").style.display = "none";
   };
   const blog = () => {
-    document.getElementById("hakkimizda").style.display = "none";
     document.getElementById("hizmetlerimiz").style.display = "none";
     document.getElementById("referanslar").style.display = "none";
     document.getElementById("blog").style.display = "block";
@@ -33,7 +23,6 @@ function Sidebar() {
   };
 
   const iletisim = () => {
-    document.getElementById("hakkimizda").style.display = "none";
     document.getElementById("hizmetlerimiz").style.display = "none";
     document.getElementById("referanslar").style.display = "none";
     document.getElementById("blog").style.display = "none";
@@ -44,19 +33,6 @@ function Sidebar() {
     <div className={{ marginTop:"0px"}}>
       <div style={{ width: "100%", height: "100vh", backgroundColor: "#1A2226", marginTop:"0px",border:'2px solid transparent'}}>
         <h3 style={{ textAlign: "center", color: "white" }}>SITE ISLEMLERI</h3>
-        <button
-          style={{
-            backgroundColor: "transparent",
-            color: "#fff",
-            fontSize: "16px",
-            display:'block',
-            width:'100%'
-          }}
-          className="btn btn-outline"
-          onClick={hakkimizda}
-        >
-          Hakkimizda
-        </button>
         <button
           className="btn btn-outline"
           style={{
