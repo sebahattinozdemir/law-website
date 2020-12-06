@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Calisma.css";
+
 import WorkIcon from '@material-ui/icons/Work';
 import Altheader from '../../altheader/Altheader'
 

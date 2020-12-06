@@ -3,9 +3,13 @@ import Neden from "./neden/Neden";
 import Misyon from "./misyon/Misyon";
 import Basic from "./basic/Basic";
 import BusinessIcon from '@material-ui/icons/Business';
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import "./About.css";
+import db from "../../firebase";
+
+
 function About() {
+
     return (
         <div >
             <Header
