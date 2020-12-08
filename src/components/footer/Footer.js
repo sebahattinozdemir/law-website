@@ -1,3 +1,9 @@
+import ankara from "./ankara06.jpg";
+import samsun from "./samsun55.jpg";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
+import EmailIcon from '@material-ui/icons/Email';
 import React from 'react'
 import "./Footer.css"
 function Footer() {
@@ -7,30 +13,48 @@ function Footer() {
           
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             
-            <b style={{ color: "black", fontSize: "20px"}}>Neden Biz</b>
+            <b style={{ color: "#A4203A", fontSize: "20px"}}>Neden Biz</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
+            NAR Danışmanlık , Ankara merkezli bir danışmanlık ofisi olup Türkiye genelindeki ve yurt dışındaki çözüm ortakları ve bünyesindeki avukatlarla birlikte yerli ve yabancı danışanlarına ticari ve hukuki danışmanlık hizmetleri sunmaktadır.
             NAR Danışmanlık hizmetleri, İkamet izni (oturma izni), Yabancı sermayeli şirket kuruluşu, Çalışma izni, Türk  hukuku, Türk vatandaşlığı gibi başlıca konularda  profesyonel avukat ve uzman kadrosuyla   hizmet veren Türk danışmanlık firmasıdır.
             </p>
            
           </div>
 
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "black", fontSize: "20px" }}>Yasal Uyarı</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>Yasal Uyarı</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            Tüm hakları saklıdır. Bu sitede yer alan yazı, haber, fotoğraf, video ve sair dokümanların, bireysel kullanım dışında izin alınmadan kısmen ya da tamamen kopyalanması, çoğaltılması, kullanılması, yayınlanması ve dağıtılması kesinlikle yasaktır. Bu yasağa uymayanlar hakkında 5846 sayılı Fikir ve Sanat Eserleri Kanunu uyarınca yasal işlem yapılacaktır.
+            Tüm hakları saklıdır. Bu sitede yer alan yazı, haber, fotoğraf, video ve sair dokümanların, bireysel kullanım dışında izin alınmadan kısmen ya da tamamen kopyalanması, çoğaltılması, kullanılması, yayınlanması ve dağıtılması kesinlikle yasaktır.
             </p>
+            
+            <div>
+                  <a className="footeremail"><EmailIcon style={{fontSize:"24px",color:"black",float:"left"}}/> &nbsp;nargocvedanismanlik@gmail.com</a> 
+                  <br/>
+                  <br/>
+                  <a className="footerphone"
+                  href="tel: +905376971155"
+                  style={{ float: "left"}}
+                >
+                  <SettingsPhoneIcon style={{fontSize:"24px"}}/> 
+                </a> 
+                <p style={{fontSize:"medium"}}>&nbsp;+90 537 697 11 55</p>
+            </div>  
+
+                
+                
+
+
+            
             
           </div>
 
         
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "black", fontSize: "20px" }}>Ankara Ofis</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>Ankara Ofis</b>
             <hr/>
             <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
-            <p><b>Randevusuz Görüşme: </b> HAYIR</p>
-            <p><b>Görüşme Ücreti: </b>400 ₺/45 Dakika</p>
             <p><b>Adres: </b>Atatürk İş Merkezi
                 <br/>
                     Karanfil Caddesi No:199 Kat:2
@@ -38,15 +62,14 @@ function Footer() {
                     Kızılay / Çankaya / Ankara
 
             </p>
+            <img src={ankara} className="footerphoto" alt="Ankara" title="Ankara"></img>
             
           </div>
 
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "black", fontSize: "20px" }}>Samsun Ofis</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>Samsun Ofis</b>
             <hr/>
             <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
-            <p><b>Randevusuz Görüşme: </b> HAYIR</p>
-            <p><b>Görüşme Ücreti: </b>300 ₺/45 Dakika</p>
             <p><b>Adres: </b>Atatürk İş Merkezi
                 <br/>
                     Nato Caddesi No:155 Kat:3
@@ -54,6 +77,7 @@ function Footer() {
                     Atakent / Atakum / Samsun
 
             </p>
+            <img src={samsun} className="footerphoto" alt="Samsun" title="Samsun"></img>
            
           </div>
 

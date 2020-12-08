@@ -1,6 +1,7 @@
 import React from "react";
+import Nar from "./nar88.ico";
 import Altheader from "../altheader/Altheader";
-import WorkIcon from "@material-ui/icons/Work";
+import NextWeekIcon from '@material-ui/icons/NextWeek';
 import "./Calisma.css";
 import html from 'react-inner-html';
 
@@ -11,7 +12,7 @@ function ServicePage(props) {
         subtitle="Hizmetlerimiz"
         title={props.location.state.heading}
         alttitle={props.location.state.heading}
-        icon={<WorkIcon style={{ fontSize: "35px" }} />}
+        icon={<NextWeekIcon style={{ fontSize: "35px" }} />}
       />
 
       <div className="row" style={{ margin: "0%", padding: "1%" }}>
@@ -22,24 +23,24 @@ function ServicePage(props) {
         </div>
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-          <h3 style={{ color: "orange" }}>
-            <WorkIcon style={{ fontSize: "x-large", color: "black" }} />{" "}
+          <h3 style={{ color: "#A4203A" }}>
+            <img src={Nar}></img>{" "}
             {props.location.state.underServiceHead1}
           </h3>
           <p  class="card-text1"  {...html(props.location.state.underServiceText1)}/>
         </div>
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-          <h3 style={{ color: "orange" }}>
-            <WorkIcon style={{ fontSize: "x-large", color: "black" }} />{" "}
+          <h3 style={{ color: "#A4203A" }}>
+            <img src={Nar}></img>{" "}
             {props.location.state.underServiceHead2}
           </h3>
           <p class="card-text1"  {...html(props.location.state.underServiceText2)}/>
         </div>
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-          <h3 style={{ color: "orange" }}>
-            <WorkIcon style={{ fontSize: "x-large", color: "black" }} />{" "}
+          <h3 style={{ color: "#A4203A" }}>
+            <img src={Nar}></img>{" "}
             {props.location.state.underServiceHead3}
           </h3>
           <p class="card-text1"  {...html(props.location.state.underServiceText3)}/>

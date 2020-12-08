@@ -16,7 +16,7 @@ function Interior(props) {
         src={props.photo}
         className="card_int"
         alt="..."
-        style={{ width: "100%", height: "auto", padding: "1%" }}
+        style={{ width: "100%", height: "25rem", padding: "1%" }}
       ></img>
 
       <Link
@@ -32,7 +32,7 @@ function Interior(props) {
       <br />
 
       <Link className="an" to={props.divert} style={{ padding: "1%" }}>
-        <ArrowForwardIcon style={{ color: "orange" }} />
+        <ArrowForwardIcon style={{ color: "#A4203A" }} />
         {props.more}
       </Link>
       <p style={{ padding: "1%", textAlign: "justify" }}>{props.explain}</p>

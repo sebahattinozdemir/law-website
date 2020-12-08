@@ -10,6 +10,30 @@
     font-size: 16px;
     text-align: left;
 }
+.footerphoto{
+    width:80%; 
+    height:10rem;
+    padding:2%;
+    float:left;
+}
+.footeremail{
+    color:black;
+    font-size: medium;
+}
+.footeremail:hover{
+    text-decoration: none;
+    color:#A4203A;
+}
+.footerphone{
+    color:black;
+    
+}
+.footerphone:hover{
+    color:#A4203A;
+    
+}
+
+
 
 
 

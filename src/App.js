@@ -20,6 +20,7 @@ import Egitim from "./components/investment/turkiyede-egitim/Egitim";
 import TurkSaglik from "./components/investment/turkiyede-saglik/TurkSaglik";
 import Yasam from "./components/investment/turkiyede-yasam/Yasam";
 import Yatirim from "./components/investment/turkiyede-yatirim/Yatirim";
+import AltBlog from "./components/blog/Altblog";
 
 import React, { useState, useEffect } from "react";
 import db from "./firebase";
@@ -92,6 +93,7 @@ function App() {
             <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
             <Route exact path="/turkiyede-yasam" component={Yasam} />
             <Route exact path="/turkiyede-yatirim" component={Yatirim} />
+            <Route exact path="/altblog" component={AltBlog} />
             <Route component={Notfound} />
             
             
