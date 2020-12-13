@@ -61,6 +61,7 @@ function App() {
     console.log(services);
   }, [services,blogs]);
 
+ 
 
  
   return (
@@ -78,6 +79,8 @@ function App() {
           style={{margin:'0px',padding:'0px'}}
         >
           <Switch>
+
+            
             <Route exact path="/" component={Home} />
             <Route exact path="/hakkimizda" component={About} />
             <Route exact path="/hizmetlerimiz" component={Services} />
