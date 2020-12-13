@@ -1,8 +1,7 @@
 import "./Interior.css";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import ServicePage from "../services-page/ServicePage";
 
 function Interior(props) {
 

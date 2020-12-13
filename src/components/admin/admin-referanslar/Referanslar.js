@@ -7,6 +7,7 @@ import firebase from 'firebase'
 function Referanslar() {
 
   const [references, setReferences] = useState([])
+  const [referenceUrl, setReferenceUrl] = useState("");
   const [referenceName, setReferenceName] = useState("");
   const [referencePosition, setReferencePosition] = useState("");
   
@@ -15,7 +16,8 @@ function Referanslar() {
     db.collection('references').orderBy('timeStamp','desc').onSnapshot(snapshot =>{
       setReferences(snapshot.docs.map(doc =>(
     { 
-      id:doc.id, 
+      id:doc.id,
+      referenceUrl:doc.data().reference_url,
       referenceName: doc.data().reference_name,
       referencePosition:doc.data().reference_position,
     })))
@@ -23,16 +25,19 @@ function Referanslar() {
   })
 
   console.log(references)
-  }, [])
+  }, [references])
 
   const addReference = (event)=>{
     event.preventDefault();
     db.collection('references').add({
+      reference_url:referenceUrl,
       reference_name:referenceName,
       reference_position:referencePosition,
       timeStamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-   
+   setReferenceName("");
+   setReferencePosition("");
+   setReferenceUrl("");
   }
 
   return (
@@ -48,12 +53,16 @@ function Referanslar() {
       <div className="container">
         <h2 style={{ color: "white" }}>Referans Ekle</h2>
         <form style={{ color: "white" }}>
+
           <div class="form-group">
-            <label for="exampleFormControlFile1">Referans Logo</label>
+          <label for="exampleFormControlInput1">Referans Foto Url</label>
             <input
-              type="file"
-              class="form-control-file"
-              id="exampleFormControlFile1"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="url"
+              value = {referenceUrl}
+              onChange={(event)=>{setReferenceUrl(event.target.value)}}
             />
           </div>
 

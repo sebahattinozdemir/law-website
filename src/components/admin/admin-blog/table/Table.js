@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Table(props) {
   const [open, setOpen] = React.useState(false);
+  const [url, setUrl] = useState(props.blog.url);
   const [heading, setHeading] = useState(props.blog.heading);
   const [blogContent, setBlogContent] = useState(props.blog.blogContent);
   const classes = useStyles();
@@ -42,6 +43,7 @@ function Table(props) {
     e.preventDefault();
     db.collection("blogs").doc(props.blog.id).set(
       {
+        url:url,
         heading: heading,
         blog_content: blogContent,
         timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -75,11 +77,14 @@ function Table(props) {
           <div className="container" style={{ marginTop: "10%" }}>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlFile1">Fotograf Ekle</label>
+              <label for="exampleFormControlInput1">Foto Url</label>
                 <input
-                  type="file"
-                  class="form-control-file"
-                  id="exampleFormControlFile1"
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Sayfa Adi"
+                  value={url}
+                  onChange={(event) => setUrl(event.target.value)}
                 />
               </div>
               <div class="form-group">

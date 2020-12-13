@@ -1,29 +1,44 @@
-import Header from "../header/Header"; 
-import Bphoto from "./nar21.jpg";
-import { Link } from "react-router-dom";
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import React from 'react'
-import "./Blog.css"
+import Header from "../header/Header";
+import AssignmentIcon from "@material-ui/icons/Assignment";
+import React, { useEffect, useState } from "react";
+import "./Blog.css";
+import db from "./../../firebase";
+import BlogInterior from "./BlogInterior";
 function Blog() {
-    return (
-        <div>
-            <Header
-                subtitle="Blog"
-                title="Blog"
-                icon={<AssignmentIcon style={{fontSize:"35px"}} />}
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    // fires once when the app loads
+    db.collection("blogs")
+      .orderBy("timeStamp", "desc")
+      .onSnapshot((snapshot) => {
+        setBlogs(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            url:doc.data().url.substring(doc.data().url.lastIndexOf('file')+7, doc.data().url.lastIndexOf('/')),
+            content: doc.data().blog_content,
+            heading: doc.data().heading,
+          }))
+        );
+      });
+  }, []);
+
+  return (
+    <div>
+
+      <Header
+        subtitle="Blog"
+        title="Blog"
+        icon={<AssignmentIcon style={{ fontSize: "35px" }} />}
+      />
+      <div className="row" style={{ margin: "0%", padding: "1%" }}>
+      {blogs.map((blog,index) => (
+            <BlogInterior photo = {blog.url} title={blog.heading} uzanti={"/blogs/"+blog.heading} 
+            content = {blog} divert={"/blogs/"+blog.heading}  
             />
-                   <div className="row" style={{margin:"0%",padding:"1%"}}>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{border:"1px #A4203A solid",borderRadius:"1em"}}>  
-                                <img src={Bphoto} className="card" alt="..." style={{width:"100%", height:"25rem",padding:"1%"}}></img>
-                        
-                                <Link className="b_title" to="/altblog" style={{paddingLeft:"1%"}} >
-                                        3 Yılda 7 Bin Yabancı Türk Vatandaşı Oldu
-                                        
-                                </Link>
-                        </div>
-                   </div>
-        </div>
-    )
+          ))}
+      </div>
+    </div>
+  );
 }
 
-export default Blog
+export default Blog;

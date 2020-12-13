@@ -1,6 +1,6 @@
 import "./Basic.css";
 import Player from "../player/Player";
-import React, { Component } from "react";
+import React from "react";
 
 function Basic() {
   return (

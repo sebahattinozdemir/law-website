@@ -33,6 +33,7 @@ function Blog() {
   const [open, setOpen] = React.useState(false);
 
   const [blogs, setBlogs] = useState([]);
+  const [url, setUrl] = useState("");
   const [heading, setHeading] = useState("");
   const [blogContent, setBlogContent] = useState("");
 
@@ -44,6 +45,7 @@ function Blog() {
         setBlogs(
           snapshot.docs.map((doc) => ({
             id: doc.id,
+            url:doc.data().url,
             heading: doc.data().heading,
             blogContent: doc.data().blog_content,
           }))
@@ -62,11 +64,12 @@ function Blog() {
   const kaydet = (e) => {
     e.preventDefault();
     db.collection("blogs").add({
+      url:url,
       heading: heading,
       blog_content: blogContent,
       timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
-
+    setUrl("");
     setHeading("");
     setBlogContent("");
     setOpen(false);
@@ -98,11 +101,14 @@ function Blog() {
           <div className="container" style={{ marginTop: "10%" }}>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlFile1">Fotograf Ekle</label>
+              <label for="exampleFormControlInput1">Foto Url</label>
                 <input
-                  type="file"
-                  class="form-control-file"
-                  id="exampleFormControlFile1"
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Url"
+                  value={url}
+                  onChange={(event) => setUrl(event.target.value)}
                 />
               </div>
               <div class="form-group">

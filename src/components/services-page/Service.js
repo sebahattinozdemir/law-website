@@ -1,10 +1,6 @@
 import Header from "../header/Header"; 
 import Interior from "../services-interior/Interior";
 import h1 from "./h1.jpg";
-import nar11 from "./nar11.jpg";
-import Turkishcitizen from "./turkishcitizen.jpg";
-import Oturmaic from "./oturmaic.jpg";
-import Calismaic from "./calisma.jpg";
 import GavelIcon from '@material-ui/icons/Gavel';
 import React, { useState, useEffect } from "react";
 import "./Service.css"
@@ -14,15 +10,6 @@ function Service() {
 
   const [services, setServices] = useState([]);
 
-  const [heading, setHeading] = useState("");
-  const [serviceContent, setServiceContent] = useState("");
-  const [underServiceText1, setUnderServiceText1] = useState("");
-  const [underServiceText2, setUnderServiceText2] = useState("");
-  const [underServiceText3, setUnderServiceText3] = useState("");
-  const [underServiceHead1, setUnderServiceHead1] = useState("");
-  const [underServiceHead2, setUnderServiceHead2] = useState("");
-  const [underServiceHead3, setUnderServiceHead3] = useState("");
-
   useEffect(() => {
     // fires once when the app loads
     db.collection("services")
@@ -31,6 +18,7 @@ function Service() {
         setServices(
           snapshot.docs.map((doc) => ({
             id: doc.id,
+            url:doc.data().url,
             heading: doc.data().heading,
             serviceContent: doc.data().service_content,
             underServiceHead1: doc.data().under_service_head1,
@@ -44,7 +32,7 @@ function Service() {
       });
 
     console.log(services);
-  }, []);
+  }, [services]);
 
     return (
         <div >

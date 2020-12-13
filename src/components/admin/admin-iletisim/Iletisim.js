@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Iletisim.css";
 import Input from "@material-ui/core/Input";
 import db from "./../../../firebase";
-import firebase from "firebase";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,7 +19,7 @@ function Iletisim() {
   const [facebook, setFacebook] = useState("");
   const [telefon, setTelefon] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
-  const [gmail, setGmail] = useState("");
+
 
   useEffect(() => {
     // fires once when the app loads

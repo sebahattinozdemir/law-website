@@ -1,7 +1,5 @@
 import ankara from "./ankara06.jpg";
 import samsun from "./samsun55.jpg";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
 import EmailIcon from '@material-ui/icons/Email';
 import React from 'react'
@@ -30,7 +28,7 @@ function Footer() {
             </p>
             
             <div>
-                  <a className="footeremail"><EmailIcon style={{fontSize:"24px",color:"black",float:"left"}}/> &nbsp;nargocvedanismanlik@gmail.com</a> 
+                  <a className="footeremail" href="nargocvedanismanlik@gmail.com" ><EmailIcon style={{fontSize:"24px",color:"black",float:"left"}}/> &nbsp;nargocvedanismanlik@gmail.com</a> 
                   <br/>
                   <br/>
                   <a className="footerphone"

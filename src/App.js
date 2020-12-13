@@ -1,7 +1,7 @@
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./components/home-page/Home";
 import About from "./components/about-page/About";
 import Services from "./components/services-page/Service";
@@ -9,19 +9,13 @@ import Reference from "./components/references-page/Reference";
 import Blog from "./components/blog/Blog";
 import Contact from "./components/contact-page/Contact";
 import Notfound from "./components/notfound/Notfound";
-import Calisma from "./components/services-page/calisma-izni/Calisma";
-import Oturma from "./components/services-page/oturma-izni/Oturma";
-import Saglik from "./components/services-page/saglik-sigorta-policesi/Saglik";
 import Turk from "./components/services-page/turk-vatandasligi/Turk";
 import Admin from "./components/admin/Admin";
-import Turkiye from "./components/services-page/turkiyede-sirket-kurulusu/Turkiye";
-import Turkuaz from "./components/services-page/turkuaz-kart/Turkuaz";
 import Egitim from "./components/investment/turkiyede-egitim/Egitim";
 import TurkSaglik from "./components/investment/turkiyede-saglik/TurkSaglik";
 import Yasam from "./components/investment/turkiyede-yasam/Yasam";
 import Yatirim from "./components/investment/turkiyede-yatirim/Yatirim";
 import AltBlog from "./components/blog/Altblog";
-
 import React, { useState, useEffect } from "react";
 import db from "./firebase";
 import ServicePage from "./components/services-page/ServicePage";
@@ -30,15 +24,8 @@ import ServicePage from "./components/services-page/ServicePage";
 
 function App() {
   const [services, setServices] = useState([]);
+  const [blogs, setBlogs] = useState([]);
 
-  const [heading, setHeading] = useState("");
-  const [serviceContent, setServiceContent] = useState("");
-  const [underServiceText1, setUnderServiceText1] = useState("");
-  const [underServiceText2, setUnderServiceText2] = useState("");
-  const [underServiceText3, setUnderServiceText3] = useState("");
-  const [underServiceHead1, setUnderServiceHead1] = useState("");
-  const [underServiceHead2, setUnderServiceHead2] = useState("");
-  const [underServiceHead3, setUnderServiceHead3] = useState("");
   useEffect(() => {
     // fires once when the app loads
     db.collection("services")
@@ -58,8 +45,21 @@ function App() {
           }))
         );
       });
+
+      db.collection("blogs")
+      .orderBy("timeStamp", "desc")
+      .onSnapshot((snapshot) => {
+        setBlogs(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            heading: doc.data().heading,
+            content: doc.data().blog_content,
+          }))
+        );
+      });
+
     console.log(services);
-  }, []);
+  }, [services,blogs]);
 
 
  
@@ -88,12 +88,14 @@ function App() {
             {services.map((service,index) => (
             <Route exact path={"/hizmetlerimiz/"+service.heading} component={ServicePage} />
           ))}
+          {blogs.map((blog,index) => (
+            <Route exact path={"/blogs/"+blog.heading} component={AltBlog} />
+          ))}
             <Route exact path="/admin" component={Admin} />
             <Route exact path="/turkiyede-egitim" component={Egitim} />
             <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
             <Route exact path="/turkiyede-yasam" component={Yasam} />
             <Route exact path="/turkiyede-yatirim" component={Yatirim} />
-            <Route exact path="/altblog" component={AltBlog} />
             <Route component={Notfound} />
             
             

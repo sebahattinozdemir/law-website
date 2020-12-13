@@ -1,15 +1,28 @@
 import Header from "../header/Header"; 
-import berati from "./berati.jpg";
-import sami from "./sami.jpg";
-import mehmet from "./mehmet.jpg";
-import hasan from "./hasan.jpg";
-import eda from "./eda.jpg";
-import tugba from "./tugba.jpg";
 import GroupIcon from '@material-ui/icons/Group';
 import RefComponent from "../Reference-compo/RefComponent";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Reference.css"
+import db from "./../../firebase";
 function Reference() {
+
+    const [references, setReferences] = useState([]);
+    useEffect(() => {
+        // fires once when the app loads
+        db.collection("references")
+          .orderBy("timeStamp", "desc")
+          .onSnapshot((snapshot) => {
+            setReferences(
+              snapshot.docs.map((doc) => ({
+                id: doc.id,
+                referenceUrl: doc.data().reference_url.substring(doc.data().reference_url.lastIndexOf('file')+7, doc.data().reference_url.lastIndexOf('/')),
+                referenceName: doc.data().reference_name,
+                referencePosition: doc.data().reference_position,
+              }))
+            );
+          });
+       
+      }, []);
 
     return (
         <div>
@@ -26,36 +39,15 @@ function Reference() {
                 <div className="row" style={{padding:"1%",width:"90%",backgroundColor:"#EFEFEF",borderRadius:"1rem",margin:"auto"}}>
                    
 
-                  <RefComponent
-                        refphoto={eda}
-                        refname="Eda Merdamert"
-                        refjob="Mechanical Engineer"
-                  />
-                  <RefComponent
-                        refphoto={tugba}
-                        refname="Tuğba Dikmen"
-                        refjob="Electrical and Electronics Engineer"
-                  />
-                  <RefComponent
-                        refphoto={berati}
-                        refname="Berati Şahin"
-                        refjob="Software Developer"
-                  />
-                  <RefComponent
-                        refphoto={hasan}
-                        refname="Hasan Hüseyin Yılmaz"
-                        refjob="Lawyer"
-                  />
-                  <RefComponent
-                        refphoto={sami}
-                        refname="Sami Oğuz"
-                        refjob="Doctor"
-                  />
-                  <RefComponent
-                        refphoto={mehmet}
-                        refname="Mehmet Cebeci"
-                        refjob="Attorney"
-                  />
+                 {references.map((reference,index) => (     
+                 <RefComponent
+                 key={reference.id}
+                 index={index}
+                 refphoto={reference.referenceUrl}
+                 refname={reference.referenceName}
+                 refjob={reference.referencePosition}
+           />
+                 ))}
                 </div>
                 <br/>
 

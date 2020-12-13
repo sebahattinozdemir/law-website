@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import "./Admin.css";
 import Login from "./login/Login";
 import Hizmetlerimiz from "./admin-hizmetlerimiz/Hizmetlerimiz";

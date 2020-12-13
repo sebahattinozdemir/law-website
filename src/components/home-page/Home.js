@@ -1,6 +1,5 @@
 import "./Home.css";
 import video from "./1.gif";
-import h2 from "./h2.jpg";
 import Calisma from "./calisma.jpg";
 import Oturma from "./oturma.jpg";
 import nar14 from "./nar14.jpg";

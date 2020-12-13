@@ -33,6 +33,7 @@ function Hizmetlerimiz() {
   const [services, setServices] = useState([]);
 
   const [heading, setHeading] = useState("");
+  const [url, setUrl] = useState("");
   const [serviceContent, setServiceContent] = useState("");
   const [underServiceText1, setUnderServiceText1] = useState("");
   const [underServiceText2, setUnderServiceText2] = useState("");
@@ -49,6 +50,7 @@ function Hizmetlerimiz() {
         setServices(
           snapshot.docs.map((doc) => ({
             id: doc.id,
+            url:doc.data().url,
             heading: doc.data().heading,
             serviceContent: doc.data().service_content,
             underServiceHead1: doc.data().under_service_head1,
@@ -62,7 +64,7 @@ function Hizmetlerimiz() {
       });
 
     console.log(services);
-  }, []);
+  }, [services]);
 
   const classes = useStyles();
 
@@ -75,8 +77,11 @@ function Hizmetlerimiz() {
   };
 
   const kaydet = (e) => {
+
     e.preventDefault();
+    
     db.collection("services").add({
+      url:url,
       heading: heading,
       service_content: serviceContent,
       under_service_head1: underServiceHead1,
@@ -89,6 +94,7 @@ function Hizmetlerimiz() {
     });
 
     setHeading("");
+    setUrl("");
     setServiceContent("");
     setUnderServiceHead1("");
     setUnderServiceHead2("");
@@ -132,19 +138,22 @@ function Hizmetlerimiz() {
           >
             <form>
               <div class="form-group">
-                <label for="exampleFormControlFile1">Fotograf Ekle</label>
-                <input
-                  type="file"
-                  class="form-control-file"
-                  id="exampleFormControlFile1"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Baslik Ekle</label>
+              <label for="exampleFormControlInput1">Foto Url</label>
                 <input
                   type="text"
                   class="form-control"
                   id="exampleFormControlInput1"
+                  placeholder="Url"
+                  value={url}
+                  onChange={(event) => setUrl(event.target.value)}
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput2">Baslik Ekle</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput2"
                   placeholder="Sayfa Adi"
                   value={heading}
                   onChange={(event) => setHeading(event.target.value)}
@@ -158,129 +167,89 @@ function Hizmetlerimiz() {
                 <CKEditor
                   editor={ClassicEditor}
                   data={serviceContent}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
                   onChange={(event, editor) => {
                     const data = editor.getData();
                     setServiceContent(data);
                   }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
-                  }}
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">
+                <label for="exampleFormControlInput3">
                   Hizmet Alt Yazisi 1 Baslik Ekle
                 </label>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="exampleFormControlInput3"
                   placeholder="Sayfa Adi"
                   value={underServiceHead1}
                   onChange={(event) => setUnderServiceHead1(event.target.value)}
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">
+                <label for="exampleFormControlTextarea8">
                   Hizmet Alt Yazisi 1
                 </label>
                 <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText1}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
                   onChange={(event, editor) => {
                     const data = editor.getData();
                     setUnderServiceText1(data);
                   }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
-                  }}
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">
+                <label for="exampleFormControlInput4">
                   Hizmet Alt Yazisi 2 Baslik Ekle
                 </label>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="exampleFormControlInput4"
                   placeholder="Sayfa Adi"
                   value={underServiceHead2}
                   onChange={(event) => setUnderServiceHead2(event.target.value)}
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">
+                <label for="exampleFormControlTextarea5">
                   Hizmet Alt Yazisi 2
                 </label>
 
                 <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText2}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
                   onChange={(event, editor) => {
                     const data = editor.getData();
                     setUnderServiceText2(data);
                   }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
-                  }}
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">
+                <label for="exampleFormControlInput6">
                   Hizmet Alt Yazisi 3 Baslik Ekle
                 </label>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="exampleFormControlInput6"
                   placeholder="Sayfa Adi"
                   value={underServiceHead3}
                   onChange={(event) => setUnderServiceHead3(event.target.value)}
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">
+                <label for="exampleFormControlTextarea7">
                   Hizmet Alt Yazisi 3
                 </label>
 
                 <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText3}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
                   onChange={(event, editor) => {
                     const data = editor.getData();
                     setUnderServiceText3(data);
-                  }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
                   }}
                 />
               </div>
@@ -297,7 +266,6 @@ function Hizmetlerimiz() {
       </Dialog>
 
       <h1 style={{ textAlign: "center", color: "white" }}>
-        {" "}
         Hizmetler Sayfasi Guncelleme
       </h1>
 

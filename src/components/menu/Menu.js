@@ -1,6 +1,5 @@
 import React from "react";
 import NarV5 from "./narV5.jpg";
-import Nar01 from "./nar01.jpg";
 import BusinessIcon from '@material-ui/icons/Business';
 import GroupIcon from '@material-ui/icons/Group';
 import GavelIcon from '@material-ui/icons/Gavel';

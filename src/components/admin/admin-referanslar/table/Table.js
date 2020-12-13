@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
 
 function Table(props) {
   const [open, setOpen] = React.useState(false);
+  const [referenceUrl, setReferenceUrl] = useState(
+    props.reference.referenceUrl
+  );
   const [referenceName, setReferenceName] = useState(
     props.reference.referenceName
   );
@@ -44,6 +47,7 @@ function Table(props) {
     e.preventDefault();
     db.collection("references").doc(props.reference.id).set(
       {
+        reference_url:referenceUrl,
         reference_name: referenceName,
         reference_position: referencePosition,
         timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -78,11 +82,14 @@ function Table(props) {
           <div className="container" style={{ marginTop: "10%" }}>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlFile1">Fotograf Ekle</label>
+              <label for="exampleFormControlInput1">Referans Url</label>
                 <input
-                  type="file"
-                  class="form-control-file"
-                  id="exampleFormControlFile1"
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Url"
+                  value={referenceUrl}
+                  onChange={(event) => setReferenceUrl(event.target.value)}
                 />
               </div>
               <div class="form-group">
@@ -91,7 +98,7 @@ function Table(props) {
                   type="text"
                   class="form-control"
                   id="exampleFormControlInput1"
-                  placeholder="Sayfa Adi"
+                  placeholder="Referans Ismi"
                   value={referenceName}
                   onChange={(event) => setReferenceName(event.target.value)}
                 />
@@ -102,7 +109,7 @@ function Table(props) {
                   type="text"
                   class="form-control"
                   id="exampleFormControlInput1"
-                  placeholder="Sayfa Adi"
+                  placeholder="Referans Pozisyonu"
                   value={referencePosition}
                   onChange={(event) => setReferencePosition(event.target.value)}
                 />

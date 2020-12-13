@@ -33,8 +33,8 @@ function Table(props) {
     setOpenUpdate(false);
   };
   const classes = useStyles();
-  const sil = () => {};
 
+  const [url, setUrl] = useState(props.service.url);
   const [heading, setHeading] = useState(props.service.heading);
   const [serviceContent, setServiceContent] = useState(props.service.heading);
   const [underServiceText1, setUnderServiceText1] = useState(
@@ -60,6 +60,7 @@ function Table(props) {
     e.preventDefault();
     db.collection("services").doc(props.service.id).set(
       {
+        url:url,
         heading: heading,
         service_content: serviceContent,
         under_service_head1: underServiceHead1,
@@ -102,11 +103,14 @@ function Table(props) {
           >
             <form>
               <div class="form-group">
-                <label for="exampleFormControlFile1">Fotograf Ekle</label>
+              <label for="exampleFormControlInput1">Foto Url</label>
                 <input
-                  type="file"
-                  class="form-control-file"
-                  id="exampleFormControlFile1"
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Sayfa Adi"
+                  value={url}
+                  onChange={(event) => setUrl(event.target.value)}
                 />
               </div>
               <div class="form-group">

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import not404 from "./notfound.jpg";
+
 import "./Notfound.css";
 function Notfound() {
   useEffect(() => {
@@ -46,8 +46,8 @@ function Notfound() {
         </div>
       </div>
 
-      <iframe
-        style={{ width: 0, height: 0, border: 0, border: "none" }}
+      <iframe title="unique"
+        style={{ width: 0, height: 0, border: "none" }}
         scrolling="no"
         frameborder="no"
         allow="autoplay"

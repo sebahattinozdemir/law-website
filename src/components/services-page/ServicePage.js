@@ -24,7 +24,7 @@ function ServicePage(props) {
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
           <h3 style={{ color: "#A4203A" }}>
-            <img src={Nar}></img>{" "}
+            <img src={Nar} alt="..."></img>{" "}
             {props.location.state.underServiceHead1}
           </h3>
           <p  class="card-text1"  {...html(props.location.state.underServiceText1)}/>
@@ -32,7 +32,7 @@ function ServicePage(props) {
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
           <h3 style={{ color: "#A4203A" }}>
-            <img src={Nar}></img>{" "}
+            <img src={Nar} alt="..."></img>{" "}
             {props.location.state.underServiceHead2}
           </h3>
           <p class="card-text1"  {...html(props.location.state.underServiceText2)}/>
@@ -40,7 +40,7 @@ function ServicePage(props) {
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
           <h3 style={{ color: "#A4203A" }}>
-            <img src={Nar}></img>{" "}
+            <img src={Nar} alt="..."></img>{" "}
             {props.location.state.underServiceHead3}
           </h3>
           <p class="card-text1"  {...html(props.location.state.underServiceText3)}/>
