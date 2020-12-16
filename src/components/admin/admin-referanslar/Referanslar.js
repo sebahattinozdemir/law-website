@@ -25,7 +25,7 @@ function Referanslar() {
   })
 
   console.log(references)
-  }, [references])
+  }, [])
 
   const addReference = (event)=>{
     event.preventDefault();

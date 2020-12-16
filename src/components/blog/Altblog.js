@@ -14,7 +14,7 @@ function Altblog(props) {
             />
                    <div className="row" style={{margin:"0%",padding:"1%"}}>
                         <div className="col-12" style={{margin:"3%"}} > 
-                            <p className="blogtitle" {...html(props.location.state.heading)}></p>
+                            <h1 className="blogtitle" {...html(props.location.state.heading)}></h1>
                             <p class="blogtext" {...html(props.location.state.content)}></p>
 
                         </div>

@@ -15,7 +15,8 @@ function Admin() {
     document.getElementById("footer").style.display = "none";
     document.getElementById("admin").style.display = "none";
     document.getElementById("app-container").style.width = "99%";
-  });
+    console.log("I am here")
+  },[]);
 
 
   return (
@@ -26,7 +27,7 @@ function Admin() {
             <Login/>
       </div>
       
-      <div className="admin" id="admin" style={{ display: "none", marginLeft: "1%",width:"99%",marginTop:'0px' }}>
+      <div className="admin" id="admin">
         
         <div className="admin-sidebar" style={{ width: "15%", height: "100vh", marginTop:"0px",}}>
             <Sidebar/>

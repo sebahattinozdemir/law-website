@@ -12,12 +12,12 @@ function Interior(props) {
       style={{ float: "left", paddingBottom: "1%" }}
     >
       <img
-        src={props.photo}
+        src={"https://drive.google.com/uc?export=view&id="+props.photo}
         className="card_int"
         alt="..."
         style={{ width: "100%", height: "25rem", padding: "1%" }}
       ></img>
-
+     
       <Link
         className="h_title"
         to={{ 

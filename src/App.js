@@ -1,7 +1,12 @@
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Home from "./components/home-page/Home";
 import About from "./components/about-page/About";
 import Services from "./components/services-page/Service";
@@ -19,12 +24,13 @@ import AltBlog from "./components/blog/Altblog";
 import React, { useState, useEffect } from "react";
 import db from "./firebase";
 import ServicePage from "./components/services-page/ServicePage";
-
-
+import Login from "./components/admin/login/Login";
 
 function App() {
   const [services, setServices] = useState([]);
   const [blogs, setBlogs] = useState([]);
+
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     // fires once when the app loads
@@ -46,7 +52,7 @@ function App() {
         );
       });
 
-      db.collection("blogs")
+    db.collection("blogs")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setBlogs(
@@ -59,28 +65,25 @@ function App() {
       });
 
     console.log(services);
-  }, [services,blogs]);
+  }, []);
 
- 
-
- 
   return (
-    
     <Router>
-      
       <div className="app">
-        <div id="menu"
-          className="col-lg-2 col-md-2 col-sm-12" style={{margin:'0px',padding:'0px'}}>
+        <div
+          id="menu"
+          className="col-lg-2 col-md-2 col-sm-12"
+          style={{ margin: "0px", padding: "0px" }}
+        >
           <Menu />
         </div>
-        
+
         <div
-          className="col-lg-10 col-md-10 col-sm-12" id= 'app-container'
-          style={{margin:'0px',padding:'0px'}}
+          className="col-lg-10 col-md-10 col-sm-12"
+          id="app-container"
+          style={{ margin: "0px", padding: "0px" }}
         >
           <Switch>
-
-            
             <Route exact path="/" component={Home} />
             <Route exact path="/hakkimizda" component={About} />
             <Route exact path="/hizmetlerimiz" component={Services} />
@@ -88,30 +91,39 @@ function App() {
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/iletisim" component={Contact} />
             <Route exact path="/turk-vatandasligi" component={Turk} />
-            {services.map((service,index) => (
-            <Route exact path={"/hizmetlerimiz/"+service.heading} component={ServicePage} />
-          ))}
-          {blogs.map((blog,index) => (
-            <Route exact path={"/blogs/"+blog.heading} component={AltBlog} />
-          ))}
-            <Route exact path="/admin" component={Admin} />
             <Route exact path="/turkiyede-egitim" component={Egitim} />
             <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
             <Route exact path="/turkiyede-yasam" component={Yasam} />
             <Route exact path="/turkiyede-yatirim" component={Yatirim} />
+
+            {services.map((service, index) => (
+              <Route
+                exact
+                path={"/hizmetlerimiz/" + service.heading}
+                component={ServicePage}
+              />
+            ))}
+            {blogs.map((blog, index) => (
+              <Route
+                exact
+                path={"/blogs/" + blog.heading}
+                component={AltBlog}
+              />
+            ))}
+
+            <Route path="/admin" component={Admin} />
             <Route component={Notfound} />
-            
-            
           </Switch>
-          <div id="footer" className="col-12 mx-0 px-0"  style={{width:'100%',backgroundColor: "#f8f9fa"}}> 
+          <div
+            id="footer"
+            className="col-12 mx-0 px-0"
+            style={{ width: "100%", backgroundColor: "#f8f9fa" }}
+          >
             <Footer />
           </div>
-          
-
         </div>
       </div>
     </Router>
-    
   );
 }
 

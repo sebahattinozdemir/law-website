@@ -64,7 +64,7 @@ function Hizmetlerimiz() {
       });
 
     console.log(services);
-  }, [services]);
+  }, []);
 
   const classes = useStyles();
 

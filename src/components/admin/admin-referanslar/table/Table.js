@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Table(props) {
+  
   const [open, setOpen] = React.useState(false);
   const [referenceUrl, setReferenceUrl] = useState(
     props.reference.referenceUrl

@@ -1,8 +1,5 @@
 import "./Home.css";
 import video from "./1.gif";
-import Calisma from "./calisma.jpg";
-import Oturma from "./oturma.jpg";
-import nar14 from "./nar14.jpg";
 import investment from "./investment.jpg";
 import education from "./education.jpg";
 import life from "./life.jpg";
@@ -10,8 +7,13 @@ import health from "./health.jpg";
 import Mail from "../mail/Mail";
 import Interior from "../services-interior/Interior";
 import Investment from "../investment/Investment";
-import React from 'react';
+import React, { useEffect } from 'react';
+
+
+
 function Home() {
+
+
   return (
     <div className="row">
       <div
@@ -41,20 +43,20 @@ function Home() {
       </div>
       <div className="row" style={{margin:"0%",padding:"1%"}}>
           <Interior
-                photo={nar14}
+                photo={'1LZTxibFFvhoQTPxw1GUUStwsnInyfkyl'}
                 title="Türk Vatandaşlığı"
                 uzanti="/hizmetlerimiz/turk-vatandasligi"
                 explain="Yatırım yoluyla Türk vatandaşlığı (Türkiye’den ev alan yabancılara vatandaşlık) 2018 yeni programının tüm detaylarını ve danışmanlık hizmetlerimizin kapsamını burada bulabilirsiniz."
                 
             />
             <Interior
-                photo={Calisma}
+                photo={"1UUKWt898yMXnzR1DDJHwky34eJ7T2ODX"}
                 title="Çalışma İzni"
                 uzanti="/hizmetlerimiz/calisma-izni"
                 explain="Yabancıların Türkiye’de çalışma esaslarını düzenleyen 6735 Sayılı Uluslarası işgücü kanunu ve yönetmeliğine göre Çalışma izni hakkında tüm sorularınıza bu sayfamızda cevap bulabilirsiniz."
             />
             <Interior
-                photo={Oturma}
+                photo={"1lr4LRsHya9kh5Q5fg8xi1_AHmxhn9BJj"}
                 title="Oturma İzni"
                 uzanti="/hizmetlerimiz/oturma-izni"
                 explain="Türkiye’de yabancılar için ikamet izni çeşitleri, başvuru yöntemleri ve başvuruların nasıl yapılacağına dair videolu anlatımlarla Oturma izni ile ilgili herşeyi detaylı anlatıyoruz."

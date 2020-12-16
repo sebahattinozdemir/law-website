@@ -18,7 +18,7 @@ function Service() {
         setServices(
           snapshot.docs.map((doc) => ({
             id: doc.id,
-            url:doc.data().url,
+            url:doc.data().url.substring(doc.data().url.lastIndexOf('file')+7, doc.data().url.lastIndexOf('/')),
             heading: doc.data().heading,
             serviceContent: doc.data().service_content,
             underServiceHead1: doc.data().under_service_head1,
@@ -32,7 +32,7 @@ function Service() {
       });
 
     console.log(services);
-  }, [services]);
+  }, []);
 
     return (
         <div >
@@ -44,7 +44,7 @@ function Service() {
           <div className="row" style={{margin:"0%",padding:"1%"}}>
 
           {services.map((service,index) => (
-            <Interior photo = {h1} title={service.heading} uzanti={"/hizmetlerimiz/"+service.heading} content = {service}
+            <Interior photo = {service.url} title={service.heading} uzanti={"/hizmetlerimiz/"+service.heading} content = {service}
             more="Daha Fazla Bilgi" divert={"/hizmetlerimiz/"+service.heading}  
             />
           ))}

@@ -10,7 +10,7 @@ import db from "./../../../../firebase";
 import firebase from "firebase";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-import "./Table.css"
+import "./Table.css";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -25,17 +25,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Table(props) {
-  const [openUpdate, setOpenUpdate] = React.useState(false);
-  const handleClickOpenUpdate = () => {
-    setOpenUpdate(true);
-  };
-  const handleCloseUpdate = () => {
-    setOpenUpdate(false);
-  };
-  const classes = useStyles();
 
-  const [url, setUrl] = useState(props.service.url);
-  const [heading, setHeading] = useState(props.service.heading);
+  const [openUpdate, setOpenUpdate] = React.useState(false);
+
+  const [urlName, setUrl] = useState(props.service.url);
+  const [headingName, setHeading] = useState(props.service.heading);
   const [serviceContent, setServiceContent] = useState(props.service.heading);
   const [underServiceText1, setUnderServiceText1] = useState(
     props.service.underServiceText1
@@ -56,12 +50,23 @@ function Table(props) {
     props.service.underServiceHead3
   );
 
+  const handleClick = () => {
+    setOpenUpdate(true);
+  };
+  const handleClose = () => {
+    setOpenUpdate(false);
+  };
+  const classes = useStyles();
+
+  
+
   const guncelle = (e) => {
     e.preventDefault();
+
     db.collection("services").doc(props.service.id).set(
       {
-        url:url,
-        heading: heading,
+        url: urlName,
+        heading: headingName,
         service_content: serviceContent,
         under_service_head1: underServiceHead1,
         under_service_head2: underServiceHead2,
@@ -73,6 +78,7 @@ function Table(props) {
       },
       { merge: true }
     );
+
     setOpenUpdate(false);
   };
   return (
@@ -80,7 +86,7 @@ function Table(props) {
       <Dialog
         fullScreen
         open={openUpdate}
-        onClose={handleCloseUpdate}
+        onClose={handleClose}
         TransitionComponent={Transition}
       >
         <AppBar className={classes.appBar}>
@@ -88,7 +94,7 @@ function Table(props) {
             <IconButton
               edge="start"
               color="inherit"
-              onClick={handleCloseUpdate}
+              onClick={handleClose}
               aria-label="close"
             >
               <CloseIcon />
@@ -103,13 +109,13 @@ function Table(props) {
           >
             <form>
               <div class="form-group">
-              <label for="exampleFormControlInput1">Foto Url</label>
+                <label for="exampleFormControlInput1">Foto Url</label>
                 <input
                   type="text"
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Sayfa Adi"
-                  value={url}
+                  value={urlName}
                   onChange={(event) => setUrl(event.target.value)}
                 />
               </div>
@@ -120,7 +126,7 @@ function Table(props) {
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Sayfa Adi"
-                  value={heading}
+                  value={headingName}
                   onChange={(event) => setHeading(event.target.value)}
                 />
               </div>
@@ -132,19 +138,9 @@ function Table(props) {
                 <CKEditor
                   editor={ClassicEditor}
                   data={serviceContent}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
                   onChange={(event, editor) => {
                     const data = editor.getData();
                     setServiceContent(data);
-                  }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
                   }}
                 />
               </div>
@@ -165,23 +161,13 @@ function Table(props) {
                 <label for="exampleFormControlTextarea1">
                   Hizmet Alt Yazisi 1
                 </label>
-            
+
                 <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText1}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
                   onChange={(event, editor) => {
                     const data = editor.getData();
                     setUnderServiceText1(data);
-                  }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
                   }}
                 />
               </div>
@@ -202,22 +188,12 @@ function Table(props) {
                 <label for="exampleFormControlTextarea1">
                   Hizmet Alt Yazisi 2
                 </label>
-                  <CKEditor
+                <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText2}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
-                  onChange={(event, editor) => {
+                  onChange={(editor) => {
                     const data = editor.getData();
                     setUnderServiceText2(data);
-                  }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
                   }}
                 />
               </div>
@@ -238,22 +214,12 @@ function Table(props) {
                 <label for="exampleFormControlTextarea1">
                   Hizmet Alt Yazisi 3
                 </label>
-                  <CKEditor
+                <CKEditor
                   editor={ClassicEditor}
                   data={underServiceText3}
-                  onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
-                    console.log("Editor is ready to use!", editor);
-                  }}
                   onChange={(event, editor) => {
                     const data = editor.getData();
                     setUnderServiceText3(data);
-                  }}
-                  onBlur={(event, editor) => {
-                    console.log("Blur.", editor);
-                  }}
-                  onFocus={(event, editor) => {
-                    console.log("Focus.", editor);
                   }}
                 />
               </div>
@@ -270,7 +236,7 @@ function Table(props) {
       </Dialog>
 
       <tr>
-        <th scope="row">{props.index+1}</th>
+        <th scope="row">{props.index + 1}</th>
         <td>{props.service.heading}</td>
         <td>
           <button
@@ -283,7 +249,7 @@ function Table(props) {
           </button>
         </td>
         <td>
-          <button className="btn btn-primary" onClick={handleClickOpenUpdate}>
+          <button className="btn btn-primary" onClick={handleClick}>
             Guncelle
           </button>
         </td>

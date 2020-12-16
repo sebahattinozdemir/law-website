@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./Blog.css";
 function BlogInterior(props) {
   return (
-    <div className="row" style={{ margin: "0%", padding: "1%" }}>
+    
       <div
         className="col-lg-3 col-md-6 col-sm-6 col-12"
-        style={{ border: "1px #A4203A solid", borderRadius: "1em" }}
+        style={{ border: "1px #A4203A solid", borderRadius: "1em",margin:"1%" }}
       >
         <img
           src={"https://drive.google.com/uc?export=view&id="+props.photo}
@@ -25,7 +25,7 @@ function BlogInterior(props) {
           {props.title}
         </Link>
       </div>
-    </div>
+    
   );
 }
 
