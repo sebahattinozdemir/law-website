@@ -7,6 +7,7 @@ import Blog from "./admin-blog/Blog";
 import Iletisim from "./admin-iletisim/Iletisim";
 import Sifre from "./admin-password/Password";
 import Sidebar from "./admin-sidebar/Sidebar";
+import Questions from "./admin-sorular/Questions";
 
 
 function Admin() {
@@ -50,6 +51,11 @@ function Admin() {
           <div id="iletisim" style={{ width: "100%", display: "none" }}>
             <Iletisim/>
           </div>
+
+          <div id="sorular" style={{ width: "100%", display: "none" }}>
+            <Questions/>
+          </div>
+
 
           <div id="password" style={{ width: "100%", display: "none" }}>
             <Sifre/>

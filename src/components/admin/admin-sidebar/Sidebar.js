@@ -8,18 +8,21 @@ function Sidebar() {
     document.getElementById("referanslar").style.display = "none";
     document.getElementById("blog").style.display = "none";
     document.getElementById("iletisim").style.display = "none";
+    document.getElementById("sorular").style.display = "none";
   };
   const referanslar = () => {
     document.getElementById("hizmetlerimiz").style.display = "none";
     document.getElementById("referanslar").style.display = "block";
     document.getElementById("blog").style.display = "none";
     document.getElementById("iletisim").style.display = "none";
+    document.getElementById("sorular").style.display = "none";
   };
   const blog = () => {
     document.getElementById("hizmetlerimiz").style.display = "none";
     document.getElementById("referanslar").style.display = "none";
     document.getElementById("blog").style.display = "block";
     document.getElementById("iletisim").style.display = "none";
+    document.getElementById("sorular").style.display = "none";
   };
 
   const iletisim = () => {
@@ -27,6 +30,15 @@ function Sidebar() {
     document.getElementById("referanslar").style.display = "none";
     document.getElementById("blog").style.display = "none";
     document.getElementById("iletisim").style.display = "block";
+    document.getElementById("sorular").style.display = "none";
+  };
+
+  const soru = () => {
+    document.getElementById("hizmetlerimiz").style.display = "none";
+    document.getElementById("referanslar").style.display = "none";
+    document.getElementById("blog").style.display = "none";
+    document.getElementById("iletisim").style.display = "none";
+    document.getElementById("sorular").style.display = "block";
   };
 
   return (
@@ -85,6 +97,19 @@ function Sidebar() {
           }}
         >
           Iletisim
+        </button>
+        <button
+          className="btn btn-outline"
+          onClick={soru}
+          style={{
+            backgroundColor: "transparent",
+            color: "#fff",
+            fontSize: "16px",
+            display:'block',
+            width:'100%'
+          }}
+        >
+          Sorular
         </button>
       </div>
     </div>
