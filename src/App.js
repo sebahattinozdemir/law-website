@@ -111,7 +111,7 @@ function App() {
               />
             ))}
 
-            <Route path="/admin" component={Admin} />
+            <Route exact path="/admin" component={Admin} />
             <Route component={Notfound} />
           </Switch>
           <div
