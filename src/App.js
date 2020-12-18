@@ -1,36 +1,47 @@
 import "./App.css";
-import Footer from "./components/footer/Footer";
-import Menu from "./components/menu/Menu";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
-import Home from "./components/home-page/Home";
-import About from "./components/about-page/About";
-import Services from "./components/services-page/Service";
-import Reference from "./components/references-page/Reference";
-import Blog from "./components/blog/Blog";
-import Contact from "./components/contact-page/Contact";
-import Notfound from "./components/notfound/Notfound";
-import Turk from "./components/services-page/turk-vatandasligi/Turk";
-import Admin from "./components/admin/Admin";
-import Egitim from "./components/investment/turkiyede-egitim/Egitim";
-import TurkSaglik from "./components/investment/turkiyede-saglik/TurkSaglik";
-import Yasam from "./components/investment/turkiyede-yasam/Yasam";
-import Yatirim from "./components/investment/turkiyede-yatirim/Yatirim";
-import AltBlog from "./components/blog/Altblog";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import db from "./firebase";
-import ServicePage from "./components/services-page/ServicePage";
-import Login from "./components/admin/login/Login";
+import Menu from "./components/turkish/menu/Menu";
+import Footer from "./components/turkish/footer/Footer";
+import Home from "./components/turkish/home-page/Home";
+import About from "./components/turkish/about-page/About";
+import Services from "./components/turkish/services-page/Service";
+import Reference from "./components/turkish/references-page/Reference";
+import Blog from "./components/turkish/blog/Blog";
+import Contact from "./components/turkish/contact-page/Contact";
+import Notfound from "./components/turkish/notfound/Notfound";
+import Turk from "./components/turkish/services-page/turk-vatandasligi/Turk";
+import Admin from "./components/turkish/admin/Admin";
+import Egitim from "./components/turkish/investment/turkiyede-egitim/Egitim";
+import TurkSaglik from "./components/turkish/investment/turkiyede-saglik/TurkSaglik";
+import Yasam from "./components/turkish/investment/turkiyede-yasam/Yasam";
+import Yatirim from "./components/turkish/investment/turkiyede-yatirim/Yatirim";
+import AltBlog from "./components/turkish/blog/Altblog";
+import ServicePage from "./components/turkish/services-page/ServicePage";
+
+import EngMenu        from "./components/english/menu/Menu";
+import EngFooter      from "./components/english/footer/Footer";
+import EngHome        from "./components/english/home-page/Home";
+import EngAbout       from "./components/english/about-page/About";
+import EngServices    from "./components/english/services-page/Service";
+import EngReference   from "./components/english/references-page/Reference";
+import EngBlog        from "./components/english/blog/Blog";
+import EngContact     from "./components/english/contact-page/Contact";
+import EngNotfound    from "./components/english/notfound/Notfound";
+import EngTurk        from "./components/english/services-page/turk-vatandasligi/Turk";
+import EngAdmin       from "./components/english/admin/Admin";
+import EngEgitim      from "./components/english/investment/turkiyede-egitim/Egitim";
+import EngTurkSaglik  from "./components/english/investment/turkiyede-saglik/TurkSaglik";
+import EngYasam       from "./components/english/investment/turkiyede-yasam/Yasam";
+import EngYatirim     from "./components/english/investment/turkiyede-yatirim/Yatirim";
+import EngAltBlog     from "./components/english/blog/Altblog";
+import EngServicePage from "./components/english/services-page/ServicePage";
+
 
 function App() {
   const [services, setServices] = useState([]);
   const [blogs, setBlogs] = useState([]);
-
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     // fires once when the app loads
@@ -67,16 +78,45 @@ function App() {
     console.log(services);
   }, []);
 
+  const [state, setState] = useState(false);
+  const handleChange = () => {
+    setState(!state);
+  };
   return (
     <Router>
       <div className="app">
         <div
-          id="menu"
-          className="col-lg-2 col-md-2 col-sm-12"
-          style={{ margin: "0px", padding: "0px" }}
+          className="row"
+          style={{
+            backgroundColor: "#a41f3a",
+            padding: "1%",
+            paddingLeft: "6%",
+          }}
         >
-          <Menu />
+          {state === true ? (
+            <label onClick={handleChange}>English / Ingilizce</label>
+          ) : (
+            <label onClick={handleChange}>Turkish / Turkce</label>
+          )}
         </div>
+
+        {state === true ? (
+          <div
+            id="menu"
+            className="col-lg-2 col-md-2 col-sm-12"
+            style={{ margin: "0px", padding: "0px" }}
+          >
+            <Menu />
+          </div>
+        ) : (
+          <div
+            id="menu"
+            className="col-lg-2 col-md-2 col-sm-12"
+            style={{ margin: "0px", padding: "0px" }}
+          >
+            <EngMenu />
+          </div>
+        )}
 
         <div
           className="col-lg-10 col-md-10 col-sm-12"
@@ -84,6 +124,7 @@ function App() {
           style={{ margin: "0px", padding: "0px" }}
         >
           <Switch>
+
             <Route exact path="/" component={Home} />
             <Route exact path="/hakkimizda" component={About} />
             <Route exact path="/hizmetlerimiz" component={Services} />
@@ -103,6 +144,7 @@ function App() {
                 component={ServicePage}
               />
             ))}
+
             {blogs.map((blog, index) => (
               <Route
                 exact
@@ -113,13 +155,46 @@ function App() {
 
             <Route exact path="/admin" component={Admin} />
             <Route component={Notfound} />
+
+            <Route exact path="/eng"                  component={EngHome} />
+            <Route exact path="/about-us"             component={EngAbout} />
+            <Route exact path="/services"             component={EngServices} />
+            <Route exact path="/references"           component={EngReference} />
+            <Route exact path="/en-blog"              component={EngBlog} />
+            <Route exact path="/contact"              component={EngContact} />
+            <Route exact path="/turkish-citizenship"  component={EngTurk} />
+            <Route exact path="/education-in-turkey"  component={EngEgitim} />
+            <Route exact path="/health-in-turkey"     component={EngTurkSaglik} />
+            <Route exact path="/life-in-turkey"       component={EngYasam} />
+            <Route exact path="/investment-in-turkey" component={EngYatirim} />
+
+            {services.map((service, index) => (
+              <Route
+                exact
+                path={"/services/" + service.heading}
+                component={EngServicePage}
+              />
+            ))}
+
+            {blogs.map((blog, index) => (
+              <Route
+                exact
+                path={"/eng-blogs/" + blog.heading}
+                component={EngAltBlog}
+              />
+            ))}
+
+            <Route exact path="/eng-admin" component={EngAdmin} />
+            <Route component={EngNotfound} />
+          
+          
           </Switch>
           <div
             id="footer"
             className="col-12 mx-0 px-0"
             style={{ width: "100%", backgroundColor: "#f8f9fa" }}
           >
-            <Footer />
+            {state === true ? <Footer /> : <EngFooter />}
           </div>
         </div>
       </div>

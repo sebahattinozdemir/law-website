@@ -1,0 +1,12 @@
+.admin-ana{
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    height: 100vh;
+}
+
+.admin{
+    display: "none";
+    margin-left: "1%";
+    width:"99%";
+    margin-top:'0px';
+}

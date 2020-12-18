@@ -1,0 +1,17 @@
+.refphoto{
+    width:50%; 
+    height:18rem;
+    padding:2%;
+    float:left;
+    
+
+}
+.refname{
+    font-size: x-large;
+
+}
+
+.refjob{
+    font-size: small;
+
+}

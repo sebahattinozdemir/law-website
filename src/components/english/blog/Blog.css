@@ -1,0 +1,9 @@
+.b_title{
+    font-size: large;
+    color:black;
+}
+
+.b_title:hover{
+    color:#A4203A;
+    text-decoration: none;
+}
