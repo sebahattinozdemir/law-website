@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
@@ -78,13 +79,14 @@ function App() {
     console.log(services);
   }, []);
 
-  const [state, setState] = useState(false);
+  const [state, setState] = useState(true);
   const handleChange = () => {
     setState(!state);
   };
   return (
     <Router>
       <div className="app">
+       
         <div
           className="row"
           style={{
@@ -100,6 +102,7 @@ function App() {
           )}
         </div>
 
+         
         {state === true ? (
           <div
             id="menu"
@@ -154,8 +157,7 @@ function App() {
             ))}
 
             <Route exact path="/admin" component={Admin} />
-            <Route component={Notfound} />
-
+          
             <Route exact path="/eng"                  component={EngHome} />
             <Route exact path="/about-us"             component={EngAbout} />
             <Route exact path="/services"             component={EngServices} />
@@ -186,7 +188,7 @@ function App() {
 
             <Route exact path="/eng-admin" component={EngAdmin} />
             <Route component={EngNotfound} />
-          
+            <Route component={Notfound} />
           
           </Switch>
           <div

@@ -55,7 +55,7 @@ function Menu() {
             <HomeIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
-            <Link className="menu-item-link" to="/">
+            <Link className="menu-item-link" to="/eng">
               HOME
             </Link>
           </li>
@@ -64,7 +64,7 @@ function Menu() {
             <BusinessIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
-            <Link className="menu-item-link" to="/hakkimizda">
+            <Link className="menu-item-link" to="/about-us">
               ABOUT US
             </Link>
           </li>
@@ -73,8 +73,8 @@ function Menu() {
             <GavelIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
-            <Link className="menu-item-link" to="/hizmetlerimiz">
-              HİZMETLERİMİZ
+            <Link className="menu-item-link" to="/services">
+              SERVICES
             </Link>
           </li>
           <hr className="line" />
@@ -82,8 +82,8 @@ function Menu() {
             <GroupIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
-            <Link className="menu-item-link" to="/referanslarimiz">
-              REFERANSLARIMIZ
+            <Link className="menu-item-link" to="/references">
+              REFERENCES
             </Link>
           </li>
           <hr className="line" />
@@ -91,7 +91,7 @@ function Menu() {
             <AssignmentIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
-            <Link className="menu-item-link" to="/blog">
+            <Link className="menu-item-link" to="/en-blog">
               BLOG
             </Link>
           </li>
@@ -100,8 +100,8 @@ function Menu() {
             <ContactPhoneIcon style={{fontSize:"28px",color:"#A4203A"}}/>
             &nbsp;
             &nbsp;
-            <Link className="menu-item-link" to="/iletisim">
-              İLETİŞİM
+            <Link className="menu-item-link" to="/contact">
+              CONTACT
             </Link>
           </li>
         </ul>
