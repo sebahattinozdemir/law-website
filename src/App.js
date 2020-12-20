@@ -75,6 +75,7 @@ function App() {
           }))
         );
       });
+      
 
     db.collection("blogs")
       .orderBy("timeStamp", "desc")
