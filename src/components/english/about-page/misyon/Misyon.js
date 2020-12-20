@@ -10,27 +10,27 @@ export default class Misyon extends Component {
                    
                    <br/>
                    <div className="col-md-6 col-sm-6 col-12">
-                        <h3 style={{marginLeft:"1%"}}><img src={mission} alt="..."></img> Misyonumuz</h3>
-                        <p class="card-vizyon">Sunduğumuz tüm  hizmetlerde danışan ve müvekkil  güvenliğini ön planda tutan, saygılı, yetkin, kalifiye hizmet üreten ve sürekli kendini yenileyen, danışan-müvekkil odaklı ve güven bazlı dinamikleri ile hizmet veren danışmanlık ofisi olmak. 
+                        <h3 style={{marginLeft:"1%"}}><img src={mission} alt="..."></img> Our Mission</h3>
+                        <p class="card-vizyon">To be a consultancy office that prioritizes client and client security in all the services we offer, produces respectful, competent, qualified service and constantly renews itself, serving with client-client focused and trust-based dynamics. 
                         </p>
                         <ol className="ilkeler">
-                            <li>Hizmet sunduğumuz bireylerin yaşam kalitesini artırmak,</li>
-                            <li>Faaliyet gösterdiğimiz şehir, bölge ve ülkenin ekonomik, sosyal ve çevresel gelişimine katkıda bulunmaktır.</li>
+                            <li>To increase the quality of life of the individuals we serve,</li>
+                            <li>To contribute to the economic, social and environmental development of the city, region and country in which we operate.</li>
                         </ol>
                         <br/>
                    </div>
                 
                    <div className="col-md-6 col-sm-6 col-12">
-                        <h3 style={{marginLeft:"1%"}}><img src={vision} alt="..."></img> Vizyonumuz</h3>
-                        <p class="card-vizyon"> Aşağıda belirtilen ilkeler çerçevesinde müvekkillerimize, danışanlarımıza karşılaştığı problemlere, sahip olduğumuz tecrübe ve birikimlerle profesyonelce çözüm aramak ve uyuşmazlıkların en hızlı ve en kısa sürede bitirilmesini sağlamak ofisimizin yegâne amacıdır.</p>
+                        <h3 style={{marginLeft:"1%"}}><img src={vision} alt="..."></img> Our Vision</h3>
+                        <p class="card-vizyon"> Within the framework of the principles stated below, it is the sole purpose of our office to seek professional solutions to the problems faced by our clients and clients, with our experience and knowledge, and to ensure that the disputes are resolved in the fastest and the shortest time.</p>
                         <ol className="ilkeler">
-                            <li>Kaliteli hizmet üretimi,</li>
-                            <li>Mesleki uzmanlık,</li>
-                            <li>Günceli yakalayan teknoloji yatırımı,</li>
-                            <li>Kişisel verilerde gizlilik,</li>
-                            <li>İnsana saygı gösterme,</li>
-                            <li>Etkili ve hızlı adımları atabilme,</li>
-                            <li>Sosyal sorumluluk bilincine sahip olmaktır.</li>
+                            <li>Quality service production,</li>
+                            <li>Professional expertise,</li>
+                            <li>Technology investment that catches the latest,</li>
+                            <li>Privacy in personal data,</li>
+                            <li>Respect for people,</li>
+                            <li>Ability to take effective and fast steps,</li>
+                            <li>To have social responsibility awareness.</li>
                         </ol>
 
                         <br/>

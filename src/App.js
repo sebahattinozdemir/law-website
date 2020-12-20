@@ -3,6 +3,9 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import db from "./firebase";
+
+
+import TurFlag from "./turkish.ico";
 import Menu from "./components/turkish/menu/Menu";
 import Footer from "./components/turkish/footer/Footer";
 import Home from "./components/turkish/home-page/Home";
@@ -20,7 +23,11 @@ import Yasam from "./components/turkish/investment/turkiyede-yasam/Yasam";
 import Yatirim from "./components/turkish/investment/turkiyede-yatirim/Yatirim";
 import AltBlog from "./components/turkish/blog/Altblog";
 import ServicePage from "./components/turkish/services-page/ServicePage";
+import CalismaIzni from "./components/turkish/sabit-hizmet/calisma-izni/Calisma";
+import OturmaIzni from "./components/turkish/sabit-hizmet/oturma-izni/Oturma";
+import TurkVatandaslik from "./components/turkish/sabit-hizmet/turk-vatandaslik/TurkVatandaslik";
 
+import EngFlag from "./english.ico";
 import EngMenu        from "./components/english/menu/Menu";
 import EngFooter      from "./components/english/footer/Footer";
 import EngHome        from "./components/english/home-page/Home";
@@ -38,6 +45,10 @@ import EngYasam       from "./components/english/investment/turkiyede-yasam/Yasa
 import EngYatirim     from "./components/english/investment/turkiyede-yatirim/Yatirim";
 import EngAltBlog     from "./components/english/blog/Altblog";
 import EngServicePage from "./components/english/services-page/ServicePage";
+import EngWorking     from "./components/english/static-service/working-permit/WorkingPermit";
+import EngResidence   from "./components/english/static-service/residence-permit/ResidencePermit";
+import EngTurkishCit  from "./components/english/static-service/turkish-citizenship/TurkishCitizenship";
+
 
 
 function App() {
@@ -46,6 +57,7 @@ function App() {
 
   useEffect(() => {
     // fires once when the app loads
+    
     db.collection("services")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
@@ -87,27 +99,35 @@ function App() {
     <Router>
       <div className="app">
        
+       
+       <br/>
         <div
-          className="row"
+          className="row languageOption"
           style={{
-            backgroundColor: "#a41f3a",
+            position:"fixed",
+            top:"0",
+            width:"105%",
+            height:"5rem",
+            backgroundColor: "white",
             padding: "1%",
-            paddingLeft: "6%",
+            paddingLeft: "5rem",
+            overflow:"hidden",
+            
+      
+            
           }}
         >
           {state === true ? (
-            <label onClick={handleChange}>English / Ingilizce</label>
+            <label onClick={handleChange} style={{color:"black"}}><img src={EngFlag} style={{width:"2.5rem",height:"2.5rem",}}></img> &nbsp;English / Ingilizce</label>
           ) : (
-            <label onClick={handleChange}>Turkish / Turkce</label>
+            <label onClick={handleChange} style={{color:"black"}}><img src={TurFlag} style={{width:"2.5rem",height:"2.5rem"}}></img> &nbsp;Turkish / Turkce</label>
           )}
         </div>
-
-         
         {state === true ? (
           <div
             id="menu"
             className="col-lg-2 col-md-2 col-sm-12"
-            style={{ margin: "0px", padding: "0px" }}
+            style={{ margin: "0px", padding: "0px",marginTop:"3rem"}}
           >
             <Menu />
           </div>
@@ -115,9 +135,9 @@ function App() {
           <div
             id="menu"
             className="col-lg-2 col-md-2 col-sm-12"
-            style={{ margin: "0px", padding: "0px" }}
+            style={{ margin: "0px", padding: "0px",marginTop:"3rem"}}
           >
-            <EngMenu />
+            <EngMenu/>
           </div>
         )}
 
@@ -126,6 +146,7 @@ function App() {
           id="app-container"
           style={{ margin: "0px", padding: "0px" }}
         >
+          
           <Switch>
 
             <Route exact path="/" component={Home} />
@@ -139,6 +160,10 @@ function App() {
             <Route exact path="/turkiyede-saglik" component={TurkSaglik} />
             <Route exact path="/turkiyede-yasam" component={Yasam} />
             <Route exact path="/turkiyede-yatirim" component={Yatirim} />
+
+            <Route exact path="/türkiyede-calisma-izni" component={CalismaIzni}/>
+            <Route exact path="/türkiyede-oturma-izni" component={OturmaIzni} />
+            <Route exact path="/türk-vatandasligi-talebi" component={TurkVatandaslik} />
 
             {services.map((service, index) => (
               <Route
@@ -169,6 +194,12 @@ function App() {
             <Route exact path="/health-in-turkey"     component={EngTurkSaglik} />
             <Route exact path="/life-in-turkey"       component={EngYasam} />
             <Route exact path="/investment-in-turkey" component={EngYatirim} />
+
+            <Route exact path="/residence-permit-in-turkey"     component={EngResidence} />
+            <Route exact path="/working-permit-in-turkey"       component={EngWorking} />
+            <Route exact path="/turkish-citizenship-request" component={EngTurkishCit} />
+
+            
 
             {services.map((service, index) => (
               <Route

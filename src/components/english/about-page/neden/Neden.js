@@ -10,25 +10,25 @@ export default class Neden extends Component {
         
         return (
             <div className="row" style={{margin:"0%",padding:"1%",backgroundColor:"#EFEFEF"}}>
-                   <h3 style={{color:"#A4203A",marginLeft:"1%"}}>Neden Nar Göç ve Danışmanlık Bürosu</h3>
+                   <h3 style={{color:"#A4203A",marginLeft:"1%"}}>Why Nar Immigration and Consultancy Office</h3>
                    <br/>
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         
-                        <p class="card-baslik"><SecurityIcon style={{color:"#A4203A",fontSize:"larger"}}/>&nbsp; Güvenilirlik</p>
+                        <p class="card-baslik"><SecurityIcon style={{color:"#A4203A",fontSize:"larger"}}/>&nbsp; Reliability</p>
                         <p class="card-neden"> 
-                        İş ve ticaret ilişkilerinde öncelik güvenilirliktir. İnsanlar iş yapacağı kişiye önce güvenmek ister. Bu yüzden Nar Danışmanlık Ofisinin temelini “güven” oluşturur.</p>
+                        In business and trade relations, the priority is reliability. People want to trust the person they will do business with first. Therefore, the basis of Nar Consultancy Office is "trust".</p>
                         <br/>
                    </div>
                 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <p class="card-baslik"><DirectionsRunIcon style={{color:"#A4203A",fontSize:"larger"}}/>&nbsp; Kolay ve Hızlı Adımlar</p>
-                        <p class="card-neden"> Asıl amacımız her zaman danışanlarımızın ve müvekkillerimizin hayatını kolaylaştırmaktır. Doğru noktalara odaklanarak karmaşık yapılardan, zorlu ve can sıkıcı süreçlerden sizleri uzak tutarız.</p>
+                        <p class="card-baslik"><DirectionsRunIcon style={{color:"#A4203A",fontSize:"larger"}}/>&nbsp; Easy and Quick Steps</p>
+                        <p class="card-neden"> Our main goal is always to make the lives of our clients and clients easier. By focusing on the right points, we keep you away from complex structures, difficult and annoying processes.</p>
                         <br/>
                    </div>
                   
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <p class="card-baslik"><HowToRegIcon style={{color:"#A4203A",fontSize:"larger"}}/>&nbsp; Saygılı Olmak</p>
-                        <p class="card-neden"> Danışan ve müvekkillerimize  karşı saygılı olma en temel önceliğimizdir. Pozisyon, unvan, yaş, cinsiyet ya da diğer hiçbir farklılık bizim için ayırıcı bir özellik değildir. Her ne durum olursa olsun her zaman profesyonel bir tavırla saygı ve nezaketten yanayızdır.</p>
+                        <p class="card-baslik"><HowToRegIcon style={{color:"#A4203A",fontSize:"larger"}}/>&nbsp; Be Respectful</p>
+                        <p class="card-neden"> Being respectful to our clients and clients is our main priority. Position, title, age, gender or any other difference is not a distinctive feature for us. Regardless of the situation, we always stand for respect and courtesy in a professional manner.</p>
                         <br/>
                    </div>
                    

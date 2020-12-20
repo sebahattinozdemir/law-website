@@ -5,4 +5,17 @@
     overflow: hidden;
 }
 
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 768px) {
+  .languageOption{
+    background-color: #A4203A !important;
+    z-index:100 !important; 
+    width:105% !important;
+    
+  }
 
+  .languageOption label{
+    color:white !important;
+    margin-top: 1rem !important;
+  }
+}

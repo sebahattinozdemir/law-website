@@ -7,21 +7,21 @@ export default class Altheader extends Component {
     render(){
         const {alttitle,title,icon}=this.props;
     return (
-        <div class="row p-4" style={{ backgroundColor: "#A4203A",paddingTop:"5rem",width:"100%",paddingLeft:"5rem",height:"20rem",marginLeft:"0px"}}>
+        <div class="row p-4" style={{ backgroundColor: "#A4203A",paddingTop:"3rem",width:"100%",paddingLeft:"5rem",height:"15rem",marginLeft:"0px",marginTop:"-2rem"}}>
           <div className="col-12">
          
                 <div className="genel">
 
-                    <Link className="ana2" to="/" >
-                            Ana Sayfa
+                    <Link className="ana2" to="/eng" >
+                            Home Page
                             
                     </Link>
                     
-                    <Link className="subtitle1" to="/hizmetlerimiz">
+                    <Link className="subtitle1" to="/services">
                             &nbsp;
                             <ArrowForwardIcon/>
                             &nbsp; 
-                            Hizmetlerimiz
+                            Services
                     </Link>   
                     <p className="alttitle">
                             &nbsp;
@@ -30,7 +30,7 @@ export default class Altheader extends Component {
                             {alttitle}
                     </p>
                 </div>
-                    <br/>
+                    
                     <br/>
                     <br/>
 

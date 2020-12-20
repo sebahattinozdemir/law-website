@@ -7,8 +7,8 @@ export default function Yasam() {
     return (
         <div>
            <Header
-                subtitle="Türkiye'de Yaşam"
-                title="Türkiye'de Yaşam"
+                subtitle="Life in Turkey"
+                title="Life in Turkey"
                 icon={<EmojiPeopleIcon style={{fontSize:"35px"}}/>}
             />
             
@@ -17,23 +17,22 @@ export default function Yasam() {
                     
           
                    <div className="col-12" style={{marginLeft:"1%",marginRight:"1%"}}>
-                           <p class="card-text1">Çalışma izni Türkiye için alınması karışık bir izindir. Yabancı uyruktan başvuru yapıldığı zaman mutlaka bir profesyonel eşliğinde yapılmalıdır. Amatörce hazırlanan başvurular direkt reddedildiği için cebinizdeki paradan olma şansınız var. Bizim sizlere sunacağı %100 garantili hizmet sayesinde artık boş yere para harcamaya son. Danışmanlık hizmetimiz işinde uzman kişiler tarafından verilmektedir. Çalışma izni başvurusunda bulunacak kişilerden detaylı evrakları talep eder, incelemeden sonra geri dönüş yaparız. Reddedilme şansı olan başvuruları müşterilerimize söyleyerek onların parasını boş yere almayız. Böylece paranız cebinde kalır, boş danışmanlık hizmetine para vermiş olmazsınız.</p>
+                           <p class="card-text1">Turkey is a complicated work permit to be allowed for. When an application is made from a foreign national, it must be accompanied by a professional. You have the chance to be with the money in your pocket as the applications prepared in an amateurish way are rejected directly. Thanks to our 100% guaranteed service, no more wasting money. Our consultancy service is provided by experts in their business. We request detailed documents from people who will apply for a work permit, and we return after the examination. We do not waste their money by telling our customers about applications that have a chance to be rejected. Thus, your money is in your pocket and you will not spend money for idle consultancy service.</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                           <h3 style={{color:"#A4203A"}}><EmojiPeopleIcon style={{fontSize:"x-large",color:"black"}}/> Türkiye için Çalışma İzni</h3>
-                           <p class="card-text1">Uluslararası geçerliliğe sahip Anayasa 6735 sayılı uluslararası işgücü kanununa göre yabancılar sadece geçerli bir iş sunduğunda Türkiye’de çalışma izni alabilir. Bu kanun kapsamında çalışacak olan yabancı uyruklu kişinin çalışma izni başvurusu işveren tarafından yapılır. İşveren kişiler ise işinde profesyonel olan çalışma izni danışmanları ile çalışır. Firmamız da bu konuda uzman olduğu için oldukça geniş referanslara sahiptir. Dolayısı ile bir yabancı kesinlikle kendi çalışma izni için başvuru yapamaz.</p>
+                           <h3 style={{color:"#A4203A"}}><EmojiPeopleIcon style={{fontSize:"x-large",color:"black"}}/> Life in Turkey Part-1</h3>
+                           <p class="card-text1">Another issue that is curious about foreign employees is the minimum wage. First of all salaries paid in the amount equal to the minimum wage paid to Turkey in Turkey for foreigners. In addition, the position and competence of employees should be taken into account. Senior executives, pilots should receive a salary to be pre-authorized engineers more than 6.5 times the minimum wage in Turkey. Unit or branch managers should earn 4 times more salary. Only foreign nationals who will work in household services are paid equal to the minimum wage. In all other sectors, 1.5 times the minimum wage must be paid. People who want to extend their working time should also not have a premium debt.</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                           <h3 style={{color:"#A4203A"}}><EmojiPeopleIcon style={{fontSize:"x-large",color:"black"}}/> Çalışma İzni Başvuru Yöntemleri</h3>
-                           <p class="card-text1">T.C Çalışma ve Sosyal Güvenlik Bakanlığına E-Devlet üzerinden online olarak başvuru yapabiliyorlar.
-                            Eğer yabancı uyruklu kişinin Türkiye üzerinde oturma izni yoksa farklı bir yöntem izlenir. Çalışacak olan yabancı kişinin geldiği ülkede resmî bir ikamet adresi olmalıdır. Resmî ikametgah adresi olan ülkenin ilgili Türk Büyükelçiliği veya konsolosluğuna başvuru yapması gerekmektedir. İki türdeki başvuru da yabancı uyruklu kişiler için online olarak internet üzerinden yapılır.</p>
+                           <h3 style={{color:"#A4203A"}}><EmojiPeopleIcon style={{fontSize:"x-large",color:"black"}}/> Life in Turkey Part-2</h3>
+                           <p class="card-text1">Another issue that is curious about foreign employees is the minimum wage. First of all salaries paid in the amount equal to the minimum wage paid to Turkey in Turkey for foreigners. In addition, the position and competence of employees should be taken into account. Senior executives, pilots should receive a salary to be pre-authorized engineers more than 6.5 times the minimum wage in Turkey. Unit or branch managers should earn 4 times more salary. Only foreign nationals who will work in household services are paid equal to the minimum wage. In all other sectors, 1.5 times the minimum wage must be paid. People who want to extend their working time should also not have a premium debt.</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12" >
-                           <h3 style={{color:"#A4203A"}}><EmojiPeopleIcon style={{fontSize:"x-large",color:"black"}}/> Yabancı Uyruklu Çalışanlar için Asgari Ücret</h3>
-                           <p class="card-text1" >Yabancı uyruklu çalışanlar için merak edilen bir diğer konu ise asgari ücrettir. Öncelikle yabancılar için Türkiye’de Türklere ödenen asgari ücretin eşit olan miktarında maaş ödenir. Ayrıca çalışanların konumu ve yeterliliği de göz önüne alınmalıdır. Üst düzey yönetici, pilot, ön izinli mühendisler Türkiye’nin asgari ücretinin 6.5 katı fazla olacak şekilde maaş almalıdırlar. Birim veya şube müdürleri ise 4 kat fazla maaş almalıdır. Sadece ev hizmetlerinde çalışacak yabancı uyruklu kişilere asgari ücretin denginde ödeme yapılır. Diğer tüm sektörlerde asgari ücretin 1,5 kat fazlası ödenmek zorundadır. Çalışma süresi uzatmak isteyen kişilerin de prim borcu olmaması gerekmektedir.</p>
+                           <h3 style={{color:"#A4203A"}}><EmojiPeopleIcon style={{fontSize:"x-large",color:"black"}}/> Life in Turkey Part-3</h3>
+                           <p class="card-text1" >Another issue that is curious about foreign employees is the minimum wage. First of all salaries paid in the amount equal to the minimum wage paid to Turkey in Turkey for foreigners. In addition, the position and competence of employees should be taken into account. Senior executives, pilots should receive a salary to be pre-authorized engineers more than 6.5 times the minimum wage in Turkey. Unit or branch managers should earn 4 times more salary. Only foreign nationals who will work in household services are paid equal to the minimum wage. In all other sectors, 1.5 times the minimum wage must be paid. People who want to extend their working time should also not have a premium debt.</p>
                    </div>
                  
                   

@@ -156,6 +156,7 @@ class Mail extends Component {
             justifyContent: "center",
             backgroundColor: "#333",
             marginLeft:"1%",
+            marginTop:"-1%",
             
           }}
         >
@@ -168,7 +169,7 @@ class Mail extends Component {
                 padding:"2%",
               }}
             >
-               BİZİMLE İLETİŞİME GEÇEBİLİRSİNİZ 
+               YOU CAN CONTACT WITH US 
             </h2>
             <p
               style={{
@@ -178,8 +179,7 @@ class Mail extends Component {
                 color: "white",
               }}
             >
-              Size yardımcı olabilmek için buradayız.
-            </p>
+              We are here to help you.</p>
             <form id="contact-form" style={{marginLeft:"10%",marginRight:"10%"}} onSubmit={this.handleSubmit} noValidate>
               <div className="row m-5" >
                 <div className="col-12">
@@ -191,7 +191,7 @@ class Mail extends Component {
                       formErrors.name.length > 0 ? "error" : null
                     }`}
                     onChange={this.handleChange}
-                    placeholder="Adınız"
+                    placeholder="Your name"
                     noValidate
                   ></input>
                   {formErrors.name.length > 0 && (
@@ -209,7 +209,7 @@ class Mail extends Component {
                       formErrors.email.length > 0 ? "error" : null
                     }`}
                     onChange={this.handleChange}
-                    placeholder="E-mail adresiniz"
+                    placeholder="Your Email address"
                     noValidate
                   ></input>
                   {formErrors.email.length > 0 && (
@@ -228,7 +228,7 @@ class Mail extends Component {
                       formErrors.subject.length > 0 ? "error" : null
                     }`}
                     onChange={this.handleChange}
-                    placeholder="Konu"
+                    placeholder="Your Subject"
                     noValidate
                   ></input>
                   {formErrors.subject.length > 0 && (
@@ -245,7 +245,7 @@ class Mail extends Component {
                       formErrors.message.length > 0 ? "error" : null
                     }`}
                     onChange={this.handleChange}
-                    placeholder="Mesajınız"
+                    placeholder="Your Message"
                     noValidate
                   ></textarea>
                   {formErrors.message.length > 0 && (
@@ -265,7 +265,7 @@ class Mail extends Component {
                     type="submit"
                     style={{ width: "100%",backgroundColor:"#A4203A" }}
                   >
-                    <b>Gönder</b>
+                    <b>Submit</b>
                   </button>
                 </div>
               </div>

@@ -1,12 +1,17 @@
 import "./Home.css";
 import video from "./1.gif";
+import Anıtkabir from "./anıtkabir.gif";
 import investment from "./investment.jpg";
 import education from "./education.jpg";
 import life from "./life.jpg";
 import health from "./health.jpg";
+import working from "./calisma.jpg";
+import residence from "./oturma.jpg";
+import turkish from "./turkishcitizenship.jpg";
 import Mail from "../mail/Mail";
 import Interior from "../services-interior/Interior";
 import Investment from "../investment/Investment";
+import StaticService from "../static-service/StaticService";
 import React, { useEffect } from 'react';
 
 
@@ -18,76 +23,77 @@ function Home() {
     <div className="row">
       <div
         className="col-12 slide"
-        style={{ position: "relative", marginLeft:'1%',marginRight:'1%' }}
+        style={{ position: "relative", marginLeft:'1%',marginRight:'1%',marginTop:"-2rem" }}
       >
 
         <img
-          src={video}
+          src={Anıtkabir}
           class="card-img-top"
           alt="..."
-          style={{ width: "100%", height: "25vw"}}
+          style={{ width: "100%", height: "20vw"}}
         ></img>
 
         <p
           style={{
             position: "absolute",
-            top: "65%",
+            top: "5%",
             left: "15%",
             color: "white",
             fontSize:"xx-large"
             
           }}
         >
-          DAHA HIZLI VE DAHA GÜVENLİ ADIMLAR İÇİN BİZİ TERCİH ETMELİSİNİZ...
+          YOU SHOULD CHOOSE US FOR QUICKER AND SAFER STEPS....
         </p>
       </div>
       <div className="row" style={{margin:"0%",padding:"1%"}}>
-          <Interior
-                photo={'1LZTxibFFvhoQTPxw1GUUStwsnInyfkyl'}
-                title="Türk Vatandaşlığı"
-                uzanti="/hizmetlerimiz/turk-vatandasligi"
-                explain="Yatırım yoluyla Türk vatandaşlığı (Türkiye’den ev alan yabancılara vatandaşlık) 2018 yeni programının tüm detaylarını ve danışmanlık hizmetlerimizin kapsamını burada bulabilirsiniz."
+            <StaticService
+                Sphoto={working}
+                Stitle="Working Permit in Turkey"
+                Suzanti="/working-permit-in-turkey"
+                Sexplain="Foreigners in Turkey working principles of International Law No. 6735 regulates all of your questions about the study by the labor laws and regulations permit this page you can find the answer."
+            />
+            <StaticService
+                Sphoto={residence}
+                Stitle="Residence Permit in Turkey"
+                Suzanti="/residence-permit-in-turkey"
+                Sexplain="The kinds of residence permit for foreigners in Turkey, application methods and applications of how everything about living with the permission to do a detailed video explanation that we're telling."
+            />
+          <StaticService
+                Sphoto={turkish}
+                Stitle="Turkish Citizenship"
+                Suzanti="/turkish-citizenship-request"
+                Sexplain="Turkish citizenship through investment (home area of citizenship to foreigners from Turkey) You can find all the details and the scope of our consulting services in 2018 a new program here."
                 
             />
-            <Interior
-                photo={"1UUKWt898yMXnzR1DDJHwky34eJ7T2ODX"}
-                title="Çalışma İzni"
-                uzanti="/hizmetlerimiz/calisma-izni"
-                explain="Yabancıların Türkiye’de çalışma esaslarını düzenleyen 6735 Sayılı Uluslarası işgücü kanunu ve yönetmeliğine göre Çalışma izni hakkında tüm sorularınıza bu sayfamızda cevap bulabilirsiniz."
-            />
-            <Interior
-                photo={"1lr4LRsHya9kh5Q5fg8xi1_AHmxhn9BJj"}
-                title="Oturma İzni"
-                uzanti="/hizmetlerimiz/oturma-izni"
-                explain="Türkiye’de yabancılar için ikamet izni çeşitleri, başvuru yöntemleri ve başvuruların nasıl yapılacağına dair videolu anlatımlarla Oturma izni ile ilgili herşeyi detaylı anlatıyoruz."
-            />
+           
           
       </div>
      
       <div className="row" style={{margin:"0%",padding:"1%"}}>
             <Investment
                 Iphoto={investment}
-                Ititle="Türkiye'de Yatırım"
-                Iuzanti="/turkiyede-yatirim"
-                Iexplain="Türkiye 2017 yılı itibari ile dünya üzerinde en hızlı büyüyen ikinci ülke konumundadır ve Türkiye’de her şey bir yatırım aracıdır, nereye ve nasıl yatırım yapacağınızı bu sayfamızda öğretiyoruz."
+                Ititle="Investment in Turkey"
+                Iuzanti="/investment-in-turkey"
+                Iexplain="Turkey is the second fastest growing country in the world by the year 2017 and everything is an investment tool in Turkey, where we teach and how we invest to this page."
             />
             <Investment
                 Iphoto={life}
-                Ititle="Türkiye'de Yaşam"
-                Iuzanti="/turkiyede-yasam"
-                Iexplain="Türkiye’de huzurlu bir yaşam için nasıl davranmalısınız, misafiri olduğunuz ülkenin örf ve adetleri nelerdir, Türkler neleri sever neleri sevmez, başucunuzdan ayırmayacağınız bir rehber hazırladık."
+                Ititle="Life in Turkey"
+                Iuzanti="/life-in-turkey"
+                Iexplain="How should you act for a peaceful life in Turkey, what are the traditions and customs of the country in which you are a guest, the Turks do not like what like what we have prepared a guide that you allocate your bedside"
             />
             <Investment
                 Iphoto={health}
-                Ititle="Türkiye'de Sağlık"
-                Iuzanti="/turkiyede-saglik"
-                Iexplain="Coğrafyanın en büyük şehir hastaneleri, dünya üzerinde ün yapmış özel hastaneleri ve kalifiye doktorları ile Türkiye’de sağlık ve tedavi hakkında bilmeniz gereken her şeyi burada yazdık."
+                Ititle="Health in Turkey"
+                Iuzanti="/health-in-turkey"
+                Iexplain="Geography largest city hospitals, private hospitals and has made a reputation all over the world have written here is everything you need to know about health care and treatment by qualified doctors in Turkey."
             />
             <Investment
                 Iphoto={education}
-                Ititle="Türkiye'de Eğitim"
-                Iuzanti="/turkiyede-egitim"
-                Iexplain="Yabancı öğrenciler için bir cennet olan Türkiye’de hangi okullarda nasıl eğitimler veriliyor, okul kayıt aşamaları, öğrenci ikamet izinleri, mezuniyet sonrası iş bulma süreçlerini detaylı bir şekilde öğretiyoruz."
+                Ititle="Education in Turkey"
+                Iuzanti="/education-in-turkey"
+                Iexplain="Which is a paradise for foreign students are given training in how schools in Turkey which, enrollment stage, student residence permits, finding a job after graduation process in a detailed way we teach."
             />
       </div>
             

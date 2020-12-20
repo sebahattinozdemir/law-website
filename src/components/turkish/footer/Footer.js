@@ -86,7 +86,7 @@ function Footer() {
             <hr/> 
                     <div className="patent">
                         
-                            <p style={{fontSize:"12px",color:"black",paddingLeft:"15px",float:"left"}}> ©2020 All Rights Reserved</p> 
+                            <p style={{fontSize:"12px",color:"black",paddingLeft:"15px",float:"left"}}> ©2020 Tüm Hakları Saklıdır</p> 
                             &nbsp; &nbsp;
                             <p style={{fontSize:"12px",color:"black",paddingRight:"15px",float:"right",textAlign:"right"}}> ®Se<b>B</b>er Tech</p>
                     </div>

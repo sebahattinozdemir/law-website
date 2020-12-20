@@ -50,8 +50,8 @@ function Contact() {
   return (
     <div>
       <Header
-        subtitle="İletişim"
-        title="İletişim"
+        subtitle="Contact"
+        title="Contact"
         icon={<ContactPhoneIcon style={{ fontSize: "35px" }} />}
       />
 

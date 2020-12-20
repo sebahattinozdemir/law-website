@@ -9,19 +9,7 @@ function Basic() {
       <div className="col-md-6 col-sm-6 col-12">
         <p className="card-basic">
           {" "}
-          NAR Danışmanlık , Ankara merkezli bir danışmanlık ofisi olup Türkiye
-          genelindeki ve yurt dışındaki çözüm ortakları ve bünyesindeki
-          avukatlarla birlikte yerli ve yabancı danışanlarına ticari ve hukuki
-          danışmanlık hizmetleri sunmaktadır. Güncel hukuki ve ticari meseleleri
-          takip eden Danışmanlık ofisimiz; Anayasa Mahkemesi, Yargıtay ve
-          Danıştay tarafından verilen güncel emsal kararları, ticari ve finansal
-          değişimleri revizyonist bakış açısı ile bilimsel çalışmalar ışığında
-          gözden geçirerek uygulamaya koyar. Ofisimiz,
-          müvekkil-vekil, danışan-danışman arasındaki karşılıklı güven, insana
-          saygı ve gizlilik prensipleri üzerine temellendirilmiş ve bu çerçevede
-          değişen zaman koşullarına uygun olarak verdiğimiz hizmetin kalitesini
-          arttırmak ve en üst düzeye çıkarmak amacıyla ofisimiz sürekli gelişim
-          içerisinde olmuştur.
+          NAR Consulting is a consultancy firm based in Ankara with partners and lawyers in general, except in Turkey and abroad within the domestic and international airports Consult offers commercial and legal advisory services. Our Consultancy office, which follows current legal and commercial issues; The Constitutional Court reviews the current precedent decisions, commercial and financial changes made by the Court of Cassation and the Council of State in the light of scientific studies with a revisionist perspective and puts them into practice. Our office is based on the principles of mutual trust between client-proxy, client-consultant, respect for human and confidentiality, and in this context, our office has been in continuous development in order to increase and maximize the quality of the service we provide in accordance with changing time conditions.
         </p>
         <br />
        

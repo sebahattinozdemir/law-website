@@ -13,8 +13,8 @@ function About() {
     return (
         <div >
             <Header
-                subtitle="Hakkımızda"
-                title="Hakkımızda"
+                subtitle="About"
+                title="About"
                 icon={<BusinessIcon style={{fontSize:"35px"}}/>}
                 
             />

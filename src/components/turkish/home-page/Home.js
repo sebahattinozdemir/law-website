@@ -4,8 +4,11 @@ import investment from "./investment.jpg";
 import education from "./education.jpg";
 import life from "./life.jpg";
 import health from "./health.jpg";
+import calisma from "./calisma.jpg";
+import oturma from "./oturma.jpg";
+import turkishimg from "./turkishcitizenship.jpg";
 import Mail from "../mail/Mail";
-import Interior from "../services-interior/Interior";
+import SabitHizmet from "../sabit-hizmet/SabitHizmet";
 import Investment from "../investment/Investment";
 import React, { useEffect } from 'react';
 
@@ -18,14 +21,14 @@ function Home() {
     <div className="row">
       <div
         className="col-12 slide"
-        style={{ position: "relative", marginLeft:'1%',marginRight:'1%' }}
+        style={{ position: "relative", marginLeft:'1%',marginRight:'1%',marginTop:"-2rem"}}
       >
 
         <img
           src={video}
           class="card-img-top"
           alt="..."
-          style={{ width: "100%", height: "25vw"}}
+          style={{ width: "100%", height: "20vw"}}
         ></img>
 
         <p
@@ -42,24 +45,24 @@ function Home() {
         </p>
       </div>
       <div className="row" style={{margin:"0%",padding:"1%"}}>
-          <Interior
-                photo={'1LZTxibFFvhoQTPxw1GUUStwsnInyfkyl'}
-                title="Türk Vatandaşlığı"
-                uzanti="/hizmetlerimiz/turk-vatandasligi"
-                explain="Yatırım yoluyla Türk vatandaşlığı (Türkiye’den ev alan yabancılara vatandaşlık) 2018 yeni programının tüm detaylarını ve danışmanlık hizmetlerimizin kapsamını burada bulabilirsiniz."
+          <SabitHizmet
+                Sphoto={turkishimg}
+                Stitle="Türk Vatandaşlığı Talebi"
+                Suzanti="/türk-vatandasligi-talebi" 
+                Sexplain="Yatırım yoluyla Türk vatandaşlığı (Türkiye’den ev alan yabancılara vatandaşlık) 2018 yeni programının tüm detaylarını ve danışmanlık hizmetlerimizin kapsamını burada bulabilirsiniz."
                 
             />
-            <Interior
-                photo={"1UUKWt898yMXnzR1DDJHwky34eJ7T2ODX"}
-                title="Çalışma İzni"
-                uzanti="/hizmetlerimiz/calisma-izni"
-                explain="Yabancıların Türkiye’de çalışma esaslarını düzenleyen 6735 Sayılı Uluslarası işgücü kanunu ve yönetmeliğine göre Çalışma izni hakkında tüm sorularınıza bu sayfamızda cevap bulabilirsiniz."
+            <SabitHizmet
+                Sphoto={calisma}
+                Stitle="Çalışma İzni"
+                Suzanti="/türkiyede-calisma-izni"
+                Sexplain="Yabancıların Türkiye’de çalışma esaslarını düzenleyen 6735 Sayılı Uluslarası işgücü kanunu ve yönetmeliğine göre Çalışma izni hakkında tüm sorularınıza bu sayfamızda cevap bulabilirsiniz."
             />
-            <Interior
-                photo={"1lr4LRsHya9kh5Q5fg8xi1_AHmxhn9BJj"}
-                title="Oturma İzni"
-                uzanti="/hizmetlerimiz/oturma-izni"
-                explain="Türkiye’de yabancılar için ikamet izni çeşitleri, başvuru yöntemleri ve başvuruların nasıl yapılacağına dair videolu anlatımlarla Oturma izni ile ilgili herşeyi detaylı anlatıyoruz."
+            <SabitHizmet
+                Sphoto={oturma}
+                Stitle="Oturma İzni"
+                Suzanti="/türkiyede-oturma-izni"
+                Sexplain="Türkiye’de yabancılar için ikamet izni çeşitleri, başvuru yöntemleri ve başvuruların nasıl yapılacağına dair videolu anlatımlarla Oturma izni ile ilgili herşeyi detaylı anlatıyoruz."
             />
           
       </div>

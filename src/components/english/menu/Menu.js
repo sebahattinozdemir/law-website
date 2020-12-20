@@ -19,7 +19,7 @@ function Menu() {
         <Link className="menu-item-link logo" to="/">
         <img
               
-              style={{ height: "15rem", width: "80%",align:"center",marginLeft:"1rem"}}
+              style={{ height: "12rem", width: "80%",align:"center",marginLeft:"1rem"}}
               src={NarV5}
               alt="hukuk"
               title="Nar Göç ve Danışmanlık"

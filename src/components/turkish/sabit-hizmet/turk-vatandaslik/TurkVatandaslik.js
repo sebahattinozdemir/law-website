@@ -1,11 +1,10 @@
 import React from 'react';
-import "./Turk.css";
 import StarRateIcon from '@material-ui/icons/StarRate';
 import Altheader from '../../altheader/Altheader'
 
 
 
-export default function Turk() {
+export default function TurkVatandaslik() {
     return (
         <div>
              <Altheader

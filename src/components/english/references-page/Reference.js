@@ -27,8 +27,8 @@ function Reference() {
     return (
         <div>
             <Header
-                subtitle="Referanslarımız"
-                title="Referanslarımız"
+                subtitle="References"
+                title="References"
                 icon={<GroupIcon style={{fontSize:"35px"}}/>}
             />
                 <br/>

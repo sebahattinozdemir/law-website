@@ -37,15 +37,15 @@ function Service() {
     return (
         <div >
             <Header
-                subtitle="Hizmetlerimiz"
-                title="Hizmetlerimiz"
+                subtitle="Services"
+                title="Services"
                 icon={<GavelIcon style={{fontSize:"35px"}}/>}
             />
           <div className="row" style={{margin:"0%",padding:"1%"}}>
 
           {services.map((service,index) => (
-            <Interior photo = {service.url} title={service.heading} uzanti={"/hizmetlerimiz/"+service.heading} content = {service}
-            more="Daha Fazla Bilgi" divert={"/hizmetlerimiz/"+service.heading}  
+            <Interior photo = {service.url} title={service.heading} uzanti={"/services/"+service.heading} content = {service}
+            more="More Information" divert={"/services/"+service.heading}  
             />
           ))}
 

@@ -63,13 +63,15 @@ function Contact() {
           paddingRight: "5%",
           paddingTop: "1%",
           backgroundColor: "#FCF5F5",
+          
+          
         }}
       >
 
         {questions.map((question, index) => (
 
             question.cevap !=="" ? (
-                <div className="row" style={{marginTop:'1%',backgroundColor:'#333'}}>
+                <div className="row" style={{marginTop:'1%',backgroundColor:'#333',borderRadius:"1rem"}}>
                 <div
                   className="row"
                   style={{

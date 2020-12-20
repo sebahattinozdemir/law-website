@@ -14,17 +14,16 @@ function Footer() {
             <b style={{ color: "#A4203A", fontSize: "20px"}}>Why Us</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            NAR Danışmanlık , Ankara merkezli bir danışmanlık ofisi olup Türkiye genelindeki ve yurt dışındaki çözüm ortakları ve bünyesindeki avukatlarla birlikte yerli ve yabancı danışanlarına ticari ve hukuki danışmanlık hizmetleri sunmaktadır.
-            NAR Danışmanlık hizmetleri, İkamet izni (oturma izni), Yabancı sermayeli şirket kuruluşu, Çalışma izni, Türk  hukuku, Türk vatandaşlığı gibi başlıca konularda  profesyonel avukat ve uzman kadrosuyla   hizmet veren Türk danışmanlık firmasıdır.
+            NAR Consulting is a consultancy firm based in Ankara with partners and lawyers in general, except in Turkey and abroad within the domestic and international airports Consult offers commercial and legal advisory services. NAR Consultancy is a Turkish consultancy firm that provides services with its professional lawyers and expert staff in major issues such as residence permit (residence permit), establishment of foreign capital companies, work permit, Turkish law, Turkish citizenship
             </p>
            
           </div>
 
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "#A4203A", fontSize: "20px" }}>Yasal Uyarı</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>Legal Warning</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            Tüm hakları saklıdır. Bu sitede yer alan yazı, haber, fotoğraf, video ve sair dokümanların, bireysel kullanım dışında izin alınmadan kısmen ya da tamamen kopyalanması, çoğaltılması, kullanılması, yayınlanması ve dağıtılması kesinlikle yasaktır.
+            All Rights Reserved. It is strictly forbidden to copy, reproduce, use, publish and distribute the text, news, photographs, videos and other documents on this site, in whole or in part, without permission, except for individual use.
             </p>
             
             <div>
@@ -50,12 +49,12 @@ function Footer() {
 
         
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "#A4203A", fontSize: "20px" }}>Ankara Ofis</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>Ankara Office</b>
             <hr/>
-            <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
-            <p><b>Adres: </b>Atatürk İş Merkezi
+            <p><b>Working Hours: </b> 10:00 am- 18:00 pm</p>
+            <p><b>Address: </b>Atatürk Business Center
                 <br/>
-                    Karanfil Caddesi No:199 Kat:2
+                    Karanfil Street Number:199 Floor:2
                 <br/>
                     Kızılay / Çankaya / Ankara
 
@@ -65,12 +64,12 @@ function Footer() {
           </div>
 
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "#A4203A", fontSize: "20px" }}>Samsun Ofis</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>Samsun Office</b>
             <hr/>
-            <p><b>Çalışma Saatleri: </b> 10:00 - 18:00</p>
-            <p><b>Adres: </b>Atatürk İş Merkezi
+            <p><b>Working Hours: </b> 10:00 am- 18:00 pm</p>
+            <p><b>Address: </b>Atatürk Business Center
                 <br/>
-                    Nato Caddesi No:155 Kat:3
+                    Nato Street Number:155 Floor:3
                 <br/>
                     Atakent / Atakum / Samsun
 
