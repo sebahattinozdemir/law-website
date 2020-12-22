@@ -46,7 +46,7 @@ function Table(props) {
 
   const guncelle = (e) => {
     e.preventDefault();
-    db.collection("references").doc(props.reference.id).set(
+    db.collection("enReferences").doc(props.reference.id).set(
       {
         reference_url:referenceUrl,
         reference_name: referenceName,
@@ -134,7 +134,7 @@ function Table(props) {
           <button
             className="btn btn-danger"
             onClick={(event) =>
-              db.collection("references").doc(props.reference.id).delete()
+              db.collection("enReferences").doc(props.reference.id).delete()
             }
           >
             X

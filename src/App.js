@@ -1,9 +1,14 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  BrowserRouter,
+  Link,
+} from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import db from "./firebase";
-
 
 import TurFlag from "./turkish.ico";
 import Menu from "./components/turkish/menu/Menu";
@@ -28,28 +33,26 @@ import OturmaIzni from "./components/turkish/sabit-hizmet/oturma-izni/Oturma";
 import TurkVatandaslik from "./components/turkish/sabit-hizmet/turk-vatandaslik/TurkVatandaslik";
 
 import EngFlag from "./english.ico";
-import EngMenu        from "./components/english/menu/Menu";
-import EngFooter      from "./components/english/footer/Footer";
-import EngHome        from "./components/english/home-page/Home";
-import EngAbout       from "./components/english/about-page/About";
-import EngServices    from "./components/english/services-page/Service";
-import EngReference   from "./components/english/references-page/Reference";
-import EngBlog        from "./components/english/blog/Blog";
-import EngContact     from "./components/english/contact-page/Contact";
-import EngNotfound    from "./components/english/notfound/Notfound";
-import EngTurk        from "./components/english/services-page/turk-vatandasligi/Turk";
-import EngAdmin       from "./components/english/admin/Admin";
-import EngEgitim      from "./components/english/investment/turkiyede-egitim/Egitim";
-import EngTurkSaglik  from "./components/english/investment/turkiyede-saglik/TurkSaglik";
-import EngYasam       from "./components/english/investment/turkiyede-yasam/Yasam";
-import EngYatirim     from "./components/english/investment/turkiyede-yatirim/Yatirim";
-import EngAltBlog     from "./components/english/blog/Altblog";
+import EngMenu from "./components/english/menu/Menu";
+import EngFooter from "./components/english/footer/Footer";
+import EngHome from "./components/english/home-page/Home";
+import EngAbout from "./components/english/about-page/About";
+import EngServices from "./components/english/services-page/Service";
+import EngReference from "./components/english/references-page/Reference";
+import EngBlog from "./components/english/blog/Blog";
+import EngContact from "./components/english/contact-page/Contact";
+import EngNotfound from "./components/english/notfound/Notfound";
+import EngTurk from "./components/english/services-page/turk-vatandasligi/Turk";
+import EngAdmin from "./components/english/admin/Admin";
+import EngEgitim from "./components/english/investment/turkiyede-egitim/Egitim";
+import EngTurkSaglik from "./components/english/investment/turkiyede-saglik/TurkSaglik";
+import EngYasam from "./components/english/investment/turkiyede-yasam/Yasam";
+import EngYatirim from "./components/english/investment/turkiyede-yatirim/Yatirim";
+import EngAltBlog from "./components/english/blog/Altblog";
 import EngServicePage from "./components/english/services-page/ServicePage";
-import EngWorking     from "./components/english/static-service/working-permit/WorkingPermit";
-import EngResidence   from "./components/english/static-service/residence-permit/ResidencePermit";
-import EngTurkishCit  from "./components/english/static-service/turkish-citizenship/TurkishCitizenship";
-
-
+import EngWorking from "./components/english/static-service/working-permit/WorkingPermit";
+import EngResidence from "./components/english/static-service/residence-permit/ResidencePermit";
+import EngTurkishCit from "./components/english/static-service/turkish-citizenship/TurkishCitizenship";
 
 function App() {
   const [services, setServices] = useState([]);
@@ -57,7 +60,7 @@ function App() {
 
   useEffect(() => {
     // fires once when the app loads
-    
+
     db.collection("services")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
@@ -75,7 +78,6 @@ function App() {
           }))
         );
       });
-      
 
     db.collection("blogs")
       .orderBy("timeStamp", "desc")
@@ -95,40 +97,112 @@ function App() {
   const [state, setState] = useState(true);
   const handleChange = () => {
     setState(!state);
+    if (state) {
+      db.collection("services")
+        .orderBy("timeStamp", "desc")
+        .onSnapshot((snapshot) => {
+          setServices(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              heading: doc.data().heading,
+              serviceContent: doc.data().service_content,
+              underServiceHead1: doc.data().under_service_head1,
+              underServiceHead2: doc.data().under_service_head2,
+              underServiceHead3: doc.data().under_service_head3,
+              underServiceText1: doc.data().under_service_text1,
+              underServiceText2: doc.data().under_service_text2,
+              underServiceText3: doc.data().under_service_text3,
+            }))
+          );
+        });
+
+      db.collection("blogs")
+        .orderBy("timeStamp", "desc")
+        .onSnapshot((snapshot) => {
+          setBlogs(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              heading: doc.data().heading,
+              content: doc.data().blog_content,
+            }))
+          );
+        });
+    } else {
+      db.collection("enServices")
+        .orderBy("timeStamp", "desc")
+        .onSnapshot((snapshot) => {
+          setServices(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              heading: doc.data().heading,
+              serviceContent: doc.data().service_content,
+              underServiceHead1: doc.data().under_service_head1,
+              underServiceHead2: doc.data().under_service_head2,
+              underServiceHead3: doc.data().under_service_head3,
+              underServiceText1: doc.data().under_service_text1,
+              underServiceText2: doc.data().under_service_text2,
+              underServiceText3: doc.data().under_service_text3,
+            }))
+          );
+        });
+
+      db.collection("enBlogs")
+        .orderBy("timeStamp", "desc")
+        .onSnapshot((snapshot) => {
+          setBlogs(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              heading: doc.data().heading,
+              content: doc.data().blog_content,
+            }))
+          );
+        });
+    }
   };
   return (
-    <Router>
+    <BrowserRouter>
       <div className="app">
-       
-       
-       <br/>
+        <br />
         <div
           className="row languageOption"
           style={{
-            position:"fixed",
-            top:"0",
-            width:"105%",
-            height:"5rem",
+            position: "fixed",
+            top: "0",
+            width: "105%",
+            height: "5rem",
             backgroundColor: "white",
             padding: "1%",
             paddingLeft: "5rem",
-            overflow:"hidden",
-            
-      
-            
+            overflow: "hidden",
           }}
         >
           {state === true ? (
-            <label onClick={handleChange} style={{color:"black"}}><img src={EngFlag} style={{width:"2.5rem",height:"2.5rem",}}></img> &nbsp;English / Ingilizce</label>
+            <Link to="/eng">
+              <label onClick={handleChange} style={{ color: "black" }}>
+                <img
+                  src={EngFlag}
+                  style={{ width: "2.5rem", height: "2.5rem" }}
+                ></img>{" "}
+                &nbsp;English / Ingilizce
+              </label>
+            </Link>
           ) : (
-            <label onClick={handleChange} style={{color:"black"}}><img src={TurFlag} style={{width:"2.5rem",height:"2.5rem"}}></img> &nbsp;Turkish / Turkce</label>
+            <Link to="/">
+              <label onClick={handleChange} style={{ color: "black" }}>
+                <img
+                  src={TurFlag}
+                  style={{ width: "2.5rem", height: "2.5rem" }}
+                ></img>{" "}
+                &nbsp;Turkish / Turkce
+              </label>
+            </Link>
           )}
         </div>
         {state === true ? (
           <div
             id="menu"
             className="col-lg-2 col-md-2 col-sm-12"
-            style={{ margin: "0px", padding: "0px",marginTop:"3rem"}}
+            style={{ margin: "0px", padding: "0px", marginTop: "3rem" }}
           >
             <Menu />
           </div>
@@ -136,9 +210,9 @@ function App() {
           <div
             id="menu"
             className="col-lg-2 col-md-2 col-sm-12"
-            style={{ margin: "0px", padding: "0px",marginTop:"3rem"}}
+            style={{ margin: "0px", padding: "0px", marginTop: "3rem" }}
           >
-            <EngMenu/>
+            <EngMenu />
           </div>
         )}
 
@@ -147,9 +221,7 @@ function App() {
           id="app-container"
           style={{ margin: "0px", padding: "0px" }}
         >
-          
           <Switch>
-
             <Route exact path="/" component={Home} />
             <Route exact path="/hakkimizda" component={About} />
             <Route exact path="/hizmetlerimiz" component={Services} />
@@ -162,9 +234,17 @@ function App() {
             <Route exact path="/turkiyede-yasam" component={Yasam} />
             <Route exact path="/turkiyede-yatirim" component={Yatirim} />
 
-            <Route exact path="/türkiyede-calisma-izni" component={CalismaIzni}/>
+            <Route
+              exact
+              path="/türkiyede-calisma-izni"
+              component={CalismaIzni}
+            />
             <Route exact path="/türkiyede-oturma-izni" component={OturmaIzni} />
-            <Route exact path="/türk-vatandasligi-talebi" component={TurkVatandaslik} />
+            <Route
+              exact
+              path="/türk-vatandasligi-talebi"
+              component={TurkVatandaslik}
+            />
 
             {services.map((service, index) => (
               <Route
@@ -183,24 +263,34 @@ function App() {
             ))}
 
             <Route exact path="/admin" component={Admin} />
-          
-            <Route exact path="/eng"                  component={EngHome} />
-            <Route exact path="/about-us"             component={EngAbout} />
-            <Route exact path="/services"             component={EngServices} />
-            <Route exact path="/references"           component={EngReference} />
-            <Route exact path="/en-blog"              component={EngBlog} />
-            <Route exact path="/contact"              component={EngContact} />
-            <Route exact path="/turkish-citizenship"  component={EngTurk} />
-            <Route exact path="/education-in-turkey"  component={EngEgitim} />
-            <Route exact path="/health-in-turkey"     component={EngTurkSaglik} />
-            <Route exact path="/life-in-turkey"       component={EngYasam} />
+
+            <Route exact path="/eng" component={EngHome} />
+            <Route exact path="/about-us" component={EngAbout} />
+            <Route exact path="/services" component={EngServices} />
+            <Route exact path="/references" component={EngReference} />
+            <Route exact path="/en-blog" component={EngBlog} />
+            <Route exact path="/contact" component={EngContact} />
+            <Route exact path="/turkish-citizenship" component={EngTurk} />
+            <Route exact path="/education-in-turkey" component={EngEgitim} />
+            <Route exact path="/health-in-turkey" component={EngTurkSaglik} />
+            <Route exact path="/life-in-turkey" component={EngYasam} />
             <Route exact path="/investment-in-turkey" component={EngYatirim} />
 
-            <Route exact path="/residence-permit-in-turkey"     component={EngResidence} />
-            <Route exact path="/working-permit-in-turkey"       component={EngWorking} />
-            <Route exact path="/turkish-citizenship-request" component={EngTurkishCit} />
-
-            
+            <Route
+              exact
+              path="/residence-permit-in-turkey"
+              component={EngResidence}
+            />
+            <Route
+              exact
+              path="/working-permit-in-turkey"
+              component={EngWorking}
+            />
+            <Route
+              exact
+              path="/turkish-citizenship-request"
+              component={EngTurkishCit}
+            />
 
             {services.map((service, index) => (
               <Route
@@ -221,7 +311,6 @@ function App() {
             <Route exact path="/eng-admin" component={EngAdmin} />
             <Route component={EngNotfound} />
             <Route component={Notfound} />
-          
           </Switch>
           <div
             id="footer"
@@ -232,7 +321,7 @@ function App() {
           </div>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

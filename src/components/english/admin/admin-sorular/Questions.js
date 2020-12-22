@@ -10,7 +10,7 @@ function Questions() {
  
   useEffect(() => {
     // fires once when the app loads 
-    db.collection('questions').orderBy('timeStamp','desc').onSnapshot(snapshot =>{
+    db.collection('enQuestions').orderBy('timeStamp','desc').onSnapshot(snapshot =>{
       setQuestions(snapshot.docs.map(doc =>(
     { 
       id:doc.id,

@@ -8,7 +8,7 @@ function Blog() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // fires once when the app loads
-    db.collection("blogs")
+    db.collection("enBlogs")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setBlogs(

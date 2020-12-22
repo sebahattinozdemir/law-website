@@ -39,7 +39,7 @@ function Blog() {
 
   useEffect(() => {
     // fires once when the app loads
-    db.collection("blogs")
+    db.collection("enBlogs")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setBlogs(
@@ -63,7 +63,7 @@ function Blog() {
 
   const kaydet = (e) => {
     e.preventDefault();
-    db.collection("blogs").add({
+    db.collection("enBlogs").add({
       url:url,
       heading: heading,
       blog_content: blogContent,

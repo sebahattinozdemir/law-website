@@ -13,7 +13,7 @@ function Referanslar() {
   
   useEffect(() => {
     // fires once when the app loads 
-    db.collection('references').orderBy('timeStamp','desc').onSnapshot(snapshot =>{
+    db.collection('enReferences').orderBy('timeStamp','desc').onSnapshot(snapshot =>{
       setReferences(snapshot.docs.map(doc =>(
     { 
       id:doc.id,
@@ -29,7 +29,7 @@ function Referanslar() {
 
   const addReference = (event)=>{
     event.preventDefault();
-    db.collection('references').add({
+    db.collection('enReferences').add({
       reference_url:referenceUrl,
       reference_name:referenceName,
       reference_position:referencePosition,

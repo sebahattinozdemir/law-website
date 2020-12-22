@@ -9,7 +9,7 @@ function Reference() {
     const [references, setReferences] = useState([]);
     useEffect(() => {
         // fires once when the app loads
-        db.collection("references")
+        db.collection("enReferences")
           .orderBy("timeStamp", "desc")
           .onSnapshot((snapshot) => {
             setReferences(

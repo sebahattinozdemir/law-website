@@ -44,7 +44,7 @@ function Hizmetlerimiz() {
 
   useEffect(() => {
     // fires once when the app loads
-    db.collection("services")
+    db.collection("enServices")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setServices(
@@ -80,7 +80,7 @@ function Hizmetlerimiz() {
 
     e.preventDefault();
     
-    db.collection("services").add({
+    db.collection("enServices").add({
       url:url,
       heading: heading,
       service_content: serviceContent,

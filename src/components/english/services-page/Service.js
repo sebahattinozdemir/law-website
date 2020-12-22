@@ -12,7 +12,7 @@ function Service() {
 
   useEffect(() => {
     // fires once when the app loads
-    db.collection("services")
+    db.collection("enServices")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setServices(

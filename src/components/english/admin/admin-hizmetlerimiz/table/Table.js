@@ -63,7 +63,7 @@ function Table(props) {
   const guncelle = (e) => {
     e.preventDefault();
 
-    db.collection("services").doc(props.service.id).set(
+    db.collection("enServices").doc(props.service.id).set(
       {
         url: urlName,
         heading: headingName,
@@ -242,7 +242,7 @@ function Table(props) {
           <button
             className="btn btn-danger"
             onClick={(event) =>
-              db.collection("services").doc(props.service.id).delete()
+              db.collection("enServices").doc(props.service.id).delete()
             }
           >
             X

@@ -41,7 +41,7 @@ function Table(props) {
 
   const guncelle = (e) => {
     e.preventDefault();
-    db.collection("blogs").doc(props.blog.id).set(
+    db.collection("enBlogs").doc(props.blog.id).set(
       {
         url:url,
         heading: heading,
@@ -139,7 +139,7 @@ function Table(props) {
           <button
             className="btn btn-danger"
             onClick={(event) =>
-              db.collection("blogs").doc(props.blog.id).delete()
+              db.collection("enBlogs").doc(props.blog.id).delete()
             }
           >
             X

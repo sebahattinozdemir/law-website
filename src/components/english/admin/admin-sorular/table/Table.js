@@ -45,7 +45,7 @@ function Table(props) {
 
   const guncelle = (e) => {
     e.preventDefault();
-    db.collection("questions").doc(props.question.id).set(
+    db.collection("enQuestions").doc(props.question.id).set(
       {
         answer: cevap,
       },
@@ -113,7 +113,7 @@ function Table(props) {
           <button
             className="btn btn-danger"
             onClick={(event) =>
-              db.collection("questions").doc(props.question.id).delete()
+              db.collection("enQuestions").doc(props.question.id).delete()
             }
           >
             X

@@ -23,7 +23,7 @@ function Iletisim() {
 
   useEffect(() => {
     // fires once when the app loads
-    db.collection("contacts").onSnapshot((snapshot) => {
+    db.collection("enContacts").onSnapshot((snapshot) => {
       setContacts(
         snapshot.docs.map((doc) => ({
           id: doc.id,
@@ -38,7 +38,7 @@ function Iletisim() {
 
   const facebookGuncelle = (e) => {
     e.preventDefault();
-    db.collection("contacts").doc(contacts[0].id).set(
+    db.collection("enContacts").doc(contacts[0].id).set(
       {
         facebook: facebook,
       },
@@ -47,7 +47,7 @@ function Iletisim() {
   };
   const telefonGuncelle = (e) => {
     e.preventDefault();
-    db.collection("contacts").doc(contacts[0].id).set(
+    db.collection("enContacts").doc(contacts[0].id).set(
       {
         telefon: telefon,
       },
@@ -56,7 +56,7 @@ function Iletisim() {
   };
   const whatsappGuncelle = (e) => {
     e.preventDefault();
-    db.collection("contacts").doc(contacts[0].id).set(
+    db.collection("enContacts").doc(contacts[0].id).set(
       {
         whatsapp: whatsapp,
       },
