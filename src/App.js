@@ -58,10 +58,43 @@ function App() {
   const [services, setServices] = useState([]);
   const [blogs, setBlogs] = useState([]);
 
+const [hizmetler, setHizmetlerimiz] = useState([]);
+const [bloks, setBloks] = useState([]);
+  
   useEffect(() => {
     // fires once when the app loads
 
     db.collection("services")
+      .orderBy("timeStamp", "desc")
+      .onSnapshot((snapshot) => {
+        setHizmetlerimiz(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            heading: doc.data().heading,
+            serviceContent: doc.data().service_content,
+            underServiceHead1: doc.data().under_service_head1,
+            underServiceHead2: doc.data().under_service_head2,
+            underServiceHead3: doc.data().under_service_head3,
+            underServiceText1: doc.data().under_service_text1,
+            underServiceText2: doc.data().under_service_text2,
+            underServiceText3: doc.data().under_service_text3,
+          }))
+        );
+      });
+
+    db.collection("blogs")
+      .orderBy("timeStamp", "desc")
+      .onSnapshot((snapshot) => {
+        setBloks(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            heading: doc.data().heading,
+            content: doc.data().blog_content,
+          }))
+        );
+      });
+
+      db.collection("enServices")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setServices(
@@ -79,7 +112,7 @@ function App() {
         );
       });
 
-    db.collection("blogs")
+    db.collection("enBlogs")
       .orderBy("timeStamp", "desc")
       .onSnapshot((snapshot) => {
         setBlogs(
@@ -101,7 +134,7 @@ function App() {
       db.collection("services")
         .orderBy("timeStamp", "desc")
         .onSnapshot((snapshot) => {
-          setServices(
+          setHizmetlerimiz(
             snapshot.docs.map((doc) => ({
               id: doc.id,
               heading: doc.data().heading,
@@ -119,7 +152,7 @@ function App() {
       db.collection("blogs")
         .orderBy("timeStamp", "desc")
         .onSnapshot((snapshot) => {
-          setBlogs(
+          setBloks(
             snapshot.docs.map((doc) => ({
               id: doc.id,
               heading: doc.data().heading,
@@ -208,7 +241,7 @@ function App() {
           </div>
         ) : (
           <div
-            id="menu"
+            id="engmenu"
             className="col-lg-2 col-md-2 col-sm-12"
             style={{ margin: "0px", padding: "0px", marginTop: "3rem" }}
           >
@@ -246,7 +279,7 @@ function App() {
               component={TurkVatandaslik}
             />
 
-            {services.map((service, index) => (
+            {hizmetler.map((service, index) => (
               <Route
                 exact
                 path={"/hizmetlerimiz/" + service.heading}
@@ -254,7 +287,7 @@ function App() {
               />
             ))}
 
-            {blogs.map((blog, index) => (
+            {bloks.map((blog, index) => (
               <Route
                 exact
                 path={"/blogs/" + blog.heading}
