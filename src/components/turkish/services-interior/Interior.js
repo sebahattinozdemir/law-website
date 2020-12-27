@@ -31,8 +31,7 @@ function Interior(props) {
       <br />
 
       <Link className="an" to={props.divert} style={{ padding: "1%" }}>
-        <ArrowForwardIcon style={{ color: "#A4203A" }} />
-        {props.more}
+        
       </Link>
       <p style={{ padding: "1%", textAlign: "justify" }}>{props.explain}</p>
     </div>

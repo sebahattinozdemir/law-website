@@ -2,6 +2,7 @@ import ankara from "./ankara06.jpg";
 import samsun from "./samsun55.jpg";
 import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
 import EmailIcon from '@material-ui/icons/Email';
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import React from 'react'
 import "./Footer.css"
 function Footer() {
@@ -11,19 +12,20 @@ function Footer() {
           
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             
-            <b style={{ color: "#A4203A", fontSize: "20px"}}>Why Us</b>
+            <b style={{ color: "#A4203A", fontSize: "20px"}}>Who Are We</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            NAR Consulting is a consultancy firm based in Ankara with partners and lawyers in general, except in Turkey and abroad within the domestic and international airports Consult offers commercial and legal advisory services. NAR Consultancy is a Turkish consultancy firm that provides services with its professional lawyers and expert staff in major issues such as residence permit (residence permit), establishment of foreign capital companies, work permit, Turkish law, Turkish citizenship
+            NAR Immigration and Consulting is a consultancy firm based in Ankara with partners and lawyers in general, except in Turkey and abroad within the domestic and international 
+            airports Consult offers commercial and legal advisory services.
             </p>
            
           </div>
 
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "#A4203A", fontSize: "20px" }}>Legal Warning</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>Contact Information</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            All Rights Reserved. It is strictly forbidden to copy, reproduce, use, publish and distribute the text, news, photographs, videos and other documents on this site, in whole or in part, without permission, except for individual use.
+            You can contact us for any issue you will transmit verbally or in writing via the phone number below.
             </p>
             
             <div>
@@ -36,6 +38,12 @@ function Footer() {
                 >
                   <SettingsPhoneIcon style={{fontSize:"24px"}}/> 
                 </a> 
+                <a className="footerphone"
+                  href="https://wa.me/+905376971155"
+                  style={{ float: "left",textIndent:"1rem"}}
+                >
+                  <WhatsAppIcon style={{fontSize:"24px"}}/>
+                </a>
                 <p style={{fontSize:"medium"}}>&nbsp;+90 537 697 11 55</p>
             </div>  
 

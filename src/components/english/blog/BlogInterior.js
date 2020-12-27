@@ -6,13 +6,13 @@ function BlogInterior(props) {
     
       <div
         className="col-lg-3 col-md-6 col-sm-6 col-12"
-        style={{ border: "1px #A4203A solid", borderRadius: "1em",margin:"1%" }}
+        style={{ marginBottom:"2rem" }}
       >
         <img
           src={"https://drive.google.com/uc?export=view&id="+props.photo}
           className="card"
           alt="..."
-          style={{ width: "100%", height: "25rem", padding: "1%" }}
+          style={{ width: "100%", height: "25rem", padding: "1%",border: "1px #A4203A solid", borderRadius: "1em" }}
         ></img>
         <Link
           className="b_title"

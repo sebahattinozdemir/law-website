@@ -17,23 +17,50 @@ export default function TurkSaglik() {
                     
           
                    <div className="col-12" style={{marginLeft:"1%",marginRight:"1%"}}>
-                           <p class="card-text1">Çalışma izni Türkiye için alınması karışık bir izindir. Yabancı uyruktan başvuru yapıldığı zaman mutlaka bir profesyonel eşliğinde yapılmalıdır. Amatörce hazırlanan başvurular direkt reddedildiği için cebinizdeki paradan olma şansınız var. Bizim sizlere sunacağı %100 garantili hizmet sayesinde artık boş yere para harcamaya son. Danışmanlık hizmetimiz işinde uzman kişiler tarafından verilmektedir. Çalışma izni başvurusunda bulunacak kişilerden detaylı evrakları talep eder, incelemeden sonra geri dönüş yaparız. Reddedilme şansı olan başvuruları müşterilerimize söyleyerek onların parasını boş yere almayız. Böylece paranız cebinde kalır, boş danışmanlık hizmetine para vermiş olmazsınız.</p>
+                           <p class="card-text1">Türkiye’de sağlık hizmetleri oldukça geniş imkânları olan ve karışık bir yapıya sahiptir. 
+                           Özel sağlık sigortalısı veya genel sağlık sigortalısı olmanız halinde sigortanızın kapsamına göre sağlık hizmetlerinden
+faydalanabilirsiniz, sigortalı değilseniz sağlık hizmetlerinden ücretli olarak faydalanabilirsiniz. Sağlık hizmetlerinden etkin yararlanabilmeniz için öncelikle
+ İl Göç İdaresi Müdürlüklerine kayıt olmanız ve Türkiye’de bağlı bulunduğunuz statünün sağlık hizmetlerinden hangi kapsamda verildiğini bilmeniz gerekmektedir.
+Türk sağlık sistemi; acil sağlık hizmetleri, birinci, ikinci ve üçüncü basamak sağlık merkezlerinden oluşmaktadır.</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                           <h3 style={{color:"#A4203A"}}><LocalHospitalIcon style={{fontSize:"x-large",color:"black"}}/> Türkiye için Çalışma İzni</h3>
-                           <p class="card-text1">Uluslararası geçerliliğe sahip Anayasa 6735 sayılı uluslararası işgücü kanununa göre yabancılar sadece geçerli bir iş sunduğunda Türkiye’de çalışma izni alabilir. Bu kanun kapsamında çalışacak olan yabancı uyruklu kişinin çalışma izni başvurusu işveren tarafından yapılır. İşveren kişiler ise işinde profesyonel olan çalışma izni danışmanları ile çalışır. Firmamız da bu konuda uzman olduğu için oldukça geniş referanslara sahiptir. Dolayısı ile bir yabancı kesinlikle kendi çalışma izni için başvuru yapamaz.</p>
+                           <h3 style={{color:"#A4203A"}}><LocalHospitalIcon style={{fontSize:"x-large",color:"black"}}/> Acil Sağlık Hizmetler</h3>
+                           <p class="card-text1">Acil sağlık hizmetleri kaza, yaralanma, ani oluşan sağlık problemleri gibi
+acil durumlarda kişilere verilen sağlık hizmetlerini kapsar. 
+Ambulans Hizmetleri: Acil durumun varlığı halinde 112 numarasını arayarak ulaşabileceğiniz tıbbi yardımdır. 112’yi aradığınızda acil durumun
+gerçekleştiği yer bilgilerini, hasta ya da yaralı sayısı gibi bilgileri vermeniz gerekmektedir. 112 yetkilileri size doğru sağlık hizmetini sunmak adına ek sorular sorabilir, yetkililerin sorularına doğru ve eksiksiz cevap vermeniz
+hayati önem taşımaktadır. Hastane Acil Servisleri: Hastanelerin bünyesinde bulunan ve 24 saat hizmet
+veren acil servisleridir. Bu servislere yalnızca acil durumların varlığı halinde başvurmanız gerekmektedir. 
+Acil servislerde genel olarak ilk tıbbi müdahale ve karşılama hizmeti verilmektedir.</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                           <h3 style={{color:"#A4203A"}}><LocalHospitalIcon style={{fontSize:"x-large",color:"black"}}/> Çalışma İzni Başvuru Yöntemleri</h3>
-                           <p class="card-text1">T.C Çalışma ve Sosyal Güvenlik Bakanlığına E-Devlet üzerinden online olarak başvuru yapabiliyorlar.
-                            Eğer yabancı uyruklu kişinin Türkiye üzerinde oturma izni yoksa farklı bir yöntem izlenir. Çalışacak olan yabancı kişinin geldiği ülkede resmî bir ikamet adresi olmalıdır. Resmî ikametgah adresi olan ülkenin ilgili Türk Büyükelçiliği veya konsolosluğuna başvuru yapması gerekmektedir. İki türdeki başvuru da yabancı uyruklu kişiler için online olarak internet üzerinden yapılır.</p>
+                           <h3 style={{color:"#A4203A"}}><LocalHospitalIcon style={{fontSize:"x-large",color:"black"}}/> Sağlık Sigortası Sistemi</h3>
+                           <p class="card-text1">Türkiye’de yaşadığınız süre boyunca sağlık sisteminden etkin faydalanmak
+için sigorta yaptırmanız yararınıza olacaktır. Özel sağlık sigortası yaptırmanız
+halinde sigorta poliçenizin kapsamına göre hizmet alabilirsiniz. Özel sağlık
+sigortası birçok sigorta şirketi tarafından farklı kapsamlarda ve farklı ücretlere
+göre belirlenmektedir. Size en uygun sigortayı seçmek için sigorta acenteleri
+ile görüşmeniz ve detaylı araştırma yapmanız faydalı olacaktır.
+Genel sağlık sigortası ise sosyal güvenlik il müdürlüklerince yapılan yani kamu
+otoritesi tarafından yapılan sigortalardır. Genel sağlık sigortası yaptırmak için
+Türkiye’de 1 yıl ikamet etme şartı aranır. Ancak Türkiye’de öğrenim gören
+yabancı uyruklu öğrenciler bir yıl ikamet şartına bakılmaksızın okullarına ilk
+kayıt tarihinden itibaren üç ay içinde talepte bulunurlarsa genel sağlık sigortası
+yaptırabilirler. </p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12" >
-                           <h3 style={{color:"#A4203A"}}><LocalHospitalIcon style={{fontSize:"x-large",color:"black"}}/> Yabancı Uyruklu Çalışanlar için Asgari Ücret</h3>
-                           <p class="card-text1" >Yabancı uyruklu çalışanlar için merak edilen bir diğer konu ise asgari ücrettir. Öncelikle yabancılar için Türkiye’de Türklere ödenen asgari ücretin eşit olan miktarında maaş ödenir. Ayrıca çalışanların konumu ve yeterliliği de göz önüne alınmalıdır. Üst düzey yönetici, pilot, ön izinli mühendisler Türkiye’nin asgari ücretinin 6.5 katı fazla olacak şekilde maaş almalıdırlar. Birim veya şube müdürleri ise 4 kat fazla maaş almalıdır. Sadece ev hizmetlerinde çalışacak yabancı uyruklu kişilere asgari ücretin denginde ödeme yapılır. Diğer tüm sektörlerde asgari ücretin 1,5 kat fazlası ödenmek zorundadır. Çalışma süresi uzatmak isteyen kişilerin de prim borcu olmaması gerekmektedir.</p>
+                           <h3 style={{color:"#A4203A"}}><LocalHospitalIcon style={{fontSize:"x-large",color:"black"}}/> Genel Sağlık Sigortası Kapsamı</h3>
+                           <p class="card-text1" >Genel sağlık sigortası sistemine dâhil olduğunuz zaman sağlık hizmetinden siz, eşiniz ve
+18 yaşını doldurmamış olan çocuklarınız faydalanabilir. Ancak lise ve dengi öğrenim veya
+aday çıraklık ve çıraklık eğitimi ile işletmelerde meslekî eğitim görmesi halinde 20 yaşını
+doldurmamış çocuklarınız, yükseköğrenim görmesi halinde 25 yaşını doldurmamış
+ve evli olmayan çocuklarınız ile malûl olduğu tespit edilen evli olmayan çocuklarınız,
+geçimini sağladığınız anne ve babanız da sağlık hizmetinden yararlanabilirler. Genel sağlık sigortası kişinin ikamet izninin sona ermiş olması, yabancı bir ülkede sigortalı
+olması, başka bir kapsamda genel sağlık sigortalısı sayılması, ölüm ve gaiplik gibi nedenlerle
+sonlandırılır. </p>
                    </div>
                  
                   

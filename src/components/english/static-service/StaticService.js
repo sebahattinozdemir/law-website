@@ -10,7 +10,7 @@ export default class StaticService extends Component {
                         
                         <img src={Sphoto} className="card" alt="..." style={{width:"100%", height:"20rem",padding:"1%"}}></img>
                         
-                        <Link className="Sh_title" to={Suzanti} style={{paddingLeft:"1%"}} >
+                        <Link className="Sh_title" to={Suzanti} style={{paddingLeft:"1%",fontSize:"large"}} >
                        
                             {Stitle}
                         </Link>

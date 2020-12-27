@@ -161,16 +161,17 @@ class Mail extends Component {
           }}
         >
           <div className="col-lg-8 col-md-8 col-sm-12 col-12 m-5">
-            <h2
+            <p className="iletisimegec"
               style={{
                 display: "flex",
                 justifyContent: "center",
                 color: "#A4203A",
-                padding:"2%",
+                paddingTop:"2%",
+                fontSize:"x-large",
               }}
             >
                YOU CAN CONTACT WITH US 
-            </h2>
+            </p>
             <p
               style={{
                 display: "flex",

@@ -6,11 +6,11 @@ export default class Investment extends Component {
         const {Iphoto,Ititle,Iuzanti,Iexplain}=this.props;
     return (
        
-          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{float:"left",paddingTop:"1%",backgroundColor:"#F2F2F2",height:"45rem"}}>
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{float:"left",paddingTop:"1%",backgroundColor:"#F2F2F2",height:"41rem"}}>
                         
                         <img src={Iphoto} className="card" alt="..." style={{width:"100%", height:"25rem",padding:"1%"}}></img>
                         
-                        <Link className="Ih_title" to={Iuzanti} style={{paddingLeft:"1%"}} >
+                        <Link className="Ih_title" to={Iuzanti} style={{paddingLeft:"1%",fontSize:"large"}} >
                        
                             {Ititle}
                         </Link>

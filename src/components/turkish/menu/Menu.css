@@ -70,6 +70,12 @@ ul li {
     display: none;
 }
 
+.buro{
+    color:#A4203A;
+    font-size: large;
+    text-align: center;
+}
+
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 998px) {
     .menu {
@@ -80,6 +86,9 @@ ul li {
     .social-icon{
         display: none;
     }
+    .menu-icon{
+        font-size: 24px !important;
+    }
     
     .menu-item{
         background-color: #333;
@@ -87,11 +96,13 @@ ul li {
         line-height: 1cm;
         width: 100%;
         display: none;
+        height: 27rem;
+        
     }
 
     .menu-item-link{
-        color: white;
-        font-size: 20px;
+        color: white ;
+        font-size: 15px !important;
     }
 
     .menu-item-link:hover{
@@ -107,6 +118,7 @@ ul li {
     .line{
         display: none;
     }
+
 
     .logo{
         color: orange;

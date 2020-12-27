@@ -18,23 +18,39 @@ export default function Calisma() {
                     
           
                    <div className="col-12" style={{marginLeft:"1%",marginRight:"1%"}}>
-                           <p class="card-text1">Çalışma izni Türkiye için alınması karışık bir izindir. Yabancı uyruktan başvuru yapıldığı zaman mutlaka bir profesyonel eşliğinde yapılmalıdır. Amatörce hazırlanan başvurular direkt reddedildiği için cebinizdeki paradan olma şansınız var. Bizim sizlere sunacağı %100 garantili hizmet sayesinde artık boş yere para harcamaya son. Danışmanlık hizmetimiz işinde uzman kişiler tarafından verilmektedir. Çalışma izni başvurusunda bulunacak kişilerden detaylı evrakları talep eder, incelemeden sonra geri dönüş yaparız. Reddedilme şansı olan başvuruları müşterilerimize söyleyerek onların parasını boş yere almayız. Böylece paranız cebinde kalır, boş danışmanlık hizmetine para vermiş olmazsınız.</p>
+                           <p class="card-text1">Türkiye’de yaşayan yabancı olarak çalışmaya başlamadan önce çalışma
+izni almanız gerekmektedir. Ancak, mülteci veya ikincil koruma statüsü
+aldıysanız, bu statüyü aldığınız tarihten itibaren bağımlı veya bağımsız olarak çalışabilirsiniz.
+Çalışma izni Aile, Çalışma ve Sosyal Hizmetler Bakanlığı tarafından verilmektedir. Başvuru yurtiçi ve yurtdışından olmak üzere iki türlü yapılmaktadır. Hem yurtiçi hem de yurtdışı başvurular bir işyeri veya işletme
+üzerinden yapılmaktadır</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                            <h3 style={{color:"#A4203A"}}><WorkIcon style={{fontSize:"x-large",color:"black"}}/> Türkiye için Çalışma İzni</h3>
-                           <p class="card-text1">Uluslararası geçerliliğe sahip Anayasa 6735 sayılı uluslararası işgücü kanununa göre yabancılar sadece geçerli bir iş sunduğunda Türkiye’de çalışma izni alabilir. Bu kanun kapsamında çalışacak olan yabancı uyruklu kişinin çalışma izni başvurusu işveren tarafından yapılır. İşveren kişiler ise işinde profesyonel olan çalışma izni danışmanları ile çalışır. Firmamız da bu konuda uzman olduğu için oldukça geniş referanslara sahiptir. Dolayısı ile bir yabancı kesinlikle kendi çalışma izni için başvuru yapamaz.</p>
+                           <p class="card-text1">Türkiye’ye çalışma amacıyla gelecekseniz bulunduğunuz ülkedeki Türkiye
+Cumhuriyeti dış temsilciliğine giderek başvuruda bulunmalısınız. Temsilciliğe başvuru amacıyla gittiğinizde Türkiye’de çalışacağınız işyeri veya işletmeye yaptığınız iş sözleşmesini ibraz etmeniz gerektiğini unutmayınız.
+Başvuruda bulunduktan sonra tarafınıza verilecek referans numarası Türkiye’de çalışacağınız işyeri veya işletmeye iletilecek ve sizin adınıza başvuruda bulunması istenecektir. Bu adımdan sonra işyeri veya işletme online
+sistem üzerinden sizin adınıza başvuruda bulunabilecektir.</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                            <h3 style={{color:"#A4203A"}}><WorkIcon style={{fontSize:"x-large",color:"black"}}/> Çalışma İzni Başvuru Yöntemleri</h3>
-                           <p class="card-text1">T.C Çalışma ve Sosyal Güvenlik Bakanlığına E-Devlet üzerinden online olarak başvuru yapabiliyorlar.
-                            Eğer yabancı uyruklu kişinin Türkiye üzerinde oturma izni yoksa farklı bir yöntem izlenir. Çalışacak olan yabancı kişinin geldiği ülkede resmî bir ikamet adresi olmalıdır. Resmî ikametgah adresi olan ülkenin ilgili Türk Büyükelçiliği veya konsolosluğuna başvuru yapması gerekmektedir. İki türdeki başvuru da yabancı uyruklu kişiler için online olarak internet üzerinden yapılır.</p>
+                           <p class="card-text1">Ülkemizde ikamet sahibi olarak bulunuyorsanız en az 6 ay süreli geçerli
+ikamet izniniz olması durumunda, uluslararası koruma başvuru sahibi
+iseniz başvuru üzerinden 6 ay geçtikten sonra, şartlı mülteci veya geçici
+koruma sahibi iseniz kimlik düzenlenmesinin üzerinden 6 ay geçtikten
+sonra çalışma izni başvurusu hakkı kazanmaktasınız. Süre koşulunu yerine getirmeniz durumunda, çalışacağınız iş yeri veya işletme online sistem
+üzerinden sizin adınıza başvuruda bulunabilecektir. </p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12" >
-                           <h3 style={{color:"#A4203A"}}><WorkIcon style={{fontSize:"x-large",color:"black"}}/> Yabancı Uyruklu Çalışanlar için Asgari Ücret</h3>
-                           <p class="card-text1" >Yabancı uyruklu çalışanlar için merak edilen bir diğer konu ise asgari ücrettir. Öncelikle yabancılar için Türkiye’de Türklere ödenen asgari ücretin eşit olan miktarında maaş ödenir. Ayrıca çalışanların konumu ve yeterliliği de göz önüne alınmalıdır. Üst düzey yönetici, pilot, ön izinli mühendisler Türkiye’nin asgari ücretinin 6.5 katı fazla olacak şekilde maaş almalıdırlar. Birim veya şube müdürleri ise 4 kat fazla maaş almalıdır. Sadece ev hizmetlerinde çalışacak yabancı uyruklu kişilere asgari ücretin denginde ödeme yapılır. Diğer tüm sektörlerde asgari ücretin 1,5 kat fazlası ödenmek zorundadır. Çalışma süresi uzatmak isteyen kişilerin de prim borcu olmaması gerekmektedir.</p>
+                           <h3 style={{color:"#A4203A"}}><WorkIcon style={{fontSize:"x-large",color:"black"}}/> Türkiye'de İş Kurma</h3>
+                           <p class="card-text1" >Türkiye, hızlı gelişen başarılı ekonomisi ile dünya genelindeki yatırımcıların dikkatini çeken ülkelerden birisidir. Genç ve dinamik nüfusa sahip oluşu, nitelikli ve
+rekabetçi iş gücü, 30 milyonu aşkın genç nüfusu, ulaşım, telekomünikasyon ve
+enerji sektörlerindeki gelişkin alt yapısı ile merkezi konumu sayesinde yabancı yatırımcıları hızla kendisine çeken Türkiye, dünyanın önde gelen ekonomileri
+arasındadır.
+50 bini aşkın yabancı şirketin bulunduğu ve 12 milyar doları aşan doğrudan yatırımın yapıldığı ülkemizde, siz de Türk vatandaşlarıyla aynı koşullar ve haklara
+sahip olarak yatırım yapabilirsiniz</p>
                    </div>
                  
                   

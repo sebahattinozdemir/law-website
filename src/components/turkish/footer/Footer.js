@@ -2,6 +2,7 @@ import ankara from "./ankara06.jpg";
 import samsun from "./samsun55.jpg";
 import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
 import EmailIcon from '@material-ui/icons/Email';
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import React from 'react'
 import "./Footer.css"
 function Footer() {
@@ -11,20 +12,21 @@ function Footer() {
           
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
             
-            <b style={{ color: "#A4203A", fontSize: "20px"}}>Neden Biz</b>
+            <b style={{ color: "#A4203A", fontSize: "20px"}}>Biz Kimiz</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            NAR Danışmanlık , Ankara merkezli bir danışmanlık ofisi olup Türkiye genelindeki ve yurt dışındaki çözüm ortakları ve bünyesindeki avukatlarla birlikte yerli ve yabancı danışanlarına ticari ve hukuki danışmanlık hizmetleri sunmaktadır.
-            NAR Danışmanlık hizmetleri, İkamet izni (oturma izni), Yabancı sermayeli şirket kuruluşu, Çalışma izni, Türk  hukuku, Türk vatandaşlığı gibi başlıca konularda  profesyonel avukat ve uzman kadrosuyla   hizmet veren Türk danışmanlık firmasıdır.
+            NAR Göç ve Danışmanlık , Ankara merkezli bir danışmanlık ofisi olup Türkiye genelindeki ve yurt dışındaki çözüm ortakları ve bünyesindeki avukatlarla birlikte
+             yerli ve yabancı danışanlarına ticari ve hukuki danışmanlık hizmetleri sunmaktadır. 
+            
             </p>
            
           </div>
 
           <div className="col-lg-3 col-md-6 col-sm-6 col-12" style={{paddingTop:"1%"}}>
-            <b style={{ color: "#A4203A", fontSize: "20px" }}>Yasal Uyarı</b>
+            <b style={{ color: "#A4203A", fontSize: "20px" }}>İletişim</b>
             <hr/>
             <p style={{textAlign:"justify"}}>
-            Tüm hakları saklıdır. Bu sitede yer alan yazı, haber, fotoğraf, video ve sair dokümanların, bireysel kullanım dışında izin alınmadan kısmen ya da tamamen kopyalanması, çoğaltılması, kullanılması, yayınlanması ve dağıtılması kesinlikle yasaktır.
+                  Aşağıda bulunan telefon numarası üzerinden yazılı ve sözlü olarak ileteceğiniz her konu için bizimle iletişime geçebilirsiniz. 
             </p>
             
             <div>
@@ -37,6 +39,13 @@ function Footer() {
                 >
                   <SettingsPhoneIcon style={{fontSize:"24px"}}/> 
                 </a> 
+              
+                <a className="footerphone"
+                  href="https://wa.me/+905376971155"
+                  style={{ float: "left",textIndent:"1rem"}}
+                >
+                  <WhatsAppIcon style={{fontSize:"24px"}}/>
+                </a>
                 <p style={{fontSize:"medium"}}>&nbsp;+90 537 697 11 55</p>
             </div>  
 

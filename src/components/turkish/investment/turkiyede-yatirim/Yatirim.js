@@ -17,23 +17,44 @@ export default function Yatirim() {
                     
           
                    <div className="col-12" style={{marginLeft:"1%",marginRight:"1%"}}>
-                           <p class="card-text1">Çalışma izni Türkiye için alınması karışık bir izindir. Yabancı uyruktan başvuru yapıldığı zaman mutlaka bir profesyonel eşliğinde yapılmalıdır. Amatörce hazırlanan başvurular direkt reddedildiği için cebinizdeki paradan olma şansınız var. Bizim sizlere sunacağı %100 garantili hizmet sayesinde artık boş yere para harcamaya son. Danışmanlık hizmetimiz işinde uzman kişiler tarafından verilmektedir. Çalışma izni başvurusunda bulunacak kişilerden detaylı evrakları talep eder, incelemeden sonra geri dönüş yaparız. Reddedilme şansı olan başvuruları müşterilerimize söyleyerek onların parasını boş yere almayız. Böylece paranız cebinde kalır, boş danışmanlık hizmetine para vermiş olmazsınız.</p>
+                           <p class="card-text1">Türkiye ekonomisi, 2003 ve 2018 yılları arasında rekor bir büyüme kaydederek 2003 yılında dünyanın 18. büyük ekonomisi iken 2018 yılında 13. sıraya yükselmiştir​. Rakiplerini geride bırakan Türkiye’nin büyüme ivmesinin önümüzdeki yıllarda da devam edeceği öngörülmektedir.
+                           Mali disipline bağlı kalan Türkiye, 2002 yılında %70 olarak gerçekleşen kamu borç stokunun milli gelire oranını 2018 yılında %30 seviyesinin altına düşürmeyi başarmıştır.
+                           İzlenen sıkı mali disiplinin olumlu etkisi, Türkiye'nin bütçe dengesine son 16 yılda fark edilir biçimde azalan bir açık olarak yansımıştır.​</p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                           <h3 style={{color:"#A4203A"}}><LocalAtmIcon style={{fontSize:"x-large",color:"black"}}/> Türkiye için Çalışma İzni</h3>
-                           <p class="card-text1">Uluslararası geçerliliğe sahip Anayasa 6735 sayılı uluslararası işgücü kanununa göre yabancılar sadece geçerli bir iş sunduğunda Türkiye’de çalışma izni alabilir. Bu kanun kapsamında çalışacak olan yabancı uyruklu kişinin çalışma izni başvurusu işveren tarafından yapılır. İşveren kişiler ise işinde profesyonel olan çalışma izni danışmanları ile çalışır. Firmamız da bu konuda uzman olduğu için oldukça geniş referanslara sahiptir. Dolayısı ile bir yabancı kesinlikle kendi çalışma izni için başvuru yapamaz.</p>
+                           <h3 style={{color:"#A4203A"}}><LocalAtmIcon style={{fontSize:"x-large",color:"black"}}/> Stratejik Konum</h3>
+                           <p class="card-text1">​​​​​​​​​​​​​​​​​​​​​​​​​​​Türkiye, hem Doğu-Batı hem de Kuzey-Güney eksenleri arasında doğal bir köprü işlevi görerek büyük pazarlar için etkin ve uygun maliyetli bir merkez konumundadır.
+                           Türkiye, 4 saatlik uçuş yarıçapı içinde Avrupa, Orta Doğu ve Kuzey Afrika bölgesi ve Orta Asya'da toplam 1,5 milyarlık bir nüfusa ve 24 trilyon ABD doları değerinde bir pazara kolay erişim sunmaktadır.​
+                           Türkiye'nin stratejik konumu, Tokyo'dan New York'a kadar 16 farklı saat dilimindeki pazarlara kolay erişim olanağı sunmaktadır.​​
+                           Türk Hava Yolları, 122 ülkede 255 noktaya uçuş gerçekleştirmektedir.
+                           Çok uluslu şirketler giderek üretim, ihracat ve yönetim için merkez olarak Türkiye'yi tercih etmektedir.
+                           </p>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                           <h3 style={{color:"#A4203A"}}><LocalAtmIcon style={{fontSize:"x-large",color:"black"}}/> Çalışma İzni Başvuru Yöntemleri</h3>
-                           <p class="card-text1">T.C Çalışma ve Sosyal Güvenlik Bakanlığına E-Devlet üzerinden online olarak başvuru yapabiliyorlar.
-                            Eğer yabancı uyruklu kişinin Türkiye üzerinde oturma izni yoksa farklı bir yöntem izlenir. Çalışacak olan yabancı kişinin geldiği ülkede resmî bir ikamet adresi olmalıdır. Resmî ikametgah adresi olan ülkenin ilgili Türk Büyükelçiliği veya konsolosluğuna başvuru yapması gerekmektedir. İki türdeki başvuru da yabancı uyruklu kişiler için online olarak internet üzerinden yapılır.</p>
+                           <h3 style={{color:"#A4203A"}}><LocalAtmIcon style={{fontSize:"x-large",color:"black"}}/> Nitelikli ve Uygun Maliyetli İş Gücü</h3>
+                           <p class="card-text1">Türkiye, 32,7 milyon kişilik iş gücüyle Avrupa'nın üçüncü en büyük iş gücü havuzunu oluşturmaktadır.​
+                           Türkiye'nin sahip olduğu genç nüfus, iş gücünün büyümesindeki en önemli faktör olarak ülkenin rakiplerine kıyasla üst sıralarda yer almasına katkı sağlamıştır. 
+                           Türkiye aynı zamanda AB ülkelerine kıyasla iş gücündeki en yüksek büyümeyi gerçekleştirmiştir.
+                           Türkiye'de büyük bir hızla artan sayıdaki üniversiteler ülkedeki üniversite mezunu sayısının yükselmesini sağlayarak genç nüfus ve geniş iş gücünün kalifiye iş gücüne dönüşmesini sağlamaktadır.
+                        </p>
+                        <ul className="card-list">
+                                <li>Yükseköğretim gören 6,7 milyonu aşkın öğrenci</li>
+                                <li>Üniversitelerden yılda yaklaşık 800.000 mezun</li>
+                                <li>Dünya standartlarında mühendislik eğitimi</li>
+
+​
+                        </ul>
                    </div>
 
                    <div className="col-lg-4 col-md-6 col-sm-6 col-12" >
-                           <h3 style={{color:"#A4203A"}}><LocalAtmIcon style={{fontSize:"x-large",color:"black"}}/> Yabancı Uyruklu Çalışanlar için Asgari Ücret</h3>
-                           <p class="card-text1" >Yabancı uyruklu çalışanlar için merak edilen bir diğer konu ise asgari ücrettir. Öncelikle yabancılar için Türkiye’de Türklere ödenen asgari ücretin eşit olan miktarında maaş ödenir. Ayrıca çalışanların konumu ve yeterliliği de göz önüne alınmalıdır. Üst düzey yönetici, pilot, ön izinli mühendisler Türkiye’nin asgari ücretinin 6.5 katı fazla olacak şekilde maaş almalıdırlar. Birim veya şube müdürleri ise 4 kat fazla maaş almalıdır. Sadece ev hizmetlerinde çalışacak yabancı uyruklu kişilere asgari ücretin denginde ödeme yapılır. Diğer tüm sektörlerde asgari ücretin 1,5 kat fazlası ödenmek zorundadır. Çalışma süresi uzatmak isteyen kişilerin de prim borcu olmaması gerekmektedir.</p>
+                           <h3 style={{color:"#A4203A"}}><LocalAtmIcon style={{fontSize:"x-large",color:"black"}}/> Avantajlı AR-GE Ekosistemi</h3>
+                           <p class="card-text1" >Türk hükümeti, Ar-Ge yatırımlarının toplam kamu bütçesi içindeki payını %2'ye artırmayı hedeflemektedir. 2018 yılı itibarıyla %1'in üzerine çıkan bu payın önümüzdeki birkaç yıl içinde %2'ye ulaşacağı beklenmektedir. 
+
+                                Türkiye'deki kapsamlı Ar-Ge teşvikleri, iyi eğitimli ve kalifiye işgücü, rekabetçi maliyet avantajları ve piyasada faaliyet gösteren birçok küresel şirket tarafından da desteklenmektedir. 
+                                Tüm bu unsurların bir araya gelmesi, Türkiye'de dinamik bir ekosistem oluşmasını sağlamaktadır. 
+                                Bugün, 100'den fazla önde gelen küresel şirket, Türkiye'deki rekabetçi Ar-Ge teşviklerinden ve gelişen ekosistemden yararlanmaktadır.​</p>
                    </div>
                  
                   

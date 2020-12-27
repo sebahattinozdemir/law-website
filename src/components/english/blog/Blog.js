@@ -30,7 +30,7 @@ function Blog() {
         title="Blog"
         icon={<AssignmentIcon style={{ fontSize: "35px" }} />}
       />
-      <div className="row" style={{ margin:'2%',paddingLeft:'11%'}}>
+      <div className="row" style={{ margin:'2%',paddingLeft:'1%'}}>
       {blogs.map((blog,index) => (
             <BlogInterior photo = {blog.url} title={blog.heading} uzanti={"/blogs/"+blog.heading} 
             content = {blog} divert={"/blogs/"+blog.heading}  

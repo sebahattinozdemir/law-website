@@ -2,3 +2,12 @@
     text-align: justify;
     font-size: larger;
 }
+.card-list{
+    text-align: justify;
+    font-size: larger;
+    
+    
+}
+.card-list li{
+    list-style-type: circle;
+}

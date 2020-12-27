@@ -16,7 +16,7 @@
   .h_title{
     
     color:black;
-    font-size: x-large;
+    font-size:large !important;
   }
   .h_title:hover{
     text-decoration: none;

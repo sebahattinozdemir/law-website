@@ -44,8 +44,11 @@ function Service() {
           <div className="row" style={{margin:"0%",padding:"1%"}}>
 
           {services.map((service,index) => (
-            <Interior photo = {service.url} title={service.heading} uzanti={"/services/"+service.heading} content = {service}
-            more="More Information" divert={"/services/"+service.heading}  
+            <Interior photo = {service.url} 
+            title={service.heading} 
+            uzanti={"/services/"+service.heading} 
+            content = {service}
+             
             />
           ))}
 

@@ -1,6 +1,8 @@
 import "./Home.css";
-import video from "./1.gif";
 import Anıtkabir from "./anıtkabir.gif";
+import Atatürk from "./atatürk.gif";
+import Bayrak from "./atatürkbayrak.gif";
+import Kasım from "./atatürk10.gif";
 import investment from "./investment.jpg";
 import education from "./education.jpg";
 import life from "./life.jpg";
@@ -27,7 +29,7 @@ function Home() {
       >
 
         <img
-          src={Anıtkabir}
+          src={Atatürk}
           class="card-img-top"
           alt="..."
           style={{ width: "100%", height: "20vw"}}
@@ -36,7 +38,7 @@ function Home() {
         <p
           style={{
             position: "absolute",
-            top: "5%",
+            bottom: "5%",
             left: "15%",
             color: "white",
             fontSize:"xx-large"

@@ -9,7 +9,7 @@ function Altblog(props) {
         <div>
             <Header
                 subtitle={props.location.state.heading}
-                title="Blok İçerikleri"
+                title="Blog İçerikleri"
                 icon={<AssignmentIcon style={{fontSize:"35px"}} />}
             />
                    <div className="row" style={{margin:"0%",padding:"1%"}}>

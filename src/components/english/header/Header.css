@@ -35,4 +35,16 @@
     
 }
 
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+
+    .ana1,.subtitle{
+        font-size: medium;
+    }
+    .title{
+        font-size: large !important;
+    
+    }
+
+}
 

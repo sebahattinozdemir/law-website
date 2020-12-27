@@ -32,7 +32,7 @@ import CalismaIzni from "./components/turkish/sabit-hizmet/calisma-izni/Calisma"
 import OturmaIzni from "./components/turkish/sabit-hizmet/oturma-izni/Oturma";
 import TurkVatandaslik from "./components/turkish/sabit-hizmet/turk-vatandaslik/TurkVatandaslik";
 
-import EngFlag from "./english.ico";
+import EngFlag from "./ukflag.ico";
 import EngMenu from "./components/english/menu/Menu";
 import EngFooter from "./components/english/footer/Footer";
 import EngHome from "./components/english/home-page/Home";
@@ -216,7 +216,7 @@ const [bloks, setBloks] = useState([]);
                   src={EngFlag}
                   style={{ width: "2.5rem", height: "2.5rem" }}
                 ></img>{" "}
-                &nbsp;English / Ingilizce
+                &nbsp;English
               </label>
             </Link>
           ) : (
@@ -226,7 +226,7 @@ const [bloks, setBloks] = useState([]);
                   src={TurFlag}
                   style={{ width: "2.5rem", height: "2.5rem" }}
                 ></img>{" "}
-                &nbsp;Turkish / Turkce
+                &nbsp;Türkçe
               </label>
             </Link>
           )}

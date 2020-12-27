@@ -1,5 +1,5 @@
 import "./Home.css";
-import video from "./1.gif";
+import AtaKasım from "./atatürk10.gif";
 import investment from "./investment.jpg";
 import education from "./education.jpg";
 import life from "./life.jpg";
@@ -25,7 +25,7 @@ function Home() {
       >
 
         <img
-          src={video}
+          src={AtaKasım}
           class="card-img-top"
           alt="..."
           style={{ width: "100%", height: "20vw"}}
@@ -34,8 +34,8 @@ function Home() {
         <p
           style={{
             position: "absolute",
-            top: "65%",
-            left: "15%",
+            top: "75%",
+            left: "10%",
             color: "white",
             fontSize:"xx-large"
             

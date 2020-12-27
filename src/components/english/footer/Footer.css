@@ -11,7 +11,7 @@
     text-align: left;
 }
 .footerphoto{
-    width:80%; 
+    width:96% !important;
     height:10rem;
     padding:2%;
     float:left;
