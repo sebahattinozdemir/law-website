@@ -113,7 +113,7 @@ function Contact() {
                   <b
                     style={{ marginLeft: "5%", marginTop: ".5%", display: "block" }}
                   >
-                    Nar Hukuk
+                    Nar Consultancy
                   </b>
                   <p className="message">
                     <img
@@ -139,7 +139,7 @@ function Contact() {
           <p
             style={{ fontWeight: "bolder", fontSize: "22px", marginLeft: "3%" }}
           >
-            Bir Soru Sorun
+            Ask a Question
           </p>
           <form style={{ marginLeft: "2%" }}>
             <div class="form-row">
@@ -149,7 +149,7 @@ function Contact() {
                   class="form-control"
                   required
                   id="inputAddress"
-                  placeholder="Isim*"
+                  placeholder="Name*"
                   value={isim}
                   onChange={(event) => setIsim(event.target.value)}
                 />
@@ -169,7 +169,7 @@ function Contact() {
                 <textarea
                   class="form-control"
                   required
-                  placeholder="Sorunuz*"
+                  placeholder="Your Question*"
                   style={{
                     minHeight: "20%",
                     maxHeight: "20%",
@@ -183,7 +183,7 @@ function Contact() {
               </div>
               <div class="form-group col-md-12">
                 <button type="submit" class="btn btn-primary" onClick={addQuestion}>
-                  Soru Sor
+                  Ask a Question
                 </button>
               </div>
             </div>
