@@ -52,9 +52,10 @@ In the applicants;</p>
                     </div>
  
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12" >
+                            
                             <h3 style={{color:"#A4203A"}}><StarRateIcon style={{fontSize:"x-large",color:"black"}}/> Blue Card</h3>
                             <p class="card-text1" >Blue Card is issued by our foreign representative offices abroad and by the Provincial Directorates of Population and Citizenship in the country, upon request, for persons who are Turkish citizens by birth but later lose their Turkish citizenship by obtaining permission to leave, and their children who are processed together. Blue card holders have the same rights as Turkish citizens if they do not pose any threat to security and public order. However, blue card holders have no military obligation, nor the right to elect and be elected / enter public office and import vehicles or household items. If the persons in question have acquired rights regarding social security, they are kept and can be used in accordance with the provisions of the laws.</p>
-                    </div>
+                    </div> 
                  
                   
                    
