@@ -4,8 +4,9 @@ import RefComponent from "../Reference-compo/RefComponent";
 import React, { useEffect, useState } from 'react'
 import "./Reference.css"
 import db from "./../../../firebase";
+import useDocumentTitle from '../../../useDocumentTitle';
 function Reference() {
-
+  useDocumentTitle('References - Nar Law and Consultancy');
     const [references, setReferences] = useState([]);
     useEffect(() => {
         // fires once when the app loads

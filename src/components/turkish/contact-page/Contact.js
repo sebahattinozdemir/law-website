@@ -8,8 +8,10 @@ import firebase from "firebase";
 import ImportExportIcon from "@material-ui/icons/ImportExport";
 import "./Contact.css";
 import html from "react-inner-html";
+import useDocumentTitle from '../../../useDocumentTitle';
 
 function Contact() {
+  useDocumentTitle('İletişim - Nar Göç ve Danışmanlık');
   const [questions, setQuestions] = useState([]);
   const [isim, setIsim] = useState("");
   const [mail, setMail] = useState("");

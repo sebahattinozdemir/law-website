@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import db from "./firebase";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import PhoneIcon from '@material-ui/icons/Phone';
 
 import TurFlag from "./turkish.ico";
 import Menu from "./components/turkish/menu/Menu";
@@ -355,6 +357,26 @@ const [bloks, setBloks] = useState([]);
             {state === true ? <Footer /> : <EngFooter />}
           </div>
         </div>
+        <div className="roof-phone">
+                <a
+                    href="tel: +905432286396"
+                    className="phone_float"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <PhoneIcon className="phone-icon"/>
+                </a>
+            </div>
+            <div className="roof-whatsapp">
+                <a
+                    href="https://wa.me/+905432286396"
+                    className="whatsapp_float"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <WhatsAppIcon className="whatsapp-icon"/>   
+                </a>
+            </div>
       </div>
     </BrowserRouter>
   );

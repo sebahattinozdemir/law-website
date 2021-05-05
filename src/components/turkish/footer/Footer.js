@@ -3,6 +3,7 @@ import samsun from "./samsun55.jpg";
 import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
 import EmailIcon from '@material-ui/icons/Email';
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import FacebookIcon from "@material-ui/icons/Facebook";
 import React from 'react'
 import "./Footer.css"
 function Footer() {
@@ -30,7 +31,7 @@ function Footer() {
             </p>
             
             <div>
-                  <a className="footeremail" href="nargocvedanismanlik@gmail.com" ><EmailIcon style={{fontSize:"24px",color:"black",float:"left"}}/> &nbsp;nargocvedanismanlik@gmail.com</a> 
+                  <a className="footeremail" href="mailto:nargocvedanismanlik@gmail.com" ><EmailIcon style={{fontSize:"24px",color:"black",float:"left"}}/> &nbsp;nargocvedanismanlik@gmail.com</a> 
                   <br/>
                   <br/>
                   <a className="footerphone"
@@ -47,6 +48,14 @@ function Footer() {
                   <WhatsAppIcon style={{fontSize:"24px"}}/>
                 </a>
                 <p style={{fontSize:"medium"}}>&nbsp;+90 537 697 11 55</p>
+
+                <a className="menu-item-link"
+                  href="https://www.facebook.com/adli.sicil.1"
+                  style={{ float: "left" }}
+                >
+                  <FacebookIcon style={{fontSize:"x-large"}}/>
+                </a>
+                <p style={{fontSize:"medium"}}>&nbsp;Facebook</p>
             </div>  
 
                 

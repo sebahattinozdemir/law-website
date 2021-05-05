@@ -5,11 +5,12 @@ import Basic from "./basic/Basic";
 import BusinessIcon from '@material-ui/icons/Business';
 import React from "react";
 import "./About.css";
+import useDocumentTitle from '../../../useDocumentTitle';
 
 
 
 function About() {
-
+    useDocumentTitle('About - Nar Law and Consultancy');
     return (
         <div >
             <Header

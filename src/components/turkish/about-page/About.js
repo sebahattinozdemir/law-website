@@ -3,13 +3,14 @@ import Neden from "./neden/Neden";
 import Misyon from "./misyon/Misyon";
 import Basic from "./basic/Basic";
 import BusinessIcon from '@material-ui/icons/Business';
+import useDocumentTitle from '../../../useDocumentTitle';
 import React from "react";
 import "./About.css";
 
 
 
 function About() {
-
+    useDocumentTitle('Hakkımızda - Nar Göç ve Danışmanlık')
     return (
         <div >
             <Header

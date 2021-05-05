@@ -11,12 +11,13 @@ import Mail from "../mail/Mail";
 import SabitHizmet from "../sabit-hizmet/SabitHizmet";
 import Investment from "../investment/Investment";
 import React, { useEffect } from 'react';
+import useDocumentTitle from '../../../useDocumentTitle';
 
 
 
 function Home() {
 
-
+  useDocumentTitle('Nar Göç ve Danışmanlık');
   return (
     <div className="row">
       <div

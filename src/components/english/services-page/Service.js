@@ -5,9 +5,10 @@ import GavelIcon from '@material-ui/icons/Gavel';
 import React, { useState, useEffect } from "react";
 import "./Service.css"
 import db from "./../../../firebase";
+import useDocumentTitle from '../../../useDocumentTitle';
 
 function Service() {
-
+  useDocumentTitle('Services - Nar Law and Consultancy');
   const [services, setServices] = useState([]);
 
   useEffect(() => {

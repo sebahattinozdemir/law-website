@@ -15,12 +15,13 @@ import Interior from "../services-interior/Interior";
 import Investment from "../investment/Investment";
 import StaticService from "../static-service/StaticService";
 import React, { useEffect } from 'react';
+import useDocumentTitle from '../../../useDocumentTitle';
 
 
 
 function Home() {
 
-
+  useDocumentTitle('Nar Law and Consultancy');
   return (
     <div className="row">
       <div

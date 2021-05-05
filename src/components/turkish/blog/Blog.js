@@ -4,7 +4,9 @@ import React, { useEffect, useState } from "react";
 import "./Blog.css";
 import db from "./../../../firebase";
 import BlogInterior from "./BlogInterior";
+import useDocumentTitle from '../../../useDocumentTitle';
 function Blog() {
+  useDocumentTitle('Blog - Nar Göç ve Danışmanlık');
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // fires once when the app loads

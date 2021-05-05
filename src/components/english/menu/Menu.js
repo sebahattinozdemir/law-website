@@ -6,7 +6,7 @@ import GavelIcon from '@material-ui/icons/Gavel';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import HomeIcon from '@material-ui/icons/Home';
-import FacebookIcon from "@material-ui/icons/Facebook";
+
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import SettingsPhoneIcon from "@material-ui/icons/SettingsPhone";
 import "./Menu.css";
@@ -107,33 +107,7 @@ function Menu() {
           </li>
         </ul>
         <br/>
-        <br/>
         
-        
-        <div className="icon_parent">
-                <a className="menu-item-link"
-                  href="https://www.facebook.com/adli.sicil.1"
-                  style={{ float: "left" }}
-                >
-                  <FacebookIcon style={{fontSize:"x-large"}}/>
-                </a>
-                
-                <a className="menu-item-link"
-                  href="https://wa.me/+905376971155"
-                  style={{ float: "left", textIndent: "10px" }}
-                >
-                  <WhatsAppIcon style={{fontSize:"x-large"}}/>
-                </a>
-                <a className="menu-item-link"
-                  href="tel: +905376971155"
-                  style={{ float: "left", textIndent: "10px" }}
-                >
-                  <SettingsPhoneIcon style={{fontSize:"x-large"}}/>
-                </a>
-
-
-            </div>
-
       </div>
 
       

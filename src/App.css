@@ -5,6 +5,161 @@
     overflow: hidden;
 }
 
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 45px;
+  left: 30px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+    
+}
+.roof-whatsapp{
+background-color:green ;
+position: fixed;
+bottom: 40px;
+left: 25px;
+width: 50px;
+height: 50px;
+border-radius: 40px;
+transition: 0.6s linear;
+animation-duration: 50ms;
+border:2px green solid;
+animation-name: roof-whatsapp;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+z-index: 1000;
+}
+
+/* The animation code */
+@keyframes roof-whatsapp {
+from {background-color: green;}
+to {background-color: white}
+}
+
+
+
+.roof-whatsapp:hover{
+background-color:white ;
+
+
+}
+
+.whatsapp-icon {
+  margin-top: 2px;
+  font-size: x-large !important;
+  
+}
+
+.phone-icon{
+margin-top: 2px;  
+font-size: x-large !important;
+color:white;
+}
+
+.phone-icon:hover{
+color:rgb(54, 189, 27);
+}
+
+/*  for phone icone */
+.phone_float {
+position: fixed;
+width: 40px;
+height: 40px;
+bottom: 110px;
+left: 30px;
+background-color: #424de2;
+color: #FFF;
+border-radius: 40px;
+text-align: center;
+font-size: 30px;
+box-shadow: 2px 2px 3px #999;
+z-index: 100;
+
+}
+
+.roof-phone{
+background-color:blueviolet ;
+position: fixed;
+bottom: 105px;
+left: 25px;
+width: 50px;
+height: 50px;
+border-radius: 40px;
+transition: 0.6s linear;
+animation-duration: 50ms;
+border:2px #3B099F solid;
+animation-name: roof-phone;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+z-index: 1000;
+}
+
+/* The animation code */
+@keyframes roof-phone {
+from {background-color: rgb(86, 86, 204);}
+to {background-color: white}
+}
+
+
+
+
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  
+
+  .whatsapp_float {
+      width: 30px;
+      height: 30px;
+      bottom: 30px;
+      left: 10px;
+      font-size: 22px;
+  }
+  .phone_float {
+    width: 30px;
+    height: 30px;
+    bottom: 75px;
+    left: 10px;
+    font-size: 22px;
+}
+
+  .roof-whatsapp{
+    bottom: 25px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+
+  }
+  .roof-phone{
+    bottom: 70px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+
+  }
+  .whatsapp-icon {
+    font-size: large !important;
+  margin-top: 4px !important;
+    
+}
+
+.phone-icon{
+  font-size: large !important;
+  margin-top: 4px !important;
+  
+}
+  
+}
+
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 991px) {
   .languageOption{
