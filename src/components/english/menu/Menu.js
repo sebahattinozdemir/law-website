@@ -19,7 +19,7 @@ function Menu() {
         <Link className="menu-item-link logo" to="/">
         <img
               
-              style={{ height: "12rem", width: "80%",align:"center",marginLeft:"1rem"}}
+              style={{ height: "8rem", width: "75%",align:"center",marginLeft:"1rem"}}
               src={NarV5}
               alt="hukuk"
               title="Nar Göç ve Danışmanlık"
@@ -108,27 +108,27 @@ function Menu() {
         </ul>
         <br/>
         <br/>
-        <br/>
+        
         
         <div className="icon_parent">
                 <a className="menu-item-link"
                   href="https://www.facebook.com/adli.sicil.1"
                   style={{ float: "left" }}
                 >
-                  <FacebookIcon style={{fontSize:"28px"}}/>
+                  <FacebookIcon style={{fontSize:"x-large"}}/>
                 </a>
                 
                 <a className="menu-item-link"
                   href="https://wa.me/+905376971155"
                   style={{ float: "left", textIndent: "10px" }}
                 >
-                  <WhatsAppIcon style={{fontSize:"28px"}}/>
+                  <WhatsAppIcon style={{fontSize:"x-large"}}/>
                 </a>
                 <a className="menu-item-link"
                   href="tel: +905376971155"
                   style={{ float: "left", textIndent: "10px" }}
                 >
-                  <SettingsPhoneIcon style={{fontSize:"28px"}}/>
+                  <SettingsPhoneIcon style={{fontSize:"x-large"}}/>
                 </a>
 
 

@@ -232,6 +232,7 @@ const [bloks, setBloks] = useState([]);
           )}
         </div>
         {state === true ? (
+          document.title = "Nar Göç ve Danışmanlık",
           <div
             id="menu"
             className="col-lg-2 col-md-2 col-sm-12"
@@ -240,6 +241,7 @@ const [bloks, setBloks] = useState([]);
             <Menu />
           </div>
         ) : (
+          document.title = "Nar Law and Consultancy",
           <div
             id="engmenu"
             className="col-lg-2 col-md-2 col-sm-12"

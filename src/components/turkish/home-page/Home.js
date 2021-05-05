@@ -41,7 +41,7 @@ function Home() {
             
           }}
         >
-          DAHA HIZLI VE DAHA GÜVENLİ ADIMLAR İÇİN BİZİ TERCİH ETMELİSİNİZ...
+          DAHA HIZLI VE GÜVENLİ ADIMLAR İÇİN BİZİ TERCİH ETMELİSİNİZ...
         </p>
       </div>
       <div className="row" style={{margin:"0%",padding:"1%"}}>
