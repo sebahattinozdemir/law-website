@@ -359,7 +359,7 @@ const [bloks, setBloks] = useState([]);
         </div>
         <div className="roof-phone">
                 <a
-                    href="tel: +905432286396"
+                    href="tel: +905376971155"
                     className="phone_float"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -369,7 +369,7 @@ const [bloks, setBloks] = useState([]);
             </div>
             <div className="roof-whatsapp">
                 <a
-                    href="https://wa.me/+905432286396"
+                    href="https://wa.me/+905376971155"
                     className="whatsapp_float"
                     target="_blank"
                     rel="noopener noreferrer"
