@@ -16,8 +16,8 @@ function Menu() {
       <div className="col-lg-12 col-md-12 col-sm-6  company-logo">
         <Link className="menu-item-link logo" to="/">
         <img
-              
-              style={{ height: "8rem", width: "75%",align:"center",marginLeft:"1rem"}}
+              className="kurum_logo"
+              style={{ height: "8rem", width: "75%",align:"center",margin:"auto",display:"block"}}
               src={NarV5}
               alt="hukuk"
               title="Nar Göç ve Danışmanlık"
