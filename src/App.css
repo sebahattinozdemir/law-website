@@ -53,13 +53,13 @@ background-color:white ;
 }
 
 .whatsapp-icon {
-  margin-top: 1px !important;
+  margin-bottom: 2px !important;
   font-size: x-large !important;
   
 }
 
 .phone-icon{
-margin-top: 1px;  
+margin-bottom: 2px !important;
 font-size: x-large !important;
 color:white;
 }
@@ -147,13 +147,13 @@ to {background-color: white}
   }
   .whatsapp-icon {
     font-size: large !important;
-  margin-top: 4px !important;
+  margin-top: 5px !important;
     
 }
 
 .phone-icon{
   font-size: large !important;
-  margin-top: 4px !important;
+  margin-top: 5px !important;
   
 }
   
